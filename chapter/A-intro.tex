@@ -1,0 +1,217 @@
+\chapter{Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Mandelstam Invariants}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+For convenience, one defines the three Mandelstam invariants:
+\begin{equation}
+	s = -\abs{p_{1} + p_{2}}^{2}, \qquad t = -\abs{p_{1} - p_{3}}^{2}, \qquad u = -\abs{p_{1} - p_{4}}^{2}. 
+\end{equation}
+Energy-momentum conservation leads to a constraint,
+\begin{equation}
+	p_{1} + p_{2} = p_{3} + p_{4}.
+\end{equation}
+This constraint means that only three out of the four external energy-momentum vectors are linearly independent. Due to the conservation constraint, the three Mandelstam invariants satisfy a linear relation:
+\begin{equation}
+	s + t + u = -\abs{p_{1}}^{2} - \abs{p_{2}}^{2} - \abs{p_{3}}^{2} - \abs{p_{4}}^{2}.
+	\label{eq:stu_slow}
+\end{equation}
+Thus, only two of them are linearly independent.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Dual Spacetime}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+You can solve the conservation constraint by introducing dual spacetime coordinates:
+\begin{equation}
+	p_{1} = d_{\red{1}} - d_{\red{2}}, \quad p_{2} = d_{\red{2}} - d_{\red{3}}, \quad p_{4} = d_{\red{4}} - d_{\red{3}}, \quad p_{3} = d_{\red{1}} - d_{\red{4}}.
+	\label{eq:d_red}
+\end{equation}
+Thus, each energy-momentum vector becomes a distance interval in a dual spacetime. However, the solution (\ref{eq:d_red}) is not the only one allowed. Indeed, two other solutions are allowed:
+\begin{equation}
+	{-p_{3}} = d_{\blue{1}} - d_{\blue{2}}, \quad p_{1} = d_{\blue{2}} - d_{\blue{3}}, \quad p_{4} = d_{\blue{4}} - d_{\blue{3}}, \quad -p_{2} = d_{\blue{1}} - d_{\blue{4}},
+	\label{eq:d_blue}
+\end{equation}
+and
+\begin{equation}
+	p_{2} = d_{\green{1}} - d_{\green{2}}, \quad -p_{3} = d_{\green{2}} - d_{\green{3}}, \quad p_{4} = d_{\green{4}} - d_{\green{3}}, \quad -p_{1} = d_{\green{1}} - d_{\green{4}}.
+	\label{eq:d_green}
+\end{equation}
+I will refer to (\ref{eq:d_red}) as the \red{red} planar class, (\ref{eq:d_blue}) as the \blue{blue} planar class, and (\ref{eq:d_green}) as the \green{green} planar class. In each planar class, the dual spacetime coordinates describe the positions of four points in the dual spacetime. These four points can be taken as the vertices of a (Minkowski) tetrahedron. Many kinematic quantities can be understood in terms of the geometry of these (Minkowski) tetrahedra.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Simplicial Invariants}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+A tetrahedron is a 3-simplex. As such, it contains four vertices (0-simplex), six edges (1-simplex), four triangular faces (2-simplex), and one tetrahedron (3-simplex). The $n$-volume of an $n$-simplex is found by evaluating an $(n+1)$-point Cayley-Menger determinant. These are useful kinematic invariants.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{1-Simplex Invariants}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Given two dual spacetime positions, the 2-point Cayley-Menger determinant is given by:
+\begin{equation}
+	C_{IJ} = -\frac{1}{2} \det{
+	\begin{pmatrix}
+	0 & \abs{d_{IJ}}^{2} & 1 \\
+	\abs{d_{IJ}}^{2} & 0 & 1 \\
+	1 & 1 & 0
+	\end{pmatrix}
+	}, \qquad d_{IJ} \equiv d_{I} - d_{J}.
+\end{equation}
+Since a tetrahedron has six edges, there are six possible 1-simplex invariants for each tetrahedron. These invariants will be either squared masses or Mandelstam invariants.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{2-Simplex Invariants}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Given three dual spacetime positions, the 3-point Cayley-Menger determinant is given by:
+\begin{equation}
+	C_{IJK} = \det{
+	\begin{pmatrix}
+	0 & \abs{d_{IJ}}^{2} & \abs{d_{IK}}^{2} & 1 \\
+	\abs{d_{IJ}}^{2} & 0 & \abs{d_{JK}}^{2} & 1 \\
+	\abs{d_{IK}}^{2} & \abs{d_{JK}}^{2} & 0 & 1 \\
+	1 & 1 & 1 & 0
+	\end{pmatrix}
+	}, \qquad d_{IJ} \equiv d_{I} - d_{J}.
+\end{equation}
+Since a tetrahedron has four triangular faces, there are four possible 2-simplex invariants for each tetrahedron. These invariants take the form of K\"{a}ll\'{e}n functions. I will introduce three kinds of K\"{a}ll\'{e}n functions.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Slow K\"{a}ll\'{e}n Function}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The slow K\"{a}ll\'{e}n function is
+\begin{equation}
+	\Lambda_{ij}(x) = \left[ \left(x - m_{i}^{2} - m_{j}^{2} \right)^{2} - 4 m_{i}^{2} m_{j}^{2} \right] = \kallen{x}{m_{i}}{m_{j}},
+\end{equation}
+where $x$ is a Mandelstam invariant. Note that $\Lambda_{ij}(x)$ can be either negative, zero, or positive for real values of $x$.
+
+If the slow K\"{a}ll\'{e}n function is negative, then
+\begin{equation}
+	\Lambda_{ij}(x) < 0 \quad \Longrightarrow \quad \abs{x - m_{i}^{2} - m_{j}^{2}} < 2 m_{i} m_{j},
+\end{equation}
+which leads to
+\begin{equation}
+	\Lambda_{ij}(x) < 0 \quad \Longrightarrow \quad x > \left(m_{i} - m_{j}\right)^{2} \text{ and } x < \left(m_{i} + m_{j}\right)^{2}.
+\end{equation}
+Similarly, if the slow K\"{a}ll\'{e}n function is zero, then
+\begin{equation}
+	\Lambda_{ij}(x) = 0 \quad \Longrightarrow \quad \abs{x - m_{i}^{2} - m_{j}^{2}} = 2 m_{i} m_{j},
+\end{equation}
+which leads to
+\begin{equation}
+	\Lambda_{ij}(x) = 0 \quad \Longrightarrow \quad x = \left(m_{i} - m_{j}\right)^{2} \text{ or } x = \left(m_{i} + m_{j}\right)^{2}.
+\end{equation}
+Finally, if the slow K\"{a}ll\'{e}n function is positive, then
+\begin{equation}
+	\Lambda_{ij}(x) > 0 \quad \Longrightarrow \quad \abs{x - m_{i}^{2} - m_{j}^{2}} > 2 m_{i} m_{j},
+\end{equation}
+which leads to
+\begin{equation}
+	\Lambda_{ij}(x) > 0 \quad \Longrightarrow \quad x < \left(m_{i} - m_{j}\right)^{2} \text{ or } x > \left(m_{i} + m_{j}\right)^{2}.
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Fast K\"{a}ll\'{e}n Function}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The fast K\"{a}ll\'{e}n function is
+\begin{equation}
+	\Upsilon_{ij}(x) = \left[ \left(x + w_{i}^{2} + w_{j}^{2} \right)^{2} - 4 w_{i}^{2} w_{j}^{2} \right] = \kallenf{x}{w_{i}}{w_{j}},
+\end{equation}
+where $x$ is a Mandelstam invariant. Just like $\Lambda_{ij}(x)$, the function $\Upsilon_{ij}$ can be either negative, zero, or positive.
+
+If the fast K\"{a}ll\'{e}n function is negative, then
+\begin{equation}
+	\Upsilon_{ij}(x) < 0 \quad \Longrightarrow \quad \abs{x + w_{i}^{2} + w_{j}^{2}} < 2 w_{i} w_{j},
+\end{equation}
+which leads to
+\begin{equation}
+	\Upsilon_{ij}(x) < 0 \quad \Longrightarrow \quad x > -\left(w_{i} + w_{j}\right)^{2} \text{ and } x < -\left(w_{i} - w_{j}\right)^{2}.
+\end{equation}
+Similarly, if the fast K\"{a}ll\'{e}n function is zero, then
+\begin{equation}
+	\Upsilon_{ij}(x) = 0 \quad \Longrightarrow \quad \abs{x + w_{i}^{2} + w_{j}^{2}} = 2 w_{i} w_{j},
+\end{equation}
+which leads to
+\begin{equation}
+	\Upsilon_{ij}(x) = 0 \quad \Longrightarrow \quad x = -\left(w_{i} + w_{j}\right)^{2} \text{ or } x = -\left(w_{i} - w_{j}\right)^{2}.
+\end{equation}
+Finally, if the fast K\"{a}ll\'{e}n function is positive, then
+\begin{equation}
+	\Upsilon_{ij}(x) > 0 \quad \Longrightarrow \quad \abs{x + w_{i}^{2} + w_{j}^{2}} > 2 w_{i} w_{j},
+\end{equation}
+which leads to
+\begin{equation}
+	\Upsilon_{ij}(x) > 0 \quad \Longrightarrow \quad x < -\left(w_{i} + w_{j}\right)^{2} \text{ or } x > -\left(w_{i} - w_{j}\right)^{2}.
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Mixed K\"{a}ll\'{e}n Function}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The mixed K\"{a}ll\'{e}n function is
+\begin{equation}
+	\Omega_{ij}(x) = \left[ \left(x - m_{i}^{2} + w_{j}^{2} \right)^{2} + 4 m_{i}^{2} w_{j}^{2} \right],
+\end{equation}
+where $x$ is a Mandelstam invariant. Note that this function is always positive for $x$ real.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{3-Simplex Invariants}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Given four dual spacetime positions, the 4-point Cayley-Menger determinant is given by:
+\begin{equation}
+	C_{IJKL} = -\frac{1}{2} \det{
+	\begin{pmatrix}
+	0 & \abs{d_{IJ}}^{2} & \abs{d_{IK}}^{2} & \abs{d_{IL}}^{2} & 1 \\
+	\abs{d_{IJ}}^{2} & 0 & \abs{d_{JK}}^{2} & \abs{d_{JL}}^{2} & 1 \\
+	\abs{d_{IK}}^{2} & \abs{d_{JK}}^{2} & 0 & \abs{d_{KL}}^{2} & 1 \\
+	\abs{d_{IL}}^{2} & \abs{d_{JL}}^{2} & \abs{d_{KL}}^{2} & 0 & 1 \\
+	1 & 1 & 1 & 1 & 0
+	\end{pmatrix}
+	}, \qquad d_{IJ} \equiv d_{I} - d_{J}.
+\end{equation}
+A tetrahedron has only one possible 3-simplex invariant.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Dual Conformal Invariants}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The expression $\abs{d_{I} - d_{J}}^{2}$ is not only Lorentz invariant, but dual Poincar\'{e} invariant. You can study dual conformal invariants by constructing a dual conformal ratio with a quartet of dual spacetime coordinates:
+\begin{equation}
+	\crat{I}{J}{K}{L} \equiv \frac{\abs{d_{IK}}^{2} \abs{d_{JL}}^{2}}{\abs{d_{IL}}^{2} \abs{d_{JK}}^{2}}, \qquad d_{IJ} \equiv d_{I} - d_{J}.
+\end{equation}
+In four-point scattering there is a unique quartet of dual spacetime coordinates. However, there are six inequivalent permutations of these coordinates, and thus, six possible values for the dual conformal ratio.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Speed and Rapidity}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The mass $m$, spatial momentum $\mathbf{p}$, and energy $E$ of a slow quantum satisfy an on-shell constraint:
+\begin{equation}
+	{-m^{2}} = {-E^{2}} + \abs{\mathbf{p}}^{2}.
+\end{equation}
+This constraint can be solved by writing
+\begin{equation}
+	E = m \operatorname{cosh}{\rho}, \qquad \abs{\mathbf{p}} = m \operatorname{sinh}{\rho}.
+\end{equation}
+Thus,
+\begin{equation}
+	\operatorname{tanh}{\rho} = \frac{\sqrt{E^{2} - m^{2}}}{E} = \frac{\abs{\mathbf{p}}}{\sqrt{\abs{\mathbf{p}}^{2} + m^{2}}} = \frac{\abs{\mathbf{p}}}{E} \equiv \abs{\mathbf{v}}.
+\end{equation}
+Here $\rho$ is the (slow) rapidity, and $\abs{\mathbf{v}}$ is the speed of the slow quantum. Note that
+\begin{equation}
+	m \leq E < \infty \text{ or } 0 \leq \abs{\mathbf{p}} < \infty \quad \Longrightarrow \quad 0 \leq \abs{\mathbf{v}} < 1.
+\end{equation}
+That is, the speed of a slow quantum is bounded from above.
+
+Similarly, the imass $w$, spatial momentum $\mathbf{p}$, and energy $E$ of a fast quantum satisfy an on-shell constraint:
+\begin{equation}
+	{w^{2}} = {-E^{2}} + \abs{\mathbf{p}}^{2}.
+\end{equation}
+This constraint can be solved by writing
+\begin{equation}
+	E = w \operatorname{sinh}{\xi}, \qquad \abs{\mathbf{p}} = w \operatorname{cosh}{\xi}.
+\end{equation}
+Thus,
+\begin{equation}
+	\operatorname{coth}{\xi} = \frac{\sqrt{E^{2} + w^{2}}}{E} = \frac{\abs{\mathbf{p}}}{\sqrt{\abs{\mathbf{p}}^{2} - w^{2}}} = \frac{\abs{\mathbf{p}}}{E} \equiv \abs{\mathbf{v}}.
+\end{equation}
+Here $\xi$ is the (fast) rapidity, and $\abs{\mathbf{v}}$ is the speed of the fast quantum. Note that
+\begin{equation}
+	0 \leq E < \infty \text{ or } w \leq \abs{\mathbf{p}} < \infty \quad \Longrightarrow \quad 1 < \abs{\mathbf{v}} < \infty.
+\end{equation}
+That is, the speed of a fast quantum is bounded from below.
+
+Recall that
+\begin{equation}
+	\operatorname{argtanh}{x} = \frac{1}{2} \log{\left( \frac{1 + x}{1 - x} \right)}, \qquad 0 \leq x < 1,
+\end{equation}
+and
+\begin{equation}
+	\operatorname{argcoth}{x} = \frac{1}{2} \log{\left( \frac{x + 1}{x - 1} \right)}, \qquad 1 < x < \infty.
+\end{equation}

@@ -1,0 +1,45 @@
+% Copyright (c) 2015 Melvin Eloy Irizarry-Gelpí
+% \documentclass[letterpaper, 12pt]{report}
+\documentclass[legalpaper, 12pt]{report}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fullpage}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{setspace}
+\usepackage{url}
+\usepackage{hyperref}
+% \usepackage[landscape]{geometry}
+
+\input{extra}
+
+\begin{document}
+
+\title{\Huge\textsc{Relativistic Four-Point Kinematics}}
+\author{M.E. Irizarry-Gelp\'{i}}
+\date{\today}
+
+\maketitle
+\tableofcontents
+
+% \onehalfspacing
+
+\input{chapter/A-intro}
+\part{Slow Quanta}
+\input{chapter/B-maximal-inelastic-slow}
+\input{chapter/C-maximal-elastic-slow}
+\input{chapter/D-minimal-elastic-slow}
+\part{Fast Quanta}
+\input{chapter/E-maximal-inelastic-fast}
+\input{chapter/F-maximal-elastic-fast}
+\input{chapter/G-minimal-elastic-fast}
+\part{Null Quanta}
+\input{chapter/H-null}
+\part{Mixed Quanta}
+\input{chapter/I-compton-slow}
+\input{chapter/J-compton-fast}
+\input{chapter/K-mixed-inelastic}
+\input{chapter/L-mixed-max}
+\input{chapter/M-mixed-min}
+
+\end{document}

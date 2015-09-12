@@ -1,0 +1,228 @@
+\chapter{Maximal Inelastic Slow Diversity}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In this chapter I will consider the kinematics of a 2-to-2 scattering process that has maximal inelastic slow diversity. This means that all external quanta are slow, and all of the corresponding masses are distinct:
+\begin{equation}
+	m_{1}^{2} = -\abs{p_{1}}^{2}, \qquad m_{2}^{2} = -\abs{p_{2}}^{2}, \qquad m_{3}^{2} = -\abs{p_{3}}^{2}, \qquad m_{4}^{2} = -\abs{p_{4}}^{2}.
+	\label{eq:shell_inelastic_slow}
+\end{equation}
+Thus, this is an inelastic process. For example,
+\begin{equation}
+	A(p_{1}) + B(p_{2}) \longrightarrow Y(p_{3}) + Z(p_{4}).
+\end{equation}
+For this process, (\ref{eq:stu_slow}) becomes
+\begin{equation}
+	s + t + u = m_{1}^{2} + m_{2}^{2} + m_{3}^{2} + m_{4}^{2}.
+	\label{stu_1234}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Simplicial Invariants}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Since this scattering process is inelastic, the simplicial invariants take many distinct values. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{1-Simplex Invariants}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+For the \red{red} tetrahedron you have
+\begin{equation}
+	C_{\red{12}} = m_{1}^{2}, \quad C_{\red{13}} = s, \quad C_{\red{14}} = m_{3}^{2}, \quad
+	C_{\red{23}} = m_{2}^{2}, \quad C_{\red{24}} = t, \quad C_{\red{34}} = m_{4}^{2}.
+\end{equation}
+Similarly, for the \blue{blue} tetrahedron you have
+\begin{equation}
+	C_{\blue{12}} = m_{3}^{2}, \quad C_{\blue{13}} = t, \quad C_{\blue{14}} = m_{2}^{2}, \quad
+	C_{\blue{23}} = m_{1}^{2}, \quad C_{\blue{24}} = u, \quad C_{\blue{34}} = m_{4}^{2}.
+\end{equation}
+Finally, for the \green{green} tetrahedron you have
+\begin{equation}
+	C_{\green{12}} = m_{2}^{2}, \quad C_{\green{13}} = u, \quad C_{\green{14}} = m_{1}^{2}, \quad
+	C_{\green{23}} = m_{3}^{2}, \quad C_{\green{24}} = s, \quad C_{\green{34}} = m_{4}^{2}.
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{2-Simplex Invariants}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+For the \red{red} tetrahedron you have
+\begin{equation}
+\begin{split}
+	C_{\red{123}} &= \kallen{s}{m_{1}}{m_{2}} = \Lambda_{12}(s), \\
+	C_{\red{124}} &= \kallen{t}{m_{1}}{m_{3}} = \Lambda_{13}(t), \\
+	C_{\red{134}} &= \kallen{s}{m_{3}}{m_{4}} = \Lambda_{34}(s), \\
+	C_{\red{234}} &= \kallen{t}{m_{2}}{m_{4}} = \Lambda_{24}(t).
+\end{split}
+\end{equation}
+Similarly, for the \blue{blue} tetrahedron you have
+\begin{equation}
+\begin{split}
+	C_{\blue{123}} &= \kallen{t}{m_{1}}{m_{3}} = \Lambda_{13}(t), \\
+	C_{\blue{124}} &= \kallen{u}{m_{2}}{m_{3}} = \Lambda_{23}(u), \\
+	C_{\blue{134}} &= \kallen{t}{m_{2}}{m_{4}} = \Lambda_{24}(t), \\
+	C_{\blue{234}} &= \kallen{u}{m_{1}}{m_{4}} = \Lambda_{14}(u).
+\end{split}
+\end{equation}
+Finally, for the \green{green} tetrahedron you have
+\begin{equation}
+\begin{split}
+	C_{\green{123}} &= \kallen{u}{m_{2}}{m_{3}} = \Lambda_{23}(u), \\
+	C_{\green{124}} &= \kallen{s}{m_{1}}{m_{2}} = \Lambda_{12}(s), \\
+	C_{\green{134}} &= \kallen{u}{m_{1}}{m_{4}} = \Lambda_{14}(u), \\
+	C_{\green{234}} &= \kallen{s}{m_{3}}{m_{4}} = \Lambda_{34}(s).
+\end{split}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{3-Simplex Invariants}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Each tetrahedron has only one possible 3-simplex invariant. Indeed,
+\begin{equation}
+	C_{\red{1234}} = C_{\blue{1234}} = C_{\green{1234}}.
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Dual Conformal Invariants}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+For the \red{red} tetrahedron, you have
+\begin{equation}
+\begin{split}
+	\crat{\red{1}}{\red{2}}{\red{3}}{\red{4}} = \frac{s t}{m_{2}^{2} m_{3}^{2}}, \qquad
+	\crat{\red{1}}{\red{3}}{\red{4}}{\red{2}} &= \frac{m_{2}^{2} m_{3}^{2}}{m_{1}^{2} m_{4}^{2}}, \qquad
+	\crat{\red{1}}{\red{4}}{\red{2}}{\red{3}} = \frac{m_{1}^{2} m_{4}^{2}}{s t}, \\
+	\crat{\red{1}}{\red{2}}{\red{4}}{\red{3}} = \frac{m_{2}^{2} m_{3}^{2}}{s t}, \qquad
+	\crat{\red{1}}{\red{3}}{\red{2}}{\red{4}} &= \frac{m_{1}^{2} m_{4}^{2}}{m_{2}^{2} m_{3}^{2}}, \qquad
+	\crat{\red{1}}{\red{4}}{\red{3}}{\red{2}} = \frac{s t}{m_{1}^{2} m_{4}^{2}}.
+\end{split}
+\end{equation}
+Similarly, for the \blue{blue} tetrahedron, you have
+\begin{equation}
+\begin{split}
+	\crat{\blue{1}}{\blue{2}}{\blue{3}}{\blue{4}} = \frac{t u}{m_{1}^{2} m_{2}^{2}}, \qquad
+	\crat{\blue{1}}{\blue{3}}{\blue{4}}{\blue{2}} &= \frac{m_{1}^{2} m_{2}^{2}}{m_{3}^{2} m_{4}^{2}}, \qquad
+	\crat{\blue{1}}{\blue{4}}{\blue{2}}{\blue{3}} = \frac{m_{3}^{2} m_{4}^{2}}{t u}, \\
+	\crat{\blue{1}}{\blue{2}}{\blue{4}}{\blue{3}} = \frac{m_{1}^{2} m_{2}^{2}}{t u}, \qquad
+	\crat{\blue{1}}{\blue{3}}{\blue{2}}{\blue{4}} &= \frac{m_{3}^{2} m_{4}^{2}}{m_{1}^{2} m_{2}^{2}}, \qquad
+	\crat{\blue{1}}{\blue{4}}{\blue{3}}{\blue{2}} = \frac{t u}{m_{3}^{2} m_{4}^{2}}.
+\end{split}
+\end{equation}
+Finally, for the \green{green} tetrahedron, you have
+\begin{equation}
+\begin{split}
+	\crat{\green{1}}{\green{2}}{\green{3}}{\green{4}} = \frac{s u}{m_{1}^{2} m_{3}^{2}}, \qquad
+	\crat{\green{1}}{\green{3}}{\green{4}}{\green{2}} &= \frac{m_{1}^{2} m_{3}^{2}}{m_{2}^{2} m_{4}^{2}}, \qquad
+	\crat{\green{1}}{\green{4}}{\green{2}}{\green{3}} = \frac{m_{2}^{2} m_{4}^{2}}{s u}, \\
+	\crat{\green{1}}{\green{2}}{\green{4}}{\green{3}} = \frac{m_{1}^{2} m_{3}^{2}}{s u}, \qquad
+	\crat{\green{1}}{\green{3}}{\green{2}}{\green{4}} &= \frac{m_{2}^{2} m_{4}^{2}}{m_{1}^{2} m_{3}^{2}}, \qquad
+	\crat{\green{1}}{\green{4}}{\green{3}}{\green{2}} = \frac{s u}{m_{2}^{2} m_{4}^{2}}.
+\end{split}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Center-of-Momentum Frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In the center-of-momentum frame you write the energy-momentum vectors as
+\begin{equation}
+	p_{1} = \begin{pmatrix} E_{1} & \mathbf{p}_{1} \end{pmatrix}, \qquad p_{2} = \begin{pmatrix} E_{2} & -\mathbf{p}_{1} \end{pmatrix}, \qquad p_{3} = \begin{pmatrix} E_{3} & \mathbf{p}_{3} \end{pmatrix}, \qquad p_{4} = \begin{pmatrix} E_{4} & -\mathbf{p}_{3} \end{pmatrix}.
+\end{equation}
+From the on-shell relations (\ref{eq:shell_inelastic_slow}) it follows that
+\begin{equation}
+	\abs{\mathbf{p}_{1}}^{2} = E_{1}^{2} - m_{1}^{2} = E_{2}^{2} - m_{2}^{2}, \qquad \abs{\mathbf{p}_{3}}^{2} = E_{3}^{2} - m_{3}^{2} = E_{4}^{2} - m_{4}^{2}.
+\end{equation}
+Using $s = -\abs{p_{1} + p_{2}}^{2}$, it follows that
+\begin{equation}
+	s = \left( E_{1} + E_{2} \right)^{2} \quad \Longrightarrow \quad E_{2} = \sqrt{s} - E_{1}.
+\end{equation}
+Similarly, using $s = -\abs{p_{3} + p_{4}}^{2}$, it follows that
+\begin{equation}
+	s = \left( E_{3} + E_{4} \right)^{2} \quad \Longrightarrow \quad E_{4} = \sqrt{s} - E_{3}.
+\end{equation}
+Note that $s$ must be positive.
+
+Using the on-shell relations, you can find the energies:
+\begin{equation}
+	E_{1} = \frac{s + m_{1}^{2} - m_{2}^{2}}{2 \sqrt{s}} \quad \Longrightarrow \quad E_{2} = \frac{s - m_{1}^{2} + m_{2}^{2}}{2 \sqrt{s}},
+\end{equation}
+and
+\begin{equation}
+	E_{3} = \frac{s + m_{3}^{2} - m_{4}^{2}}{2 \sqrt{s}} \quad \Longrightarrow \quad E_{4} = \frac{s - m_{3}^{2} + m_{4}^{2}}{2 \sqrt{s}}.
+\end{equation}
+These lead to the magnitude of the spatial momenta:
+\begin{equation}
+	\abs{\mathbf{p}_{1}} = \frac{\sqrt{\Lambda_{12}(s)}}{2 \sqrt{s}}, \qquad \abs{\mathbf{p}_{3}} = \frac{\sqrt{\Lambda_{34}(s)}}{2 \sqrt{s}}.
+\end{equation}
+Using $t = -\abs{p_{1} - p_{3}}^{2}$, it follows that
+\begin{equation}
+	t = \left( E_{1} - E_{3} \right)^{2} - \abs{\mathbf{p}_{1} - \mathbf{p}_{3}}^{2}.
+\end{equation}
+Similarly, using $u = -\abs{p_{1} - p_{4}}^{2}$, it follows that
+\begin{equation}
+	u = \left( E_{1} - E_{4} \right)^{2} - \abs{\mathbf{p}_{1} + \mathbf{p}_{3}}^{2}.
+\end{equation}
+Thus,
+\begin{equation}
+	u - t = \left( E_{1} - E_{4} \right)^{2} - \left( E_{1} - E_{3} \right)^{2} - 4 \left( \mathbf{p}_{1} \cdot \mathbf{p}_{3} \right),
+\end{equation}
+and
+\begin{equation}
+	u + t = \left( E_{1} - E_{4} \right)^{2} + \left( E_{1} - E_{3} \right)^{2} - 2 \left( \abs{\mathbf{p}_{1}}^{2} + \abs{\mathbf{p}_{3}}^{2} \right).
+\end{equation}
+It follows that
+\begin{equation}
+	\left( \mathbf{p}_{1} \cdot \mathbf{p}_{3} \right) = \frac{ \left( m_{1}^{2} - m_{2}^{2} \right) \left( m_{3}^{2} - m_{4}^{2} \right) - s \left(u - t\right) }{4s}.
+\end{equation}
+Alternatively, you also find that
+\begin{equation}
+	\abs{\mathbf{p}_{1}}^{2} + \abs{\mathbf{p}_{3}}^{2} = \frac{\left( m_{1}^{2} - m_{2}^{2} \right)^{2} +  \left( m_{3}^{2} - m_{4}^{2} \right)^{2} - 2s \left(u + t\right)}{4s}.
+\end{equation}
+Using
+\begin{equation}
+	\frac{1}{\abs{\mathbf{p}_{1}} \abs{\mathbf{p}_{3}}} = \frac{1}{\abs{\mathbf{p}_{1}}^{2} + \abs{\mathbf{p}_{3}}^{2}} \left( \frac{\abs{\mathbf{p}_{1}}}{\abs{\mathbf{p}_{3}}} + \frac{\abs{\mathbf{p}_{3}}}{\abs{\mathbf{p}_{1}}} \right).
+\end{equation}
+From here you can find that
+\begin{equation}
+	z_{13} \equiv \frac{\mathbf{p}_{1} \cdot \mathbf{p}_{3}}{ \abs{\mathbf{p}_{1}} \abs{\mathbf{p}_{3}} } = \left[ \frac{\Lambda_{12}(s) + \Lambda_{34}(s)}{ \sqrt{\Lambda_{12}(s)} \sqrt{\Lambda_{34}(s)} } \right] \left[ 
+	\frac{ \left( m_{1}^{2} - m_{2}^{2} \right) \left( m_{3}^{2} - m_{4}^{2} \right) - s \left(u - t\right) }{\left( m_{1}^{2} - m_{2}^{2} \right)^{2} +  \left( m_{3}^{2} - m_{4}^{2} \right)^{2} - 2s \left(u + t\right)} \right].
+\end{equation}
+Note that
+\begin{align}
+	\Lambda_{12}(s) + \Lambda_{34}(s) &= \left( m_{1}^{2} - m_{2}^{2} \right)^{2} +  \left( m_{3}^{2} - m_{4}^{2} \right)^{2} - 2s \left(t + u\right), \\
+	\Lambda_{13}(t) + \Lambda_{24}(t) &= \left( m_{1}^{2} - m_{3}^{2} \right)^{2} +  \left( m_{2}^{2} - m_{4}^{2} \right)^{2} - 2t \left(s + u\right), \\
+	\Lambda_{14}(u) + \Lambda_{23}(u) &= \left( m_{1}^{2} - m_{4}^{2} \right)^{2} +  \left( m_{2}^{2} - m_{3}^{2} \right)^{2} - 2u \left(s + t\right).
+\end{align}
+The right-hand side has dependence on one Mandelstam invariant after using (\ref{stu_1234}).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Speed and Rapidity}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The speed of each external quantum is
+\begin{align}
+	\abs{\mathbf{v}_{1}} &= \frac{\sqrt{\Lambda_{12}(s)}}{s + m_{1}^{2} - m_{2}^{2}}, \\
+	\abs{\mathbf{v}_{2}} &= \frac{\sqrt{\Lambda_{12}(s)}}{s - m_{1}^{2} + m_{2}^{2}}, \\
+	\abs{\mathbf{v}_{3}} &= \frac{\sqrt{\Lambda_{34}(s)}}{s + m_{3}^{2} - m_{4}^{2}}, \\
+	\abs{\mathbf{v}_{4}} &= \frac{\sqrt{\Lambda_{34}(s)}}{s - m_{3}^{2} + m_{4}^{2}}.
+\end{align}
+The rapidity of each external quantum is
+\begin{align}
+	\rho_{1} &= \frac{1}{2} \log{\left[ \frac{s + m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}(s)}}{s + m_{1}^{2} - m_{2}^{2} - \sqrt{\Lambda_{12}(s)}} \right]}, \\
+	\rho_{2} &= \frac{1}{2} \log{\left[ \frac{s - m_{1}^{2} + m_{2}^{2} + \sqrt{\Lambda_{12}(s)}}{s - m_{1}^{2} + m_{2}^{2} - \sqrt{\Lambda_{12}(s)}} \right]}, \\
+	\rho_{3} &= \frac{1}{2} \log{\left[ \frac{s + m_{3}^{2} - m_{4}^{2} + \sqrt{\Lambda_{34}(s)}}{s + m_{3}^{2} - m_{4}^{2} - \sqrt{\Lambda_{34}(s)}} \right]}, \\
+	\rho_{4} &= \frac{1}{2} \log{\left[ \frac{s - m_{3}^{2} + m_{4}^{2} + \sqrt{\Lambda_{34}(s)}}{s - m_{3}^{2} + m_{4}^{2} - \sqrt{\Lambda_{34}(s)}} \right]}.
+\end{align}
+The sum of the incoming rapidities is
+\begin{equation}
+	\rho_{1} + \rho_{2} = \frac{1}{2} \log{ \left[ \frac{s - m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}(s)}}{s - m_{1}^{2} - m_{2}^{2} - \sqrt{\Lambda_{12}(s)}} \right] }.
+\end{equation}
+Similarly, the sum of the outgoing rapidities is
+\begin{equation}
+	\rho_{3} + \rho_{4} = \frac{1}{2} \log{ \left[ \frac{s - m_{3}^{2} - m_{4}^{2} + \sqrt{\Lambda_{34}(s)}}{s - m_{3}^{2} - m_{4}^{2} - \sqrt{\Lambda_{34}(s)}} \right] }.
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Physical Scattering Region}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Inside the physical scattering region, you must require that $\abs{\mathbf{p}_{1}}$ be real and positive. This leads to the condition
+\begin{equation}
+	s > (m_{1} + m_{2})^{2}.
+\end{equation}
+Similarly, requiring that $\abs{\mathbf{p}_{3}}$ be real and positive leads to the condition
+\begin{equation}
+	s > (m_{3} + m_{4})^{2}.
+\end{equation}
+Thus, we take the overlap of these two regions:
+\begin{equation}
+	s > \operatorname{max}{\left\lbrace (m_{1} + m_{2})^{2}, (m_{3} + m_{4})^{2} \right\rbrace}.
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Scattering Regimes}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+...

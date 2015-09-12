@@ -1,0 +1,411 @@
+\chapter{Fast Compton Kinematics}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In this chapter I will consider the kinematics of a 2-to-2 Compton scattering process. This means that you have a massive elastic pair, and a massless elastic pair. Thus, this is an elastic process. For example,
+\begin{equation}
+	e^{-}(p_{1}) + \gamma(p_{2}) \longrightarrow e^{-}(p_{3}) + \gamma(p_{4}).
+\end{equation}
+Energy-momentum conservation leads to the constraint
+\begin{equation}
+	p_{1} + p_{2} = p_{3} + p_{4}.
+\end{equation}
+This constraint means that only three out of the four external energy-momentum vectors are linearly independent. Due to this process being elastic, there are now two elasticity constraints:
+\begin{equation}
+	\abs{p_{1}}^{2} = \abs{p_{3}}^{2}, \qquad \abs{p_{2}}^{2} = \abs{p_{4}}^{2} = 0.
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Simplicial Invariants}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+A tetrahedron is a 3-simplex. As such, it contains four vertices (0-simplex), six edges (1-simplex), four triangular faces (2-simplex), and one tetrahedron (3-simplex). The $n$-volume of an $n$-simplex is found by evaluating an $(n+1)$-point Cayley-Menger determinant. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{1-Simplex Invariants}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Given two dual spacetime positions, the 2-point Cayley-Menger determinant is given by:
+\begin{equation}
+	C_{ij} = -\frac{1}{2} \det{
+	\begin{pmatrix}
+	0 & \abs{d_{ij}}^{2} & 1 \\
+	\abs{d_{ij}}^{2} & 0 & 1 \\
+	1 & 1 & 0
+	\end{pmatrix}
+	}.
+\end{equation}
+Since a tetrahedron has six edges, there are six possible 1-simplex invariants. These invariants will be either squared masses or Mandelstam invariants. For the \red{red} tetrahedron you have
+\begin{equation}
+\begin{split}
+	C_{\red{12}} = m^{2}, \qquad C_{\red{13}} &= s, \qquad C_{\red{14}} = m^{2}, \\
+	C_{\red{23}} = m^{2}, \qquad C_{\red{24}} &= t, \qquad C_{\red{34}} = m^{2}. \\
+\end{split}
+\end{equation}
+Similarly, for the \blue{blue} tetrahedron you have
+\begin{equation}
+\begin{split}
+	C_{\blue{12}} = m^{2}, \qquad C_{\blue{13}} &= t, \qquad C_{\blue{14}} = m^{2}, \\
+	C_{\blue{23}} = m^{2}, \qquad C_{\blue{24}} &= u, \qquad C_{\blue{34}} = m^{2}. \\
+\end{split}
+\end{equation}
+Finally, for the \green{green} tetrahedron you have
+\begin{equation}
+\begin{split}
+	C_{\green{12}} = m^{2}, \qquad C_{\green{13}} &= u, \qquad C_{\green{14}} = m^{2}, \\
+	C_{\green{23}} = m^{2}, \qquad C_{\green{24}} &= s, \qquad C_{\green{34}} = m^{2}. \\
+\end{split}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{2-Simplex Invariants}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Given three dual spacetime positions, the 3-point Cayley-Menger determinant is given by:
+\begin{equation}
+	C_{ijk} = \det{
+	\begin{pmatrix}
+	0 & \abs{d_{ij}}^{2} & \abs{d_{ik}}^{2} & 1 \\
+	\abs{d_{ij}}^{2} & 0 & \abs{d_{jk}}^{2} & 1 \\
+	\abs{d_{ik}}^{2} & \abs{d_{jk}}^{2} & 0 & 1 \\
+	1 & 1 & 1 & 0
+	\end{pmatrix}
+	}.
+\end{equation}
+Since a tetrahedron has four triangular faces, there are four possible 2-simplex invariants. Each of these invariants has the form
+\begin{equation}
+	\Lambda_{IJ}(x) = \kallen{x}{m_{I}}{m_{J}},
+\end{equation}
+where $x$ is a Mandelstam invariant. This function is also known as the K\"{a}ll\'{e}n function. For the \red{red} tetrahedron you have
+\begin{equation}
+	C_{\red{123}} = C_{\red{134}} = \left(s - m^{2} \right)^{2}, \qquad C_{\red{124}} = C_{\red{234}} = \left(t - m^{2} \right)^{2}.
+\end{equation}
+Similarly, for the \blue{blue} tetrahedron you have
+\begin{equation}
+	C_{\blue{123}} = C_{\blue{134}} = \left(t - m^{2} \right)^{2}, \qquad C_{\blue{124}} = C_{\blue{234}} = \left(u - m^{2} \right)^{2}.
+\end{equation}
+Finally, for the \green{green} tetrahedron you have
+\begin{equation}
+	C_{\green{123}} = C_{\green{134}} = \left(u - m^{2} \right)^{2}, \qquad C_{\green{124}} = C_{\green{234}} = \left(s - m^{2} \right)^{2}.
+\end{equation}
+Note that all 2-simplex invariants are strictly positive by definition.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{3-Simplex Invariants}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Given four dual spacetime positions, the 4-point Cayley-Menger determinant is given by:
+\begin{equation}
+	C_{ijkl} = -\frac{1}{2} \det{
+	\begin{pmatrix}
+	0 & \abs{d_{ij}}^{2} & \abs{d_{ik}}^{2} & \abs{d_{il}}^{2} & 1 \\
+	\abs{d_{ij}}^{2} & 0 & \abs{d_{jk}}^{2} & \abs{d_{jl}}^{2} & 1 \\
+	\abs{d_{ik}}^{2} & \abs{d_{jk}}^{2} & 0 & \abs{d_{kl}}^{2} & 1 \\
+	\abs{d_{il}}^{2} & \abs{d_{jl}}^{2} & \abs{d_{kl}}^{2} & 0 & 1 \\
+	1 & 1 & 1 & 1 & 0
+	\end{pmatrix}
+	}.
+\end{equation}
+A tetrahedron has only one possible 3-simplex invariant. Indeed,
+\begin{equation}
+	C_{\red{1234}} = C_{\blue{1234}} = C_{\green{1234}} = t \left(s u - m^{4} \right).
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Dual Conformal Invariants}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Each of the 1-simplex invariants has the form $\abs{d_{i} - d_{j}}^{2}$. This is not only Lorentz invariant, but dual Poincar\'{e} invariant. You can study dual conformal invariants by constructing a dual conformal ratio with a quartet of dual spacetime coordinates:
+\begin{equation}
+	\crat{i}{j}{k}{l} \equiv \frac{\abs{d_{ik}}^{2} \abs{d_{jl}}^{2}}{\abs{d_{il}}^{2} \abs{d_{jk}}^{2}}.
+\end{equation}
+In four-point scattering there is a unique quartet of dual spacetime coordinates. However, there are six inequivalent permutations of these coordinates, and thus, six possible values for the dual conformal ratio.
+
+For the \red{red} tetrahedron, you have
+\begin{equation}
+\begin{split}
+	\crat{\red{1}}{\red{2}}{\red{3}}{\red{4}} = \frac{s t}{m^{4}}, \qquad
+	\crat{\red{1}}{\red{3}}{\red{4}}{\red{2}} &= 1, \qquad
+	\crat{\red{1}}{\red{4}}{\red{2}}{\red{3}} = \frac{m^{4}}{s t}, \\
+	\crat{\red{1}}{\red{2}}{\red{4}}{\red{3}} = \frac{m^{4}}{s t}, \qquad
+	\crat{\red{1}}{\red{3}}{\red{2}}{\red{4}} &= 1, \qquad
+	\crat{\red{1}}{\red{4}}{\red{3}}{\red{2}} = \frac{s t}{m^{4}}.
+\end{split}
+\end{equation}
+Similarly, for the \blue{blue} tetrahedron, you have
+\begin{equation}
+\begin{split}
+	\crat{\blue{1}}{\blue{2}}{\blue{3}}{\blue{4}} = \frac{t u}{m^{4}}, \qquad
+	\crat{\blue{1}}{\blue{3}}{\blue{4}}{\blue{2}} &= 1, \qquad
+	\crat{\blue{1}}{\blue{4}}{\blue{2}}{\blue{3}} = \frac{m^{4}}{t u}, \\
+	\crat{\blue{1}}{\blue{2}}{\blue{4}}{\blue{3}} = \frac{m^{4}}{t u}, \qquad
+	\crat{\blue{1}}{\blue{3}}{\blue{2}}{\blue{4}} &= 1, \qquad
+	\crat{\blue{1}}{\blue{4}}{\blue{3}}{\blue{2}} = \frac{t u}{m^{4}}.
+\end{split}
+\end{equation}
+Finally, for the \green{green} tetrahedron, you have
+\begin{equation}
+\begin{split}
+	\crat{\green{1}}{\green{2}}{\green{3}}{\green{4}} = \frac{s u}{m^{4}}, \qquad
+	\crat{\green{1}}{\green{3}}{\green{4}}{\green{2}} &= 1, \qquad
+	\crat{\green{1}}{\green{4}}{\green{2}}{\green{3}} = \frac{m^{4}}{s u}, \\
+	\crat{\green{1}}{\green{2}}{\green{4}}{\green{3}} = \frac{m^{4}}{s u}, \qquad
+	\crat{\green{1}}{\green{3}}{\green{2}}{\green{4}} &= 1, \qquad
+	\crat{\green{1}}{\green{4}}{\green{3}}{\green{2}} = \frac{s u}{m^{4}}.
+\end{split}
+\end{equation}
+Note that
+\begin{equation}
+	\crat{1}{2}{3}{4} \crat{1}{3}{4}{2} \crat{1}{4}{2}{3} = 1,
+\end{equation}
+which is analogous to the constraint satisfied by the three Mandelstam invariants.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Center-of-Momentum Frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In the center-of-momentum frame you write the energy-momentum vectors as
+\begin{equation}
+	p_{1} = \begin{pmatrix} E_{1} & \mathbf{p}_{1} \end{pmatrix}, \qquad p_{2} = \begin{pmatrix} E_{2} & -\mathbf{p}_{1} \end{pmatrix}, \qquad p_{3} = \begin{pmatrix} E_{3} & \mathbf{p}_{3} \end{pmatrix}, \qquad p_{4} = \begin{pmatrix} E_{4} & -\mathbf{p}_{3} \end{pmatrix}.
+\end{equation}
+One of the first things to notice is that
+\begin{equation}
+	s = (E_{1} + E_{2})^{2} = (E_{3} + E_{4})^{2}.
+\end{equation}
+Thus, $s$ can be interpreted as the total energy in the center-of-momentum frame. It also follows that $s$ must be positive.
+
+From the on-shell constraints, it follows that
+\begin{equation}
+\begin{split}
+	E_{1} = \sqrt{m^{2} + \abs{\mathbf{p}_{1}}^{2}}, &\qquad E_{2} = \sqrt{m^{2} + \abs{\mathbf{p}_{1}}^{2}}, \\
+	E_{3} = \sqrt{m^{2} + \abs{\mathbf{p}_{3}}^{2}}, &\qquad E_{4} = \sqrt{m^{2} + \abs{\mathbf{p}_{3}}^{2}}.
+\end{split}
+\end{equation}
+Using the relations
+\begin{equation}
+	E_{2} = \sqrt{s} - E_{1}, \qquad E_{4} = \sqrt{s} - E_{3},
+\end{equation}
+you find that
+\begin{equation}
+	\abs{\mathbf{p}_{1}} = \abs{\mathbf{p}_{3}} = \frac{\sqrt{s - 4m^{2}}}{2}.
+\end{equation}
+Thus,
+\begin{equation}
+	E_{1} = E_{2} = E_{3} = E_{4} = \frac{\sqrt{s}}{2}.
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Speed and Rapidity}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+A quantum with mass $m$, spatial momentum $\mathbf{p}$, and energy $E$ has a speed $\abs{\mathbf{v}}$ given by
+\begin{equation}
+	\abs{\mathbf{v}} = \frac{\sqrt{E^{2} - m^{2}}}{E^{2}} = \frac{\abs{\mathbf{p}}}{\sqrt{m^{2} + \abs{\mathbf{p}}^{2}}} = \frac{\abs{\mathbf{p}}}{E}.
+\end{equation}
+If the quantum is physical, then $E \geq m$, or equivalently, $\abs{\mathbf{p}} < E$. Both of these conditions lead to a bound on speed:
+\begin{equation}
+	0 \leq \abs{\mathbf{v}} < 1.
+\end{equation}
+In contrast with energy, mass, and spatial momentum, speed and velocity are dimensionless. However, energy and spatial momentum are conserved, but velocity is not. The speed of each external quantum is
+\begin{equation}
+	\abs{\mathbf{v}_{1}} = \abs{\mathbf{v}_{2}} = \abs{\mathbf{v}_{3}} = \abs{\mathbf{v}_{4}} = \sqrt{1 - \frac{4 m^{2}}{s}}.
+\end{equation}
+Given the speed of a quantum, you can find its rapidity $\eta$ via
+\begin{equation}
+	\eta = \operatorname{arctanh}{\abs{\mathbf{v}}} = \frac{1}{2} \log{\left( \frac{1 + \abs{\mathbf{v}}}{1 - \abs{\mathbf{v}}} \right)}.
+\end{equation}
+Since the speed of a physical quantum is bounded, the rapidity of a physical quantum is bounded from below:
+\begin{equation}
+	0 \leq \eta < \infty.
+\end{equation}
+The rapidity of each external quantum is
+\begin{equation}
+	\eta_{1} = \eta_{2} = \eta_{3} = \eta_{4} = \frac{1}{2} \log{\left[\frac{\sqrt{s} + \sqrt{s - 4 m^{2}}}{\sqrt{s} - \sqrt{s - 4 m^{2}}}\right]}.
+\end{equation}
+The sum of the incoming rapidites is equal to the sum of the outgoing rapidities:
+\begin{equation}
+	\eta_{1} + \eta_{2} = \eta_{3} + \eta_{4} = \log{\left[\frac{\sqrt{s} + \sqrt{s - 4 m^{2}}}{\sqrt{s} - \sqrt{s - 4 m^{2}}}\right]}.
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Physical Scattering Region}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Fixed-Speed Scattering}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The speed of each external quantum can be written as a function of one dimensionless ratio,
+\begin{equation}
+	\frac{s}{m^{2}}.
+\end{equation}
+Fixed-speed scattering corresponds to the kinematic regime where we keep this ratio fixed:
+\begin{equation}
+	\frac{s}{m^{2}} \text{ fixed}.
+\end{equation}
+This regime is appropriate for either large $s$ and large mass, or small $s$ and small mass. Note that fixed-speed is equivalent to fixed-rapidity. By itself, this regime is not very helpful, but when combined with other limits it leads to important approximations.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Small-Speed Scattering}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Small speeds occur when $s$ is close to the threshold value $4 m^{2}$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Large-Speed Scattering}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Large-speed scattering involves the regime
+\begin{equation}
+	\frac{s}{m^{2}} \rightarrow \infty.
+\end{equation}
+That is, $\sqrt{s}$ is very large compared to the mass.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Regge Scattering}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Regge scattering is the regime of fixed-speed and large (unphysical) $z_{13}$. This corresponds to
+\begin{equation}
+	\frac{t}{s} \rightarrow \infty, \qquad \frac{s}{m^{2}} \text{ fixed}.
+\end{equation}
+As a corollary, you have
+\begin{equation}
+	u = 4m^{2} - s - t \quad \Longrightarrow \quad \frac{u}{s} \rightarrow -\infty.
+\end{equation}
+In this regime all dual conformal invariants become trivial:
+\begin{equation}
+\begin{split}
+	\crat{\red{1}}{\red{2}}{\red{3}}{\red{4}} \rightarrow \infty, \qquad
+	\crat{\red{1}}{\red{3}}{\red{4}}{\red{2}} &= 1, \qquad
+	\crat{\red{1}}{\red{4}}{\red{2}}{\red{3}} \rightarrow 0, \\
+	\crat{\red{1}}{\red{2}}{\red{4}}{\red{3}} \rightarrow 0, \qquad
+	\crat{\red{1}}{\red{3}}{\red{2}}{\red{4}} &= 1, \qquad
+	\crat{\red{1}}{\red{4}}{\red{3}}{\red{2}} \rightarrow \infty.
+\end{split}
+\end{equation}
+\begin{equation}
+\begin{split}
+	\crat{\blue{1}}{\blue{2}}{\blue{3}}{\blue{4}} \rightarrow -\infty, \qquad
+	\crat{\blue{1}}{\blue{3}}{\blue{4}}{\blue{2}} &= 1, \qquad
+	\crat{\blue{1}}{\blue{4}}{\blue{2}}{\blue{3}} \rightarrow 0, \\
+	\crat{\blue{1}}{\blue{2}}{\blue{4}}{\blue{3}} \rightarrow 0, \qquad
+	\crat{\blue{1}}{\blue{3}}{\blue{2}}{\blue{4}} &= 1, \qquad
+	\crat{\blue{1}}{\blue{4}}{\blue{3}}{\blue{2}} \rightarrow -\infty.
+\end{split}
+\end{equation}
+\begin{equation}
+\begin{split}
+	\crat{\green{1}}{\green{2}}{\green{3}}{\green{4}} \rightarrow -\infty, \qquad
+	\crat{\green{1}}{\green{3}}{\green{4}}{\green{2}} &= 1, \qquad
+	\crat{\green{1}}{\green{4}}{\green{2}}{\green{3}} \rightarrow 0, \\
+	\crat{\green{1}}{\green{2}}{\green{4}}{\green{3}} \rightarrow 0, \qquad
+	\crat{\green{1}}{\green{3}}{\green{2}}{\green{4}} &= 1, \qquad
+	\crat{\green{1}}{\green{4}}{\green{3}}{\green{2}} \rightarrow -\infty.
+\end{split}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Forward Scattering}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Forward scattering is the regime of fixed-speed and small (physical) scattering angles (i.e. $z_{13} \rightarrow 1$). This can be stated as
+\begin{equation}
+	\frac{t}{s} \rightarrow 0, \qquad \frac{s}{m^{2}} \text{ fixed}.
+\end{equation}
+As a corollary, you have
+\begin{equation}
+	u = 4m^{2} - s - t \quad \Longrightarrow \quad \frac{u}{s} \text{ fixed}.
+\end{equation}
+Unlike the case of Regge scattering, in the forward regime only some of the dual conformal invariants are trivial:
+\begin{equation}
+\begin{split}
+	\crat{\red{1}}{\red{2}}{\red{3}}{\red{4}} \rightarrow 0, \qquad
+	\crat{\red{1}}{\red{3}}{\red{4}}{\red{2}} &= 1, \qquad
+	\crat{\red{1}}{\red{4}}{\red{2}}{\red{3}} \rightarrow \infty, \\
+	\crat{\red{1}}{\red{2}}{\red{4}}{\red{3}} \rightarrow \infty, \qquad
+	\crat{\red{1}}{\red{3}}{\red{2}}{\red{4}} &= 1, \qquad
+	\crat{\red{1}}{\red{4}}{\red{3}}{\red{2}} \rightarrow 0.
+\end{split}
+\end{equation}
+\begin{equation}
+\begin{split}
+	\crat{\blue{1}}{\blue{2}}{\blue{3}}{\blue{4}} \rightarrow 0, \qquad
+	\crat{\blue{1}}{\blue{3}}{\blue{4}}{\blue{2}} &= 1, \qquad
+	\crat{\blue{1}}{\blue{4}}{\blue{2}}{\blue{3}} \rightarrow \infty, \\
+	\crat{\blue{1}}{\blue{2}}{\blue{4}}{\blue{3}} \rightarrow \infty, \qquad
+	\crat{\blue{1}}{\blue{3}}{\blue{2}}{\blue{4}} &= 1, \qquad
+	\crat{\blue{1}}{\blue{4}}{\blue{3}}{\blue{2}} \rightarrow 0.
+\end{split}
+\end{equation}
+The rest of the dual conformal invariants are fixed and nontrivial:
+\begin{equation}
+\begin{split}
+	\crat{\green{1}}{\green{2}}{\green{3}}{\green{4}} = \frac{s u}{m^{4}}, \qquad
+	\crat{\green{1}}{\green{3}}{\green{4}}{\green{2}} &= 1, \qquad
+	\crat{\green{1}}{\green{4}}{\green{2}}{\green{3}} = \frac{m^{4}}{s u}, \\
+	\crat{\green{1}}{\green{2}}{\green{4}}{\green{3}} = \frac{m^{4}}{s u}, \qquad
+	\crat{\green{1}}{\green{3}}{\green{2}}{\green{4}} &= 1, \qquad
+	\crat{\green{1}}{\green{4}}{\green{3}}{\green{2}} = \frac{s u}{m^{4}}.
+\end{split}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Backward Scattering}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Backward scattering is the regime of fixed-speed and large (physical) scattering angles (i.e. $z_{13} \rightarrow -1$). This can be stated as
+\begin{equation}
+	\frac{u}{s} \rightarrow 0, \qquad \frac{s}{m^{2}} \text{ fixed}.
+\end{equation}
+As a corollary, you have
+\begin{equation}
+	t = 4m^{2} - s - u \quad \Longrightarrow \quad \frac{t}{s} \text{ fixed}.
+\end{equation}
+Similarly to the forward scattering regime, some of the dual conformal invariants are trivial:
+\begin{equation}
+\begin{split}
+	\crat{\blue{1}}{\blue{2}}{\blue{3}}{\blue{4}} \rightarrow 0, \qquad
+	\crat{\blue{1}}{\blue{3}}{\blue{4}}{\blue{2}} &= 1, \qquad
+	\crat{\blue{1}}{\blue{4}}{\blue{2}}{\blue{3}} \rightarrow \infty, \\
+	\crat{\blue{1}}{\blue{2}}{\blue{4}}{\blue{3}} \rightarrow \infty, \qquad
+	\crat{\blue{1}}{\blue{3}}{\blue{2}}{\blue{4}} &= 1, \qquad
+	\crat{\blue{1}}{\blue{4}}{\blue{3}}{\blue{2}} \rightarrow 0.
+\end{split}
+\end{equation}
+\begin{equation}
+\begin{split}
+	\crat{\green{1}}{\green{2}}{\green{3}}{\green{4}} \rightarrow 0, \qquad
+	\crat{\green{1}}{\green{3}}{\green{4}}{\green{2}} &= 1, \qquad
+	\crat{\green{1}}{\green{4}}{\green{2}}{\green{3}} \rightarrow \infty, \\
+	\crat{\green{1}}{\green{2}}{\green{4}}{\green{3}} \rightarrow \infty, \qquad
+	\crat{\green{1}}{\green{3}}{\green{2}}{\green{4}} &= 1, \qquad
+	\crat{\green{1}}{\green{4}}{\green{3}}{\green{2}} \rightarrow 0.
+\end{split}
+\end{equation}
+The rest of the dual conformal invariants are fixed and nontrivial:
+\begin{equation}
+\begin{split}
+	\crat{\red{1}}{\red{2}}{\red{3}}{\red{4}} = \frac{s t}{m^{4}}, \qquad
+	\crat{\red{1}}{\red{3}}{\red{4}}{\red{2}} &= 1, \qquad
+	\crat{\red{1}}{\red{4}}{\red{2}}{\red{3}} = \frac{m^{4}}{s t}, \\
+	\crat{\red{1}}{\red{2}}{\red{4}}{\red{3}} = \frac{m^{4}}{s t}, \qquad
+	\crat{\red{1}}{\red{3}}{\red{2}}{\red{4}} &= 1, \qquad
+	\crat{\red{1}}{\red{4}}{\red{3}}{\red{2}} = \frac{s t}{m^{4}}.
+\end{split}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Fixed-Angle Scattering}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Fixed-angle scattering is the regime of large-speed and (physical) fixed-angle. This can be stated as
+\begin{equation}
+	\frac{t}{s} \text{ fixed}, \qquad \frac{s}{m^{2}} \rightarrow \infty.
+\end{equation}
+As a corollary, you have
+\begin{equation}
+	u = 4m^{2} - s - t \quad \Longrightarrow \quad \frac{u}{s} \text{ fixed}.
+\end{equation}
+In this regime all dual conformal invariants become trivial:
+\begin{equation}
+\begin{split}
+	\crat{\red{1}}{\red{2}}{\red{3}}{\red{4}} \rightarrow -\infty, \qquad
+	\crat{\red{1}}{\red{3}}{\red{4}}{\red{2}} &= 1, \qquad
+	\crat{\red{1}}{\red{4}}{\red{2}}{\red{3}} \rightarrow 0, \\
+	\crat{\red{1}}{\red{2}}{\red{4}}{\red{3}} \rightarrow 0, \qquad
+	\crat{\red{1}}{\red{3}}{\red{2}}{\red{4}} &= 1, \qquad
+	\crat{\red{1}}{\red{4}}{\red{3}}{\red{2}} \rightarrow -\infty.
+\end{split}
+\end{equation}
+\begin{equation}
+\begin{split}
+	\crat{\blue{1}}{\blue{2}}{\blue{3}}{\blue{4}} \rightarrow \infty, \qquad
+	\crat{\blue{1}}{\blue{3}}{\blue{4}}{\blue{2}} &= 1, \qquad
+	\crat{\blue{1}}{\blue{4}}{\blue{2}}{\blue{3}} \rightarrow 0, \\
+	\crat{\blue{1}}{\blue{2}}{\blue{4}}{\blue{3}} \rightarrow 0, \qquad
+	\crat{\blue{1}}{\blue{3}}{\blue{2}}{\blue{4}} &= 1, \qquad
+	\crat{\blue{1}}{\blue{4}}{\blue{3}}{\blue{2}} \rightarrow \infty.
+\end{split}
+\end{equation}
+\begin{equation}
+\begin{split}
+	\crat{\green{1}}{\green{2}}{\green{3}}{\green{4}} \rightarrow -\infty, \qquad
+	\crat{\green{1}}{\green{3}}{\green{4}}{\green{2}} &= 1, \qquad
+	\crat{\green{1}}{\green{4}}{\green{2}}{\green{3}} \rightarrow 0, \\
+	\crat{\green{1}}{\green{2}}{\green{4}}{\green{3}} \rightarrow 0, \qquad
+	\crat{\green{1}}{\green{3}}{\green{2}}{\green{4}} &= 1, \qquad
+	\crat{\green{1}}{\green{4}}{\green{3}}{\green{2}} \rightarrow -\infty.
+\end{split}
+\end{equation}
+From the point of view of dual conformal invariants, Regge scattering and fixed-angle scattering are very similar.
