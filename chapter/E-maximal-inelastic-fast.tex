@@ -15,104 +15,61 @@ For this process, (\ref{eq:stu_slow}) becomes
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Simplicial Invariants}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-A tetrahedron is a 3-simplex. As such, it contains four vertices (0-simplex), six edges (1-simplex), four triangular faces (2-simplex), and one tetrahedron (3-simplex). The $n$-volume of an $n$-simplex is found by evaluating an $(n+1)$-point Cayley-Menger determinant. 
+The simplicial invariants for fast quanta are slightly different from the slow quanta invariants. Due to diversity, there are many distinct values.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{1-Simplex Invariants}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Given two dual spacetime positions, the 2-point Cayley-Menger determinant is given by:
+For the \red{red} tetrahedron you have
 \begin{equation}
-	C_{ij} = -\frac{1}{2} \det{
-	\begin{pmatrix}
-	0 & \abs{d_{ij}}^{2} & 1 \\
-	\abs{d_{ij}}^{2} & 0 & 1 \\
-	1 & 1 & 0
-	\end{pmatrix}
-	}, \qquad d_{ij} \equiv d_{i} - d_{j}.
-\end{equation}
-Since a tetrahedron has six edges, there are six possible 1-simplex invariants. These invariants will be either squared masses or Mandelstam invariants. For the \red{red} tetrahedron you have
-\begin{equation}
-\begin{split}
-	C_{\red{12}} = -w_{1}^{2}, \qquad C_{\red{13}} &= s, \qquad C_{\red{14}} = -w_{3}^{2}, \\
-	C_{\red{23}} = -w_{2}^{2}, \qquad C_{\red{24}} &= t, \qquad C_{\red{34}} = -w_{4}^{2}. \\
-\end{split}
+	C_{\red{12}} = -w_{1}^{2}, \quad C_{\red{13}} = s, \quad C_{\red{14}} = -w_{3}^{2}, \quad
+	C_{\red{23}} = -w_{2}^{2}, \quad C_{\red{24}} = t, \quad C_{\red{34}} = -w_{4}^{2}.
 \end{equation}
 Similarly, for the \blue{blue} tetrahedron you have
 \begin{equation}
-\begin{split}
-	C_{\blue{12}} = -w_{3}^{2}, \qquad C_{\blue{13}} &= t, \qquad C_{\blue{14}} = -w_{2}^{2}, \\
-	C_{\blue{23}} = -w_{1}^{2}, \qquad C_{\blue{24}} &= u, \qquad C_{\blue{34}} = -w_{4}^{2}. \\
-\end{split}
+	C_{\blue{12}} = -w_{3}^{2}, \quad C_{\blue{13}} = t, \quad C_{\blue{14}} = -w_{2}^{2}, \quad
+	C_{\blue{23}} = -w_{1}^{2}, \quad C_{\blue{24}} = u, \quad C_{\blue{34}} = -w_{4}^{2}.
 \end{equation}
 Finally, for the \green{green} tetrahedron you have
 \begin{equation}
-\begin{split}
-	C_{\green{12}} = -w_{2}^{2}, \qquad C_{\green{13}} &= u, \qquad C_{\green{14}} = -w_{1}^{2}, \\
-	C_{\green{23}} = -w_{3}^{2}, \qquad C_{\green{24}} &= s, \qquad C_{\green{34}} = -w_{4}^{2}. \\
-\end{split}
+	C_{\green{12}} = -w_{2}^{2}, \quad C_{\green{13}} = u, \quad C_{\green{14}} = -w_{1}^{2}, \quad
+	C_{\green{23}} = -w_{3}^{2}, \quad C_{\green{24}} = s, \quad C_{\green{34}} = -w_{4}^{2}.
 \end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{2-Simplex Invariants}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Given three dual spacetime positions, the 3-point Cayley-Menger determinant is given by:
-\begin{equation}
-	S_{ijk} = \det{
-	\begin{pmatrix}
-	0 & \abs{d_{ij}}^{2} & \abs{d_{ik}}^{2} & 1 \\
-	\abs{d_{ij}}^{2} & 0 & \abs{d_{jk}}^{2} & 1 \\
-	\abs{d_{ik}}^{2} & \abs{d_{jk}}^{2} & 0 & 1 \\
-	1 & 1 & 1 & 0
-	\end{pmatrix}
-	}, \qquad d_{ij} \equiv d_{i} - d_{j}.
-\end{equation}
-Since a tetrahedron has four triangular faces, there are four possible 2-simplex invariants. Each of these invariants has the form
-\begin{equation}
-	\Lambda_{IJ}(x) = \kallen{x}{m_{I}}{m_{J}},
-\end{equation}
-where $x$ is a Mandelstam invariant. This function is also known as the K\"{a}ll\'{e}n function. For the \red{red} tetrahedron you have
+For the \red{red} tetrahedron you have
 \begin{equation}
 \begin{split}
-	C_{\red{123}} &= \kallenf{s}{w_{1}}{w_{2}}, \\
-	C_{\red{124}} &= \kallenf{t}{w_{1}}{w_{3}}, \\
-	C_{\red{134}} &= \kallenf{s}{w_{3}}{w_{4}}, \\
-	C_{\red{234}} &= \kallenf{t}{w_{2}}{w_{4}}.
+	C_{\red{123}} &= \kallenf{s}{w_{1}}{w_{2}} = \Upsilon_{12}(s), \\
+	C_{\red{124}} &= \kallenf{t}{w_{1}}{w_{3}} = \Upsilon_{13}(t), \\
+	C_{\red{134}} &= \kallenf{s}{w_{3}}{w_{4}} = \Upsilon_{34}(s), \\
+	C_{\red{234}} &= \kallenf{t}{w_{2}}{w_{4}} = \Upsilon_{24}(t).
 \end{split}
 \end{equation}
 Similarly, for the \blue{blue} tetrahedron you have
 \begin{equation}
 \begin{split}
-	C_{\blue{123}} &= \kallenf{t}{w_{1}}{w_{3}}, \\
-	C_{\blue{124}} &= \kallenf{u}{w_{2}}{w_{3}}, \\
-	C_{\blue{134}} &= \kallenf{t}{w_{2}}{w_{4}}, \\
-	C_{\blue{234}} &= \kallenf{u}{w_{1}}{w_{4}}.
+	C_{\blue{123}} &= \kallenf{t}{w_{1}}{w_{3}} = \Upsilon_{13}(t), \\
+	C_{\blue{124}} &= \kallenf{u}{w_{2}}{w_{3}} = \Upsilon_{23}(u), \\
+	C_{\blue{134}} &= \kallenf{t}{w_{2}}{w_{4}} = \Upsilon_{24}(t), \\
+	C_{\blue{234}} &= \kallenf{u}{w_{1}}{w_{4}} = \Upsilon_{14}(u).
 \end{split}
 \end{equation}
 Finally, for the \green{green} tetrahedron you have
 \begin{equation}
 \begin{split}
-	C_{\green{123}} &= \kallenf{u}{w_{2}}{w_{3}}, \\
-	C_{\green{124}} &= \kallenf{s}{w_{1}}{w_{2}}, \\
-	C_{\green{134}} &= \kallenf{u}{w_{1}}{w_{4}}, \\
-	C_{\green{234}} &= \kallenf{s}{w_{3}}{w_{4}}.
+	C_{\green{123}} &= \kallenf{u}{w_{2}}{w_{3}} = \Upsilon_{23}(u), \\
+	C_{\green{124}} &= \kallenf{s}{w_{1}}{w_{2}} = \Upsilon_{12}(s), \\
+	C_{\green{134}} &= \kallenf{u}{w_{1}}{w_{4}} = \Upsilon_{14}(u), \\
+	C_{\green{234}} &= \kallenf{s}{w_{3}}{w_{4}} = \Upsilon_{34}(s).
 \end{split}
 \end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{3-Simplex Invariants}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Given four dual spacetime positions, the 4-point Cayley-Menger determinant is given by:
-\begin{equation}
-	C_{ijkl} = -\frac{1}{2} \det{
-	\begin{pmatrix}
-	0 & \abs{d_{ij}}^{2} & \abs{d_{ik}}^{2} & \abs{d_{il}}^{2} & 1 \\
-	\abs{d_{ij}}^{2} & 0 & \abs{d_{jk}}^{2} & \abs{d_{jl}}^{2} & 1 \\
-	\abs{d_{ik}}^{2} & \abs{d_{jk}}^{2} & 0 & \abs{d_{kl}}^{2} & 1 \\
-	\abs{d_{il}}^{2} & \abs{d_{jl}}^{2} & \abs{d_{kl}}^{2} & 0 & 1 \\
-	1 & 1 & 1 & 1 & 0
-	\end{pmatrix}
-	}, \qquad d_{ij} \equiv d_{i} - d_{j} = .
-\end{equation}
 A tetrahedron has only one possible 3-simplex invariant. Indeed,
 \begin{equation}
-	C_{\red{1234}} = C_{\blue{1234}} = C_{\green{1234}} = ....
+	C_{\red{1234}} = C_{\blue{1234}} = C_{\green{1234}}.
 \end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Dual Conformal Invariants}
@@ -181,26 +138,47 @@ Hence
 \begin{equation}
 	E_{2} = \frac{s + w_{1}^{2} - w_{2}^{2}}{2 \sqrt{s}} , \qquad E_{4} = \frac{s + w_{3}^{2} - w_{4}^{2}}{2 \sqrt{s}}.
 \end{equation}
-Going back the the spatial momentum, you find
-\begin{align}
-	\abs{\mathbf{p}_{1}} &= \frac{\sqrt{\kallenf{s}{w_{1}}{w_{2}}}}{2 \sqrt{s}}, \\
-	\abs{\mathbf{p}_{3}} &= \frac{\sqrt{\kallenf{s}{w_{3}}{w_{4}}}}{2 \sqrt{s}}.
-\end{align}
+Going back to the spatial momentum, you find
+\begin{equation}
+	\abs{\mathbf{p}_{1}} = \frac{\sqrt{\Upsilon_{12}(s)}}{2 \sqrt{s}}, \qquad
+	\abs{\mathbf{p}_{3}} = \frac{\sqrt{\Upsilon_{34}(s)}}{2 \sqrt{s}}.
+\end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Speed and Rapidity}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The speed of each external quantum is
 \begin{align}
-	\abs{\mathbf{v}_{1}} &= \frac{\sqrt{\kallenf{s}{w_{1}}{w_{2}}}}{s - w_{1}^{2} + w_{2}^{2}}, \\
-	\abs{\mathbf{v}_{2}} &= \frac{\sqrt{\kallenf{s}{w_{1}}{w_{2}}}}{s + w_{1}^{2} - w_{2}^{2}}, \\
-	\abs{\mathbf{v}_{3}} &= \frac{\sqrt{\kallenf{s}{w_{3}}{w_{4}}}}{s - w_{3}^{2} + w_{4}^{2}}, \\
-	\abs{\mathbf{v}_{4}} &= \frac{\sqrt{\kallenf{s}{w_{3}}{w_{4}}}}{s + w_{3}^{2} - w_{4}^{2}}.
+	\abs{\mathbf{v}_{1}} &= \frac{\sqrt{\Upsilon_{12}(s)}}{s - w_{1}^{2} + w_{2}^{2}}, \\
+	\abs{\mathbf{v}_{2}} &= \frac{\sqrt{\Upsilon_{12}(s)}}{s + w_{1}^{2} - w_{2}^{2}}, \\
+	\abs{\mathbf{v}_{3}} &= \frac{\sqrt{\Upsilon_{34}(s)}}{s - w_{3}^{2} + w_{4}^{2}}, \\
+	\abs{\mathbf{v}_{4}} &= \frac{\sqrt{\Upsilon_{34}(s)}}{s + w_{3}^{2} - w_{4}^{2}}.
 \end{align}
-The rapidity of each external quantum is
+The (fast) rapidity of each external quantum is
+\begin{align}
+	\xi_{1} &= \frac{1}{2} \log{\left[ \frac{\sqrt{\Upsilon_{12}(s)} + s - w_{1}^{2} + w_{2}^{2}}{\sqrt{\Upsilon_{12}(s)} - s + w_{1}^{2} - w_{2}^{2}} \right]}, \\
+	\xi_{2} &= \frac{1}{2} \log{\left[ \frac{\sqrt{\Upsilon_{12}(s)} + s + w_{1}^{2} - w_{2}^{2}}{\sqrt{\Upsilon_{12}(s)} - s - w_{1}^{2} + w_{2}^{2}} \right]}, \\
+	\xi_{3} &= \frac{1}{2} \log{\left[ \frac{\sqrt{\Upsilon_{34}(s)} + s - w_{3}^{2} + w_{4}^{2}}{\sqrt{\Upsilon_{34}(s)} - s + w_{3}^{2} - w_{4}^{2}} \right]}, \\
+	\xi_{4} &= \frac{1}{2} \log{\left[ \frac{\sqrt{\Upsilon_{34}(s)} + s + w_{3}^{2} - w_{4}^{2}}{\sqrt{\Upsilon_{34}(s)} - s - w_{3}^{2} + w_{4}^{2}} \right]}.
+\end{align}
+The sum of the incoming (fast) rapidities is
+\begin{equation}
+	\xi_{1} + \xi_{2} = \frac{1}{2} \log{\left[ \frac{s + w_{1}^{2} + w_{2}^{2} + \sqrt{\Upsilon_{12}(s)}}{s + w_{1}^{2} + w_{2}^{2} - \sqrt{\Upsilon_{12}(s)}} \right]}.
+\end{equation}
+Similarly, the sum of the outgoing (fast) rapidities is
+\begin{equation}
+	\xi_{3} + \xi_{4} = \frac{1}{2} \log{\left[ \frac{s + w_{3}^{2} + w_{4}^{2} + \sqrt{\Upsilon_{34}(s)}}{s + w_{3}^{2} + w_{4}^{2} - \sqrt{\Upsilon_{34}(s)}} \right]}.
+\end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Physical Scattering Region}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+The on-shell relation for a fast quantum is
+\begin{equation}
+	w^{2} = -E^{2} + \abs{\mathbf{p}}^{2} \quad \Longrightarrow \quad \abs{\mathbf{p}}^{2} = w^{2} + E^{2},
+\end{equation}
+so requiring $E > 0$ leads to $\abs{\mathbf{p}} > w$. The energies are positive as long as
+\begin{equation}
+	s > \abs{w_{1} - w_{2}} \left( w_{1} + w_{2} \right), \qquad s > \abs{w_{3} - w_{4}} \left( w_{3} + w_{4} \right).
+\end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Scattering Regimes}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
