@@ -17,7 +17,7 @@ This constraint means that only three out of the four external energy-momentum v
 	s + t + u = -\abs{p_{1}}^{2} - \abs{p_{2}}^{2} - \abs{p_{3}}^{2} - \abs{p_{4}}^{2}.
 	\label{eq:stu_slow}
 \end{equation}
-Thus, only two of them are linearly independent.
+Thus, only two of the Mandelstam invariants are linearly independent.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Dual Spacetime}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -167,7 +167,11 @@ The expression $\abs{d_{I} - d_{J}}^{2}$ is not only Lorentz invariant, but dual
 \begin{equation}
 	\crat{I}{J}{K}{L} \equiv \frac{\abs{d_{IK}}^{2} \abs{d_{JL}}^{2}}{\abs{d_{IL}}^{2} \abs{d_{JK}}^{2}}, \qquad d_{IJ} \equiv d_{I} - d_{J}.
 \end{equation}
-In four-point scattering there is a unique quartet of dual spacetime coordinates. However, there are six inequivalent permutations of these coordinates, and thus, six possible values for the dual conformal ratio.
+In four-point scattering there is a unique quartet of dual spacetime coordinates. However, there are six inequivalent permutations of these coordinates, and thus, six possible values for the dual conformal ratio. Note that
+\begin{equation}
+	\crat{I}{J}{K}{L} \crat{I}{K}{L}{J} \crat{I}{L}{J}{K} = 1,
+\end{equation}
+which is analogous to the constraint satisfied by the three Mandelstam invariants.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Speed and Rapidity}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -185,7 +189,7 @@ Thus,
 \end{equation}
 Here $\rho$ is the (slow) rapidity, and $\abs{\mathbf{v}}$ is the speed of the slow quantum. Note that
 \begin{equation}
-	m \leq E < \infty \text{ or } 0 \leq \abs{\mathbf{p}} < \infty \quad \Longrightarrow \quad 0 \leq \abs{\mathbf{v}} < 1.
+	m^{2} \leq E^{2} < \infty \text{ or } 0 \leq \abs{\mathbf{p}}^{2} < \infty \quad \Longrightarrow \quad 0 \leq \abs{\mathbf{v}}^{2} < 1.
 \end{equation}
 That is, the speed of a slow quantum is bounded from above.
 
@@ -203,7 +207,7 @@ Thus,
 \end{equation}
 Here $\xi$ is the (fast) rapidity, and $\abs{\mathbf{v}}$ is the speed of the fast quantum. Note that
 \begin{equation}
-	0 \leq E < \infty \text{ or } w \leq \abs{\mathbf{p}} < \infty \quad \Longrightarrow \quad 1 < \abs{\mathbf{v}} < \infty.
+	0 \leq E^{2} < \infty \text{ or } w^{2} \leq \abs{\mathbf{p}}^{2} < \infty \quad \Longrightarrow \quad 1 < \abs{\mathbf{v}}^{2} < \infty.
 \end{equation}
 That is, the speed of a fast quantum is bounded from below.
 

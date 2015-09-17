@@ -1,6 +1,6 @@
 \chapter{Maximal Inelastic Slow Diversity}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-In this chapter I will consider the kinematics of a 2-to-2 scattering process that has maximal inelastic slow diversity. This means that all external quanta are slow, and all of the corresponding masses are distinct:
+In this chapter I will consider the kinematics of a 2-to-2 scattering process that has maximal inelastic slow diversity. This means that all external quanta are slow, and all of the corresponding (slow) masses are distinct:
 \begin{equation}
 	m_{1}^{2} = -\abs{p_{1}}^{2}, \qquad m_{2}^{2} = -\abs{p_{2}}^{2}, \qquad m_{3}^{2} = -\abs{p_{3}}^{2}, \qquad m_{4}^{2} = -\abs{p_{4}}^{2}.
 	\label{eq:shell_inelastic_slow}
@@ -112,7 +112,7 @@ Finally, for the \green{green} tetrahedron, you have
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Center-of-Momentum Frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-In the center-of-momentum frame you write the energy-momentum vectors as
+In the center-of-momentum frame you can write the energy-momentum vectors as
 \begin{equation}
 	p_{1} = \begin{pmatrix} E_{1} & \mathbf{p}_{1} \end{pmatrix}, \qquad p_{2} = \begin{pmatrix} E_{2} & -\mathbf{p}_{1} \end{pmatrix}, \qquad p_{3} = \begin{pmatrix} E_{3} & \mathbf{p}_{3} \end{pmatrix}, \qquad p_{4} = \begin{pmatrix} E_{4} & -\mathbf{p}_{3} \end{pmatrix}.
 \end{equation}
@@ -221,6 +221,14 @@ Similarly, requiring that $\abs{\mathbf{p}_{3}}$ be real and positive leads to t
 Thus, we take the overlap of these two regions:
 \begin{equation}
 	s > \operatorname{max}{\left\lbrace (m_{1} + m_{2})^{2}, (m_{3} + m_{4})^{2} \right\rbrace}.
+\end{equation}
+Other requirements include that $\abs{ \mathbf{p}_{1} - \mathbf{p}_{3} }^{2}$ and $\abs{ \mathbf{p}_{1} - \mathbf{p}_{3} }^{2}$ be real and positive. These lead to two conditions:
+\begin{equation}
+	\left(E_{1} - E_{3} \right)^{2} > t, \qquad \left(E_{1} - E_{4} \right)^{2} > u.
+\end{equation}
+These conditions translate to the statements
+\begin{equation}
+	\left(m_{1}^{2} - m_{2}^{2} - m_{3}^{2} + m_{4}^{2} \right)^{2} > 4st, \qquad \left(m_{1}^{2} - m_{2}^{2} + m_{3}^{2} - m_{4}^{2} \right)^{2} > 4su.
 \end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Scattering Regimes}

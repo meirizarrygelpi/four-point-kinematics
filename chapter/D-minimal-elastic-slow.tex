@@ -15,86 +15,40 @@ For this process, (\ref{eq:stu_slow}) becomes
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Simplicial Invariants}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-A tetrahedron is a 3-simplex. As such, it contains four vertices (0-simplex), six edges (1-simplex), four triangular faces (2-simplex), and one tetrahedron (3-simplex). The $n$-volume of an $n$-simplex is found by evaluating an $(n+1)$-point Cayley-Menger determinant. 
+With elastic minimal slow diversity you have even less distinct values.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{1-Simplex Invariants}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Given two dual spacetime positions, the 2-point Cayley-Menger determinant is given by:
+For the \red{red} tetrahedron you have
 \begin{equation}
-	C_{ij} = -\frac{1}{2} \det{
-	\begin{pmatrix}
-	0 & \abs{d_{ij}}^{2} & 1 \\
-	\abs{d_{ij}}^{2} & 0 & 1 \\
-	1 & 1 & 0
-	\end{pmatrix}
-	}.
-\end{equation}
-Since a tetrahedron has six edges, there are six possible 1-simplex invariants. These invariants will be either squared masses or Mandelstam invariants. For the \red{red} tetrahedron you have
-\begin{equation}
-\begin{split}
-	C_{\red{12}} = m^{2}, \qquad C_{\red{13}} &= s, \qquad C_{\red{14}} = m^{2}, \\
-	C_{\red{23}} = m^{2}, \qquad C_{\red{24}} &= t, \qquad C_{\red{34}} = m^{2}. \\
-\end{split}
+	C_{\red{12}} = C_{\red{14}} = C_{\red{23}} = C_{\red{34}} = m^{2}, \qquad C_{\red{13}} = s, \qquad C_{\red{24}} = t.
 \end{equation}
 Similarly, for the \blue{blue} tetrahedron you have
 \begin{equation}
-\begin{split}
-	C_{\blue{12}} = m^{2}, \qquad C_{\blue{13}} &= t, \qquad C_{\blue{14}} = m^{2}, \\
-	C_{\blue{23}} = m^{2}, \qquad C_{\blue{24}} &= u, \qquad C_{\blue{34}} = m^{2}. \\
-\end{split}
+	C_{\blue{12}} = C_{\blue{14}} = C_{\blue{23}} = C_{\blue{34}} = m^{2}, \qquad C_{\blue{13}} = t, \qquad C_{\blue{24}} = u.
 \end{equation}
 Finally, for the \green{green} tetrahedron you have
 \begin{equation}
-\begin{split}
-	C_{\green{12}} = m^{2}, \qquad C_{\green{13}} &= u, \qquad C_{\green{14}} = m^{2}, \\
-	C_{\green{23}} = m^{2}, \qquad C_{\green{24}} &= s, \qquad C_{\green{34}} = m^{2}. \\
-\end{split}
+	C_{\green{12}} = C_{\green{14}} = C_{\green{23}} = C_{\green{34}} = m^{2}, \qquad C_{\green{13}} = u, \qquad C_{\green{24}} = s.
 \end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{2-Simplex Invariants}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Given three dual spacetime positions, the 3-point Cayley-Menger determinant is given by:
+For the \red{red} tetrahedron you have
 \begin{equation}
-	C_{ijk} = \det{
-	\begin{pmatrix}
-	0 & \abs{d_{ij}}^{2} & \abs{d_{ik}}^{2} & 1 \\
-	\abs{d_{ij}}^{2} & 0 & \abs{d_{jk}}^{2} & 1 \\
-	\abs{d_{ik}}^{2} & \abs{d_{jk}}^{2} & 0 & 1 \\
-	1 & 1 & 1 & 0
-	\end{pmatrix}
-	}.
-\end{equation}
-Since a tetrahedron has four triangular faces, there are four possible 2-simplex invariants. Each of these invariants has the form
-\begin{equation}
-	\Lambda_{IJ}(x) = \kallen{x}{m_{I}}{m_{J}},
-\end{equation}
-where $x$ is a Mandelstam invariant. This function is also known as the K\"{a}ll\'{e}n function. For the \red{red} tetrahedron you have
-\begin{equation}
-	C_{\red{123}} = C_{\red{134}} = s \left[s - 4 m^{2} \right], \qquad C_{\red{124}} = C_{\red{234}} = t \left[t - 4 m^{2} \right].
+	C_{\red{123}} = C_{\red{134}} = s \left[s - 4 m^{2} \right] = \Lambda_{12}(s), \qquad C_{\red{124}} = C_{\red{234}} = t \left[t - 4 m^{2} \right] = \Lambda_{13}(t).
 \end{equation}
 Similarly, for the \blue{blue} tetrahedron you have
 \begin{equation}
-	C_{\blue{123}} = C_{\blue{134}} = t \left[t - 4 m^{2} \right], \qquad C_{\blue{124}} = C_{\blue{234}} = u \left[u - 4 m^{2} \right].
+	C_{\blue{123}} = C_{\blue{134}} = t \left[t - 4 m^{2} \right] = \Lambda_{13}(t), \qquad C_{\blue{124}} = C_{\blue{234}} = u \left[u - 4 m^{2} \right] = \Lambda_{14}(u).
 \end{equation}
 Finally, for the \green{green} tetrahedron you have
 \begin{equation}
-	C_{\green{123}} = C_{\green{134}} = u \left[u - 4 m^{2} \right], \qquad C_{\green{124}} = C_{\green{234}} = s \left[s - 4 m^{2} \right].
+	C_{\green{123}} = C_{\green{134}} = u \left[u - 4 m^{2} \right] = \Lambda_{14}(u), \qquad C_{\green{124}} = C_{\green{234}} = s \left[s - 4 m^{2} \right] = \Lambda_{12}(s).
 \end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{3-Simplex Invariants}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Given four dual spacetime positions, the 4-point Cayley-Menger determinant is given by:
-\begin{equation}
-	C_{ijkl} = -\frac{1}{2} \det{
-	\begin{pmatrix}
-	0 & \abs{d_{ij}}^{2} & \abs{d_{ik}}^{2} & \abs{d_{il}}^{2} & 1 \\
-	\abs{d_{ij}}^{2} & 0 & \abs{d_{jk}}^{2} & \abs{d_{jl}}^{2} & 1 \\
-	\abs{d_{ik}}^{2} & \abs{d_{jk}}^{2} & 0 & \abs{d_{kl}}^{2} & 1 \\
-	\abs{d_{il}}^{2} & \abs{d_{jl}}^{2} & \abs{d_{kl}}^{2} & 0 & 1 \\
-	1 & 1 & 1 & 1 & 0
-	\end{pmatrix}
-	}.
-\end{equation}
 A tetrahedron has only one possible 3-simplex invariant. Indeed,
 \begin{equation}
 	C_{\red{1234}} = C_{\blue{1234}} = C_{\green{1234}} = stu.
@@ -102,12 +56,6 @@ A tetrahedron has only one possible 3-simplex invariant. Indeed,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Dual Conformal Invariants}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Each of the 1-simplex invariants has the form $\abs{d_{i} - d_{j}}^{2}$. This is not only Lorentz invariant, but dual Poincar\'{e} invariant. You can study dual conformal invariants by constructing a dual conformal ratio with a quartet of dual spacetime coordinates:
-\begin{equation}
-	\crat{i}{j}{k}{l} \equiv \frac{\abs{d_{ik}}^{2} \abs{d_{jl}}^{2}}{\abs{d_{il}}^{2} \abs{d_{jk}}^{2}}.
-\end{equation}
-In four-point scattering there is a unique quartet of dual spacetime coordinates. However, there are six inequivalent permutations of these coordinates, and thus, six possible values for the dual conformal ratio.
-
 For the \red{red} tetrahedron, you have
 \begin{equation}
 \begin{split}
@@ -141,11 +89,6 @@ Finally, for the \green{green} tetrahedron, you have
 	\crat{\green{1}}{\green{4}}{\green{3}}{\green{2}} = \frac{s u}{m^{4}}.
 \end{split}
 \end{equation}
-Note that
-\begin{equation}
-	\crat{1}{2}{3}{4} \crat{1}{3}{4}{2} \crat{1}{4}{2}{3} = 1,
-\end{equation}
-which is analogous to the constraint satisfied by the three Mandelstam invariants.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Center-of-Momentum Frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -181,27 +124,11 @@ Thus,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Speed and Rapidity}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-A quantum with mass $m$, spatial momentum $\mathbf{p}$, and energy $E$ has a speed $\abs{\mathbf{v}}$ given by
-\begin{equation}
-	\abs{\mathbf{v}} = \frac{\sqrt{E^{2} - m^{2}}}{E^{2}} = \frac{\abs{\mathbf{p}}}{\sqrt{m^{2} + \abs{\mathbf{p}}^{2}}} = \frac{\abs{\mathbf{p}}}{E}.
-\end{equation}
-If the quantum is physical, then $E \geq m$, or equivalently, $\abs{\mathbf{p}} < E$. Both of these conditions lead to a bound on speed:
-\begin{equation}
-	0 \leq \abs{\mathbf{v}} < 1.
-\end{equation}
-In contrast with energy, mass, and spatial momentum, speed and velocity are dimensionless. However, energy and spatial momentum are conserved, but velocity is not. The speed of each external quantum is
+The speed of each external quantum is
 \begin{equation}
 	\abs{\mathbf{v}_{1}} = \abs{\mathbf{v}_{2}} = \abs{\mathbf{v}_{3}} = \abs{\mathbf{v}_{4}} = \sqrt{1 - \frac{4 m^{2}}{s}}.
 \end{equation}
-Given the speed of a quantum, you can find its rapidity $\eta$ via
-\begin{equation}
-	\eta = \operatorname{arctanh}{\abs{\mathbf{v}}} = \frac{1}{2} \log{\left( \frac{1 + \abs{\mathbf{v}}}{1 - \abs{\mathbf{v}}} \right)}.
-\end{equation}
-Since the speed of a physical quantum is bounded, the rapidity of a physical quantum is bounded from below:
-\begin{equation}
-	0 \leq \eta < \infty.
-\end{equation}
-The rapidity of each external quantum is
+The (slow) rapidity of each external quantum is
 \begin{equation}
 	\eta_{1} = \eta_{2} = \eta_{3} = \eta_{4} = \frac{1}{2} \log{\left[\frac{\sqrt{s} + \sqrt{s - 4 m^{2}}}{\sqrt{s} - \sqrt{s - 4 m^{2}}}\right]}.
 \end{equation}
@@ -212,7 +139,10 @@ The sum of the incoming rapidites is equal to the sum of the outgoing rapidities
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Physical Scattering Region}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+For this particular process, the physical scattering region is
+\begin{equation}
+	s > 4m^2, \qquad t < 0, \qquad u < 0.
+\end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Fixed-Speed Scattering}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
