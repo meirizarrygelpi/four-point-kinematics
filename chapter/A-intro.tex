@@ -175,7 +175,7 @@ which is analogous to the constraint satisfied by the three Mandelstam invariant
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Speed and Rapidity}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The mass $m$, spatial momentum $\mathbf{p}$, and energy $E$ of a slow quantum satisfy an on-shell constraint:
+The (slow) mass $m$, spatial momentum $\mathbf{p}$, and energy $E$ of a slow quantum satisfy the on-shell constraint
 \begin{equation}
 	{-m^{2}} = {-E^{2}} + \abs{\mathbf{p}}^{2}.
 \end{equation}
@@ -193,7 +193,7 @@ Here $\rho$ is the (slow) rapidity, and $\abs{\mathbf{v}}$ is the speed of the s
 \end{equation}
 That is, the speed of a slow quantum is bounded from above.
 
-Similarly, the imass $w$, spatial momentum $\mathbf{p}$, and energy $E$ of a fast quantum satisfy an on-shell constraint:
+Similarly, the (fast) mass $w$, spatial momentum $\mathbf{p}$, and energy $E$ of a fast quantum satisfy the on-shell constraint
 \begin{equation}
 	{w^{2}} = {-E^{2}} + \abs{\mathbf{p}}^{2}.
 \end{equation}
@@ -219,3 +219,81 @@ and
 \begin{equation}
 	\operatorname{argcoth}{x} = \frac{1}{2} \log{\left( \frac{x + 1}{x - 1} \right)}, \qquad 1 < x < \infty.
 \end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Two-Body Sudakov Decompositions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The external energy-momentum vectors can be divided into an incoming set ($p_{1}$ and $p_{2}$), and an outgoing set ($p_{3}$ and $p_{4}$). In a two-body Sudakov decomposition one postulates the existence of two Sudakov momenta $k_{3}$ and $k_{4}$ and writes the outgoing momenta as linear combinations of the Sudakov momenta:
+\begin{equation}
+	p_{3} = k_{3} + c_{34} k_{4}, \qquad p_{4} = c_{43} k_{3} + k_{4}.
+\end{equation}
+In other words, the outgoing and Sudakov momenta are related by a linear transformation:
+\begin{equation}
+	\begin{pmatrix} p_{3} \\
+	p_{4} \end{pmatrix} = \begin{pmatrix} 1 & c_{34} \\
+	c_{43} & 1 \end{pmatrix} \begin{pmatrix} k_{3} \\
+	k_{4} \end{pmatrix}.
+\end{equation}
+In order for this transformation to be invertible, you need the determinant of the $2 \times 2$ matrix to be nonzero. The inverse transformation is
+\begin{equation}
+	\begin{pmatrix} k_{3} \\
+	k_{4} \end{pmatrix} = \frac{1}{1 - c_{34} c_{43}} \begin{pmatrix} 1 & -c_{34} \\
+	-c_{43} & 1 \end{pmatrix} \begin{pmatrix} p_{3} \\
+	p_{4} \end{pmatrix}.
+\end{equation}
+That is, in terms of the outgoing momenta, the Sudakov momenta are
+\begin{equation}
+	k_{3} = \frac{p_{3} - c_{34} p_{4}}{1 - c_{34} c_{43}}, \qquad k_{4} = \frac{p_{4} - c_{43} p_{3}}{1 - c_{34} c_{43}}.
+\end{equation}
+% Thus,
+% \begin{align}
+% 	\abs{k_{3}}^{2} &= \frac{\abs{p_{3}}^{2} - 2 c_{34} \left(p_{3} \cdot p_{4}\right) + c_{34}^{2} \abs{p_{4}}^{2}}{\left( 1 - c_{34} c_{43} \right)^{2}}, \\
+% 	\abs{k_{4}}^{2} &= \frac{c_{43}^{2}\abs{p_{3}}^{2} - 2 c_{43} \left(p_{3} \cdot p_{4}\right) + \abs{p_{4}}^{2}}{\left( 1 - c_{34} c_{43} \right)^{2}}, \\
+% 	\left(k_{3} \cdot k_{4}\right) &= \frac{ \left( 1 + c_{34}c_{43} \right) \left(p_{3} \cdot p_{4}\right) - c_{43} \abs{p_{3}}^{2} - c_{34} \abs{p_{4}}^{2}}{\left( 1 - c_{34} c_{43} \right)^{2}}.
+% \end{align}
+You have
+\begin{align}
+	\abs{p_{3}}^{2} &= \abs{k_{3}}^{2} + c_{34}^{2} \abs{k_{4}}^{2} + 2 c_{34} \left( k_{3} \cdot k_{4} \right), \\
+	\abs{p_{4}}^{2} &= c_{43}^{2} \abs{k_{3}}^{2} + \abs{k_{4}}^{2} + 2 c_{43} \left( k_{3} \cdot k_{4} \right), \\
+	\left(p_{3} \cdot p_{4} \right) &= c_{43} \abs{k_{3}}^{2} + c_{34} \abs{k_{4}}^{2} + \left( 1 + c_{34} c_{43} \right) \left( k_{3} \cdot k_{4} \right).
+\end{align}
+and thus
+\begin{equation}
+	\abs{p_{3}}^{2} \abs{p_{4}}^{2} - \left( p_{3} \cdot p_{4} \right)^{2} = \left(1 - c_{34} c_{43} \right)^{2} \left( \abs{k_{3}}^{2} \abs{k_{4}}^{2} - \left( k_{3} \cdot k_{4} \right)^{2} \right)
+\end{equation}
+You know the value of $\abs{p_{3}}^{2}$, $\abs{p_{4}}^{2}$, and $p_{3} \cdot p_{4}$, so you can eliminate at most three of the five unknowns. Thus, in order for this decomposition to be useful, you need to specify two additional pieces of information.
+
+Each of the incoming momenta is decomposed into a part that is orthogonal to the subspace spanned by the two Sudakov momenta, and a part that is parallel to this subspace:
+\begin{align}
+	p_{1} &= P_{1} + c_{13} k_{3} + c_{14} k_{4}, \qquad P_{1} \cdot k_{3} = 0, \qquad P_{1} \cdot k_{4} = 0, \\
+	p_{2} &= P_{2} + c_{23} k_{3} + c_{24} k_{4}, \qquad P_{2} \cdot k_{3} = 0, \qquad P_{2} \cdot k_{4} = 0.
+\end{align}
+Here $P_{1}$ and $P_{2}$ are said to be transversal. It follows that
+\begin{align}
+	c_{13} = \frac{ \abs{k_{4}}^{2} \left(p_{1} \cdot k_{3} \right) - \left(k_{3} \cdot k_{4} \right) \left(p_{1} \cdot k_{4} \right) }{\abs{k_{3}}^{2} \abs{k_{4}}^{2} - \left( k_{3} \cdot k_{4} \right)^{2}}, &\qquad
+	c_{14} = \frac{ \abs{k_{3}}^{2} \left(p_{1} \cdot k_{4} \right) - \left(k_{3} \cdot k_{4} \right) \left(p_{1} \cdot k_{3} \right) }{\abs{k_{3}}^{2} \abs{k_{4}}^{2} - \left( k_{3} \cdot k_{4} \right)^{2}}, \\
+	c_{23} = \frac{\abs{k_{4}}^{2} \left(p_{2} \cdot k_{3} \right) - \left(k_{3} \cdot k_{4} \right) \left(p_{2} \cdot k_{4} \right)}{\abs{k_{3}}^{2} \abs{k_{4}}^{2} - \left( k_{3} \cdot k_{4} \right)^{2}}, &\qquad
+	c_{24} = \frac{ \abs{k_{3}}^{2} \left(p_{2} \cdot k_{4} \right) - \left(k_{3} \cdot k_{4} \right) \left(p_{2} \cdot k_{3} \right) }{\abs{k_{3}}^{2} \abs{k_{4}}^{2} - \left( k_{3} \cdot k_{4} \right)^{2}}.
+\end{align}
+Note that
+\begin{equation}
+	\abs{p_{1}}^{2} = \abs{P_{1}}^{2} + \abs{c_{13} k_{3} + c_{14} k_{4}}^{2}, \qquad \abs{p_{2}}^{2} = \abs{P_{2}}^{2} + \abs{c_{23} k_{3} + c_{24} k_{4}}^{2}.
+\end{equation}
+Thus,
+\begin{align}
+	\abs{P_{1}}^{2} &= \abs{p_{1}}^{2} - c_{13}^{2} \abs{k_{3}}^{2} - c_{14}^{2} \abs{k_{4}}^{2} - 2 c_{13} c_{14} \left( k_{3} \cdot k_{4} \right), \\
+	\abs{P_{2}}^{2} &= \abs{p_{2}}^{2} - c_{23}^{2} \abs{k_{3}}^{2} - c_{24}^{2} \abs{k_{4}}^{2} - 2 c_{23} c_{24} \left( k_{3} \cdot k_{4} \right).
+\end{align}
+It is also useful to decompose the linear combinations of external momenta that yield Mandelstam invariants:
+\begin{align}
+	p_{1} + p_{2} &= P_{1} + P_{2} + \left(c_{13} + c_{23}\right) k_{3} + \left(c_{14} + c_{24}\right) k_{4}, \\
+	p_{3} + p_{4} &= \left(1 + c_{43}\right) k_{3} + \left(c_{34} + 1\right) k_{4}, \\
+	p_{1} - p_{3} &= P_{1} + \left(c_{13} - 1\right) k_{3} + \left(c_{14} - c_{34}\right) k_{4}, \\
+	p_{4} - p_{2} &= -P_{2} + \left(c_{43} - c_{23}\right) k_{3} + \left(1 - c_{24}\right) k_{4}, \\
+	p_{1} - p_{4} &= P_{1} + \left(c_{13} - c_{43}\right) k_{3} + \left(c_{14} - 1\right) k_{4}, \\
+	p_{3} - p_{2} &= -P_{2} + \left(1 - c_{23}\right) k_{3} + \left(c_{34} - c_{24}\right) k_{4}.
+\end{align}
+From the conservation constraint, you find
+\begin{equation}
+	p_{1} + p_{2} = p_{3} + p_{4} \quad \Longrightarrow \quad c_{13} + c_{23} = 1 + c_{43}, \qquad c_{14} + c_{24} = c_{34} + 1.
+\end{equation}
+It also follows that $P_{1} + P_{2} = 0$.
