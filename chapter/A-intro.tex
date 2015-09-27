@@ -103,6 +103,11 @@ which leads to
 \begin{equation}
 	\Lambda_{ij}(x) > 0 \quad \Longrightarrow \quad x < \left(m_{i} - m_{j}\right)^{2} \text{ or } x > \left(m_{i} + m_{j}\right)^{2}.
 \end{equation}
+The region where $\Lambda_{ij}(x)$ is negative is called the (slow) Coulomb region. If one of the (slow) masses becomes zero, you get the null-slow K\"{a}ll\'{e}n function:
+\begin{equation}
+	\Lambda_{i}(x) = \left( x - m_{i}^{2} \right)^{2},
+\end{equation}
+which is positive for any real value of $x$. That is, there is no (slow) Coulomb region.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Fast K\"{a}ll\'{e}n Function}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -110,7 +115,7 @@ The fast K\"{a}ll\'{e}n function is
 \begin{equation}
 	\Upsilon_{ij}(x) = \left[ \left(x + w_{i}^{2} + w_{j}^{2} \right)^{2} - 4 w_{i}^{2} w_{j}^{2} \right] = \kallenf{x}{w_{i}}{w_{j}},
 \end{equation}
-where $x$ is a Mandelstam invariant. Just like $\Lambda_{ij}(x)$, the function $\Upsilon_{ij}$ can be either negative, zero, or positive.
+where $x$ is a Mandelstam invariant. Just like $\Lambda_{ij}(x)$, the function $\Upsilon_{ij}$ can be either negative, zero, or positive for real values of $x$.
 
 If the fast K\"{a}ll\'{e}n function is negative, then
 \begin{equation}
@@ -136,6 +141,11 @@ which leads to
 \begin{equation}
 	\Upsilon_{ij}(x) > 0 \quad \Longrightarrow \quad x < -\left(w_{i} + w_{j}\right)^{2} \text{ or } x > -\left(w_{i} - w_{j}\right)^{2}.
 \end{equation}
+The region where $\Upsilon_{ij}(x)$ is negative is called the (fast) Coulomb region. If one of the (fast) masses becomes zero, you get the null-fast K\"{a}ll\'{e}n function:
+\begin{equation}
+	\Upsilon_{i}(x) = \left( x + w_{i}^{2} \right)^{2},
+\end{equation}
+which is positive for any real value of $x$. That is, there is no (fast) Coulomb region.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Mixed K\"{a}ll\'{e}n Function}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -220,7 +230,7 @@ and
 	\operatorname{argcoth}{x} = \frac{1}{2} \log{\left( \frac{x + 1}{x - 1} \right)}, \qquad 1 < x < \infty.
 \end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Two-Body Sudakov Decompositions}
+\section{Two-Body Sudakov Decomposition}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The external energy-momentum vectors can be divided into an incoming set ($p_{1}$ and $p_{2}$), and an outgoing set ($p_{3}$ and $p_{4}$). In a two-body Sudakov decomposition one postulates the existence of two Sudakov momenta $k_{3}$ and $k_{4}$ and writes the outgoing momenta as linear combinations of the Sudakov momenta:
 \begin{equation}
@@ -297,3 +307,50 @@ From the conservation constraint, you find
 	p_{1} + p_{2} = p_{3} + p_{4} \quad \Longrightarrow \quad c_{13} + c_{23} = 1 + c_{43}, \qquad c_{14} + c_{24} = c_{34} + 1.
 \end{equation}
 It also follows that $P_{1} + P_{2} = 0$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Null Sudakov Basis}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instead of using Sudakov momenta to study transversality of the incoming momenta, you can make a full change of basis to null Sudakov momenta:
+\begin{equation}
+	p_{1} = k_{1} + c_{12} k_{2}, \qquad p_{2} = k_{2} + c_{21} k_{1}, \qquad p_{3} = k_{3} + c_{34} k_{4}, \qquad p_{4} = k_{4} + c_{43} k_{3};
+\end{equation}
+with
+\begin{equation}
+	\abs{k_{1}}^{2} = \abs{k_{2}}^{2} = \abs{k_{3}}^{2} = \abs{k_{4}}^{2} = 0.
+\end{equation}
+There are ten unknowns, and ten relations:
+\begin{align}
+	\abs{p_{1}}^{2} &= 2 c_{12} \left( k_{1} \cdot k_{2} \right), \\
+	\left( p_{1} \cdot p_{2} \right) &= \left(1 + c_{12}c_{21} \right) \left( k_{1} \cdot k_{2} \right), \\
+	\left( p_{1} \cdot p_{3} \right) &= \left( k_{1} \cdot k_{3} \right) + c_{34} \left( k_{1} \cdot k_{4} \right) + c_{12} \left( k_{2} \cdot k_{3} \right) + c_{12} c_{34} \left( k_{2} \cdot k_{4} \right), \\
+	\left( p_{1} \cdot p_{4} \right) &= \left( k_{1} \cdot k_{4} \right) + c_{43} \left( k_{1} \cdot k_{3} \right) + c_{12} \left( k_{2} \cdot k_{4} \right) + c_{12} c_{43} \left( k_{2} \cdot k_{3} \right), \\
+	\abs{p_{2}}^{2} &= 2 c_{21} \left( k_{1} \cdot k_{2} \right), \\
+	\left( p_{2} \cdot p_{3} \right) &= \left( k_{2} \cdot k_{3} \right) + c_{34} \left( k_{2} \cdot k_{4} \right) + c_{21} \left( k_{1} \cdot k_{3} \right) + c_{21} c_{34} \left( k_{1} \cdot k_{4} \right), \\
+	\left( p_{2} \cdot p_{4} \right) &= \left( k_{2} \cdot k_{4} \right) + c_{43} \left( k_{2} \cdot k_{3} \right) + c_{21} \left( k_{1} \cdot k_{4} \right) + c_{21} c_{43} \left( k_{1} \cdot k_{3} \right), \\
+	\abs{p_{3}}^{2} &= 2 c_{34} \left( k_{3} \cdot k_{4} \right), \\
+	\left( p_{3} \cdot p_{4} \right) &= \left(1 + c_{34}c_{43} \right) \left( k_{3} \cdot k_{4} \right), \\
+	\abs{p_{4}}^{2} &= 2 c_{43} \left( k_{3} \cdot k_{4} \right).
+\end{align}
+You find two solutions for $c_{12}$ and $c_{21}$:
+\begin{equation}
+\begin{split}
+	c_{12} &= -\frac{s + \abs{p_{1}}^{2} + \abs{p_{2}}^{2} \pm \sqrt{\left( s + \abs{p_{1}}^{2} + \abs{p_{2}}^{2} \right)^{2} - 4 \abs{p_{1}}^{2} \abs{p_{2}}^{2}}}{2\abs{p_{2}}^{2}}, \\
+	c_{21} &= -\frac{s + \abs{p_{1}}^{2} + \abs{p_{2}}^{2} \pm \sqrt{\left( s + \abs{p_{1}}^{2} + \abs{p_{2}}^{2} \right)^{2} - 4 \abs{p_{1}}^{2} \abs{p_{2}}^{2}}}{2\abs{p_{1}}^{2}};
+\end{split}
+\end{equation}
+two solutions for $c_{34}$ and $c_{43}$:
+\begin{equation}
+\begin{split}
+	c_{34} &= -\frac{s + \abs{p_{3}}^{2} + \abs{p_{4}}^{2} \pm \sqrt{\left( s + \abs{p_{3}}^{2} + \abs{p_{4}}^{2} \right)^{2} - 4 \abs{p_{3}}^{2} \abs{p_{4}}^{2}}}{2\abs{p_{4}}^{2}}, \\
+	c_{43} &= -\frac{s + \abs{p_{3}}^{2} + \abs{p_{4}}^{2} \pm \sqrt{\left( s + \abs{p_{3}}^{2} + \abs{p_{4}}^{2} \right)^{2} - 4 \abs{p_{3}}^{2} \abs{p_{4}}^{2}}}{2\abs{p_{3}}^{2}};
+\end{split}
+\end{equation}
+and the rest,
+\begin{align}
+	\left( k_{1} \cdot k_{2} \right) &= \frac{\left( p_{1} \cdot p_{2} \right)}{1 + c_{12} c_{21}}, \\
+	\left( k_{1} \cdot k_{3} \right) &= \frac{ \left( p_{1} \cdot p_{3} \right) - c_{12} \left( p_{2} \cdot p_{3} \right) - c_{34} \left( p_{1} \cdot p_{4} \right) + c_{12} c_{34} \left( p_{2} \cdot p_{4} \right) }{\left( 1 - c_{12} c_{21} \right) \left( 1 - c_{34} c_{43} \right)}, \\
+	\left( k_{1} \cdot k_{4} \right) &= \frac{ \left( p_{1} \cdot p_{4} \right) - c_{12} \left( p_{2} \cdot p_{4} \right) - c_{43} \left( p_{1} \cdot p_{3} \right) + c_{12} c_{43} \left( p_{2} \cdot p_{3} \right) }{\left( 1 - c_{12} c_{21} \right) \left( 1 - c_{34} c_{43} \right)}, \\
+	\left( k_{2} \cdot k_{3} \right) &= \frac{ \left( p_{2} \cdot p_{3} \right) - c_{21} \left( p_{1} \cdot p_{3} \right) - c_{34} \left( p_{2} \cdot p_{4} \right) + c_{21} c_{34} \left( p_{1} \cdot p_{4} \right) }{\left( 1 - c_{12} c_{21} \right) \left( 1 - c_{34} c_{43} \right)}, \\
+	\left( k_{2} \cdot k_{4} \right) &= \frac{ \left( p_{2} \cdot p_{4} \right) - c_{21} \left( p_{1} \cdot p_{4} \right) - c_{43} \left( p_{2} \cdot p_{3} \right) + c_{21} c_{43} \left( p_{1} \cdot p_{3} \right) }{\left( 1 - c_{12} c_{21} \right) \left( 1 - c_{34} c_{43} \right)}, \\
+	\left( k_{3} \cdot k_{4} \right) &= \frac{\left( p_{3} \cdot p_{4} \right)}{1 + c_{34} c_{43}}.
+\end{align}
