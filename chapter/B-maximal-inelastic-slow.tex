@@ -164,7 +164,7 @@ From here it follows that
 \end{equation}
 Solving these equations yields
 \begin{equation}
-	c_{43} = \frac{s - m_{3}^{2} - m_{4}^{2} \pm \sqrt{\Lambda_{34}(s)}}{2 m_{3}^{2}}, \qquad c_{34} = \left( \frac{m_{3}}{m_{4}} \right)^{2} c_{43} = \frac{s - m_{3}^{2} - m_{4}^{2} \pm \sqrt{\Lambda_{34}(s)}}{2 m_{4}^{2}}.
+	c_{43} = \frac{s - m_{3}^{2} - m_{4}^{2} \pm \sqrt{\Lambda_{34}(s)}}{2 m_{3}^{2}}, \qquad c_{34} = \frac{s - m_{3}^{2} - m_{4}^{2} \pm \sqrt{\Lambda_{34}(s)}}{2 m_{4}^{2}}.
 \end{equation}
 Thus,
 \begin{align}
@@ -340,3 +340,116 @@ These conditions translate to the statements
 \subsection{Scattering Regimes}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Slow Small-Speed Scattering}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Small slow speeds (i.e. $\abs{\mathbf{v}} \rightarrow 0$) occur when $s$ approaches either of the threshold values $\left(m_{1} + m_{2}\right)^{2}$ or $\left(m_{3} + m_{4}\right)^{2}$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Slow Fixed-Speed Scattering}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The speed of each external quantum can be written as a function of four dimensionless ratios:
+\begin{equation}
+	\frac{s}{m_{1} m_{2}}, \qquad \frac{m_{1}}{m_{2}}, \qquad \frac{m_{1}}{m_{3}}, \qquad \frac{m_{2}}{m_{4}}.
+\end{equation}
+Keeping these ratios fixed keeps the speeds fixed.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Slow Large-Speed Scattering}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Large slow speed scattering (i.e. $\abs{\mathbf{v}} \rightarrow 1$) involes the regime
+\begin{equation}
+	\frac{s}{m_{1} m_{2}} \rightarrow \infty, \qquad \frac{m_{1}}{m_{2}} \text{ fixed}, \qquad \frac{m_{1}}{m_{3}} \text{ fixed}, \qquad \frac{m_{2}}{m_{4}} \text{ fixed}.
+\end{equation}
+In other words, $s$ is very large compared to the (slow) masses. This is a high-energy regime.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Regge Scattering}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Regge scattering is the regime of fixed-speed and large (unphysical) $z_{13}$. That is,
+\begin{equation}
+	\frac{t}{s} \rightarrow \infty, \qquad \frac{s}{m_{1} m_{2}} \text{ fixed}, \qquad \frac{m_{1}}{m_{2}} \text{ fixed}, \qquad \frac{m_{1}}{m_{3}} \text{ fixed}, \qquad \frac{m_{2}}{m_{4}} \text{ fixed}.
+\end{equation}
+As a corollary you have
+\begin{equation}
+	u = m_{1}^{2} + m_{2}^{2} + m_{3}^{2} + m_{4}^{2} - s - t \quad \Longrightarrow \quad \frac{u}{s} \rightarrow -\infty.
+\end{equation}
+In this regime most values of the dual conformal invariant become trivial:
+\begin{equation}
+\begin{split}
+	\crat{\red{1}}{\red{2}}{\red{3}}{\red{4}} \rightarrow \infty, \qquad
+	\crat{\red{1}}{\red{3}}{\red{4}}{\red{2}} &= \frac{m_{2}^{2} m_{3}^{2}}{m_{1}^{2} m_{4}^{2}}, \qquad
+	\crat{\red{1}}{\red{4}}{\red{2}}{\red{3}} \rightarrow 0, \\
+	\crat{\red{1}}{\red{2}}{\red{4}}{\red{3}} \rightarrow 0, \qquad
+	\crat{\red{1}}{\red{3}}{\red{2}}{\red{4}} &= \frac{m_{1}^{2} m_{4}^{2}}{m_{2}^{2} m_{3}^{2}}, \qquad
+	\crat{\red{1}}{\red{4}}{\red{3}}{\red{2}} \rightarrow \infty.
+\end{split}
+\end{equation}
+\begin{equation}
+\begin{split}
+	\crat{\blue{1}}{\blue{2}}{\blue{3}}{\blue{4}} \rightarrow -\infty, \qquad
+	\crat{\blue{1}}{\blue{3}}{\blue{4}}{\blue{2}} &= \frac{m_{1}^{2} m_{2}^{2}}{m_{3}^{2} m_{4}^{2}}, \qquad
+	\crat{\blue{1}}{\blue{4}}{\blue{2}}{\blue{3}} \rightarrow 0, \\
+	\crat{\blue{1}}{\blue{2}}{\blue{4}}{\blue{3}} \rightarrow 0, \qquad
+	\crat{\blue{1}}{\blue{3}}{\blue{2}}{\blue{4}} &= \frac{m_{3}^{2} m_{4}^{2}}{m_{1}^{2} m_{2}^{2}}, \qquad
+	\crat{\blue{1}}{\blue{4}}{\blue{3}}{\blue{2}} \rightarrow -\infty.
+\end{split}
+\end{equation}
+\begin{equation}
+\begin{split}
+	\crat{\green{1}}{\green{2}}{\green{3}}{\green{4}} \rightarrow -\infty, \qquad
+	\crat{\green{1}}{\green{3}}{\green{4}}{\green{2}} &= \frac{m_{1}^{2} m_{3}^{2}}{m_{2}^{2} m_{4}^{2}}, \qquad
+	\crat{\green{1}}{\green{4}}{\green{2}}{\green{3}} \rightarrow 0, \\
+	\crat{\green{1}}{\green{2}}{\green{4}}{\green{3}} \rightarrow 0, \qquad
+	\crat{\green{1}}{\green{3}}{\green{2}}{\green{4}} &= \frac{m_{2}^{2} m_{4}^{2}}{m_{1}^{2} m_{3}^{2}}, \qquad
+	\crat{\green{1}}{\green{4}}{\green{3}}{\green{2}} \rightarrow -\infty.
+\end{split}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Forward Scattering}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Backward Scattering}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Fixed-Angle Scattering}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Fixed-angle scattering is the regime of large slow speed and fixed (physical) angle. That is,
+\begin{equation}
+	\frac{t}{s} \text{ fixed}, \qquad \frac{s}{m_{1} m_{2}} \rightarrow \infty, \qquad \frac{m_{1}}{m_{2}} \text{ fixed}, \qquad \frac{m_{1}}{m_{3}} \text{ fixed}, \qquad \frac{m_{2}}{m_{4}} \text{ fixed}.
+\end{equation}
+As a corollary you have
+\begin{equation}
+	u = m_{1}^{2} + m_{2}^{2} + m_{3}^{2} + m_{4}^{2} - s - t \quad \Longrightarrow \quad \frac{u}{s} \text{ fixed}.
+\end{equation}
+In this regime most values of the dual conformal invariant become trivial:
+\begin{equation}
+\begin{split}
+	\crat{\red{1}}{\red{2}}{\red{3}}{\red{4}} \rightarrow \infty, \qquad
+	\crat{\red{1}}{\red{3}}{\red{4}}{\red{2}} &= \frac{m_{2}^{2} m_{3}^{2}}{m_{1}^{2} m_{4}^{2}}, \qquad
+	\crat{\red{1}}{\red{4}}{\red{2}}{\red{3}} \rightarrow 0, \\
+	\crat{\red{1}}{\red{2}}{\red{4}}{\red{3}} \rightarrow 0, \qquad
+	\crat{\red{1}}{\red{3}}{\red{2}}{\red{4}} &= \frac{m_{1}^{2} m_{4}^{2}}{m_{2}^{2} m_{3}^{2}}, \qquad
+	\crat{\red{1}}{\red{4}}{\red{3}}{\red{2}} \rightarrow \infty.
+\end{split}
+\end{equation}
+\begin{equation}
+\begin{split}
+	\crat{\blue{1}}{\blue{2}}{\blue{3}}{\blue{4}} \rightarrow \infty, \qquad
+	\crat{\blue{1}}{\blue{3}}{\blue{4}}{\blue{2}} &= \frac{m_{1}^{2} m_{2}^{2}}{m_{3}^{2} m_{4}^{2}}, \qquad
+	\crat{\blue{1}}{\blue{4}}{\blue{2}}{\blue{3}} \rightarrow 0, \\
+	\crat{\blue{1}}{\blue{2}}{\blue{4}}{\blue{3}} \rightarrow 0, \qquad
+	\crat{\blue{1}}{\blue{3}}{\blue{2}}{\blue{4}} &= \frac{m_{3}^{2} m_{4}^{2}}{m_{1}^{2} m_{2}^{2}}, \qquad
+	\crat{\blue{1}}{\blue{4}}{\blue{3}}{\blue{2}} \rightarrow \infty.
+\end{split}
+\end{equation}
+\begin{equation}
+\begin{split}
+	\crat{\green{1}}{\green{2}}{\green{3}}{\green{4}} \rightarrow \infty, \qquad
+	\crat{\green{1}}{\green{3}}{\green{4}}{\green{2}} &= \frac{m_{1}^{2} m_{3}^{2}}{m_{2}^{2} m_{4}^{2}}, \qquad
+	\crat{\green{1}}{\green{4}}{\green{2}}{\green{3}} \rightarrow 0, \\
+	\crat{\green{1}}{\green{2}}{\green{4}}{\green{3}} \rightarrow 0, \qquad
+	\crat{\green{1}}{\green{3}}{\green{2}}{\green{4}} &= \frac{m_{2}^{2} m_{4}^{2}}{m_{1}^{2} m_{3}^{2}}, \qquad
+	\crat{\green{1}}{\green{4}}{\green{3}}{\green{2}} \rightarrow \infty.
+\end{split}
+\end{equation}
+From the point of view of the values of the dual conformal invariant, Regge scattering and fixed-angle scattering are very similar.
