@@ -94,10 +94,10 @@ Finally, for the \green{green} tetrahedron, you have
 \begin{equation}
 \begin{split}
 	\crat{\green{1}}{\green{2}}{\green{3}}{\green{4}} = \frac{s u}{w_{1}^{4}}, \qquad
-	\crat{\green{1}}{\green{3}}{\green{4}}{\green{2}} &= \frac{w_{1}^{4}}{w_{2}^{4}}, \qquad
+	\crat{\green{1}}{\green{3}}{\green{4}}{\green{2}} &= \left( \frac{w_{1}}{w_{2}} \right)^{4}, \qquad
 	\crat{\green{1}}{\green{4}}{\green{2}}{\green{3}} = \frac{w_{2}^{4}}{s u}, \\
 	\crat{\green{1}}{\green{2}}{\green{4}}{\green{3}} = \frac{w_{1}^{4}}{s u}, \qquad
-	\crat{\green{1}}{\green{3}}{\green{2}}{\green{4}} &= \frac{w_{2}^{4}}{w_{1}^{4}}, \qquad
+	\crat{\green{1}}{\green{3}}{\green{2}}{\green{4}} &= \left( \frac{w_{2}}{w_{1}} \right)^{4}, \qquad
 	\crat{\green{1}}{\green{4}}{\green{3}}{\green{2}} = \frac{s u}{w_{2}^{4}}.
 \end{split}
 \end{equation}
@@ -210,12 +210,12 @@ As a corollary, you have
 In this regime all dual conformal invariants become trivial:
 \begin{equation}
 \begin{split}
-	\crat{\red{1}}{\red{2}}{\red{3}}{\red{4}} \rightarrow \infty, \qquad
+	\crat{\red{1}}{\red{2}}{\red{3}}{\red{4}} \rightarrow +\infty, \qquad
 	\crat{\red{1}}{\red{3}}{\red{4}}{\red{2}} &= 1, \qquad
 	\crat{\red{1}}{\red{4}}{\red{2}}{\red{3}} \rightarrow 0, \\
 	\crat{\red{1}}{\red{2}}{\red{4}}{\red{3}} \rightarrow 0, \qquad
 	\crat{\red{1}}{\red{3}}{\red{2}}{\red{4}} &= 1, \qquad
-	\crat{\red{1}}{\red{4}}{\red{3}}{\red{2}} \rightarrow \infty.
+	\crat{\red{1}}{\red{4}}{\red{3}}{\red{2}} \rightarrow +\infty.
 \end{split}
 \end{equation}
 \begin{equation}
@@ -231,17 +231,17 @@ In this regime all dual conformal invariants become trivial:
 \begin{equation}
 \begin{split}
 	\crat{\green{1}}{\green{2}}{\green{3}}{\green{4}} \rightarrow -\infty, \qquad
-	\crat{\green{1}}{\green{3}}{\green{4}}{\green{2}} &= \frac{w_{1}^{4}}{w_{2}^{4}}, \qquad
+	\crat{\green{1}}{\green{3}}{\green{4}}{\green{2}} &= \left( \frac{w_{1}}{w_{2}} \right)^{4}, \qquad
 	\crat{\green{1}}{\green{4}}{\green{2}}{\green{3}} \rightarrow 0, \\
 	\crat{\green{1}}{\green{2}}{\green{4}}{\green{3}} \rightarrow 0, \qquad
-	\crat{\green{1}}{\green{3}}{\green{2}}{\green{4}} &= \frac{w_{2}^{4}}{w_{1}^{4}}, \qquad
+	\crat{\green{1}}{\green{3}}{\green{2}}{\green{4}} &= \left( \frac{w_{2}}{w_{1}} \right)^{4}, \qquad
 	\crat{\green{1}}{\green{4}}{\green{3}}{\green{2}} \rightarrow -\infty.
 \end{split}
 \end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Forward Scattering}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Forward scattering is the regime of fixed-speed and small (physical) scattering angles (i.e. $z_{13} \rightarrow 1$). This can be stated as
+Forward scattering is the regime of fixed-speed and small (physical) scattering angles (i.e. $z_{13} \rightarrow +1$). This can be stated as
 \begin{equation}
 	\frac{t}{s} \rightarrow 0, \qquad \frac{s}{w_{1} w_{2}} \text{ fixed}, \qquad \frac{w_{1}}{w_{2}} \text{ fixed}.
 \end{equation}
@@ -274,10 +274,10 @@ The rest of the dual conformal invariants are fixed and nontrivial:
 \begin{equation}
 \begin{split}
 	\crat{\green{1}}{\green{2}}{\green{3}}{\green{4}} = \frac{s u}{w_{1}^{4}}, \qquad
-	\crat{\green{1}}{\green{3}}{\green{4}}{\green{2}} &= \frac{w_{1}^{4}}{w_{2}^{4}}, \qquad
+	\crat{\green{1}}{\green{3}}{\green{4}}{\green{2}} &= \left( \frac{w_{1}}{w_{2}} \right)^{4}, \qquad
 	\crat{\green{1}}{\green{4}}{\green{2}}{\green{3}} = \frac{w_{2}^{4}}{s u}, \\
 	\crat{\green{1}}{\green{2}}{\green{4}}{\green{3}} = \frac{w_{1}^{4}}{s u}, \qquad
-	\crat{\green{1}}{\green{3}}{\green{2}}{\green{4}} &= \frac{w_{2}^{4}}{w_{1}^{4}}, \qquad
+	\crat{\green{1}}{\green{3}}{\green{2}}{\green{4}} &= \left( \frac{w_{2}}{w_{1}} \right)^{4}, \qquad
 	\crat{\green{1}}{\green{4}}{\green{3}}{\green{2}} = \frac{s u}{w_{2}^{4}}.
 \end{split}
 \end{equation}
@@ -288,13 +288,13 @@ Backward scattering is the regime of fixed-speed and large (physical) scattering
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Fixed-Angle Scattering}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Fixed-angle scattering is the regime of large-speed and (physical) fixed-angle. This can be stated as
+Fixed-angle scattering is the regime of small-speed and (physical) fixed-angle. This can be stated as
 \begin{equation}
-	\frac{t}{s} \text{ fixed}, \qquad \frac{s}{m_{1} m_{2}} \rightarrow \infty, \qquad \frac{m_{1}}{m_{2}} \text{ fixed}.
+	\frac{t}{s} \text{ fixed}, \qquad \frac{s}{w_{1} w_{2}} \rightarrow \infty, \qquad \frac{w_{1}}{w_{2}} \text{ fixed}.
 \end{equation}
 As a corollary, you have
 \begin{equation}
-	u = 2m_{1}^{2} + 2m_{2}^{2} - s - t \quad \Longrightarrow \quad \frac{u}{s} \text{ fixed}.
+	u = - 2w_{1}^{2} - 2w_{2}^{2} - s - t \quad \Longrightarrow \quad \frac{u}{s} \text{ fixed}.
 \end{equation}
 In this regime all dual conformal invariants become trivial:
 \begin{equation}
@@ -320,10 +320,10 @@ In this regime all dual conformal invariants become trivial:
 \begin{equation}
 \begin{split}
 	\crat{\green{1}}{\green{2}}{\green{3}}{\green{4}} \rightarrow -\infty, \qquad
-	\crat{\green{1}}{\green{3}}{\green{4}}{\green{2}} &= \frac{m_{1}^{4}}{m_{2}^{4}}, \qquad
+	\crat{\green{1}}{\green{3}}{\green{4}}{\green{2}} &= \left( \frac{w_{1}}{w_{2}} \right)^{4}, \qquad
 	\crat{\green{1}}{\green{4}}{\green{2}}{\green{3}} \rightarrow 0, \\
 	\crat{\green{1}}{\green{2}}{\green{4}}{\green{3}} \rightarrow 0, \qquad
-	\crat{\green{1}}{\green{3}}{\green{2}}{\green{4}} &= \frac{m_{2}^{4}}{m_{1}^{4}}, \qquad
+	\crat{\green{1}}{\green{3}}{\green{2}}{\green{4}} &= \left( \frac{w_{2}}{w_{1}} \right)^{4}, \qquad
 	\crat{\green{1}}{\green{4}}{\green{3}}{\green{2}} \rightarrow -\infty.
 \end{split}
 \end{equation}
