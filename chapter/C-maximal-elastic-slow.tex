@@ -104,112 +104,6 @@ Finally, for the \green{green} tetrahedron, you have
 \end{split}
 \end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Sudakov Decompositions}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Again, all the external quanta are slow, so you can have either slow or null Sudakov momenta.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Slow Sudakov Momenta}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The simplest choice for slow Sudakov momenta is
-\begin{equation}
-	k_{3} = p_{3}, \qquad k_{4} = p_{4}.
-\end{equation}
-That is,
-\begin{equation}
-	c_{34} = c_{43} = 0.
-\end{equation}
-You have
-\begin{equation}
-	\abs{k_{3}}^{2} = -m_{1}^{2}, \qquad \abs{k_{4}}^{2} = -m_{2}^{2} \quad \Longrightarrow \quad 2\left( k_{3} \cdot k_{4} \right) = m_{1}^{2} + m_{2}^{2} - s.
-\end{equation}
-Note that
-\begin{equation}
-	\abs{k_{3}}^{2} \abs{k_{4}}^{2} - \left( k_{3} \cdot k_{4} \right)^{2} = \frac{1}{4} \left[ s - \left( m_{1} - m_{2} \right)^{2} \right] \left[ \left( m_{1} + m_{2} \right)^{2} - s \right] = - \frac{\Lambda_{12}(s)}{4}.
-\end{equation}
-For this choice of Sudakov momenta, you find
-\begin{align}
-	c_{13} &= \frac{2 m_{2}^{2} \left(t - 2m_{1}^{2} \right) - \left(s - m_{1}^{2} - m_{2}^{2} \right) \left(u - m_{1}^{2} - m_{2}^{2} \right) }{\Lambda_{12}(s)}, \\
-	c_{14} &= \frac{2 m_{1}^{2} \left(u - m_{1}^{2} - m_{2}^{2} \right) - \left(s - m_{1}^{2} - m_{2}^{2} \right) \left(t - 2m_{1}^{2} \right) }{\Lambda_{12}(s)}, \\
-	c_{23} &= \frac{2 m_{2}^{2} \left(u - m_{1}^{2} - m_{2}^{2} \right) - \left(s - m_{1}^{2} - m_{2}^{2} \right) \left(t - 2m_{2}^{2} \right) }{\Lambda_{12}(s)}, \\
-	c_{24} &= \frac{2 m_{1}^{2} \left(t - 2m_{2}^{2} \right) - \left(s - m_{1}^{2} - m_{2}^{2} \right) \left(u - m_{1}^{2} - m_{2}^{2} \right) }{\Lambda_{12}(s)}.
-\end{align}
-Thus,
-\begin{equation}
-	\abs{P_{1}}^{2} = ..., \qquad \abs{P_{2}}^{2} = ....
-\end{equation}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Null Sudakov Momenta}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-If the Sudakov momenta are null, then
-\begin{equation}
-	\abs{k_{3}}^{2} = \abs{k_{4}}^{2} = 0.
-\end{equation}
-This leads to
-\begin{equation}
-\begin{split}
-	m_{1}^{2} &= -2 c_{34} \left(k_{3} \cdot k_{4} \right), \\
-	m_{2}^{2} &= -2 c_{43} \left(k_{3} \cdot k_{4} \right), \\
-	s - m_{1}^{2} - m_{2}^{2} &= -2\left(1 + c_{34}c_{43} \right) \left(k_{3} \cdot k_{4} \right).
-\end{split}
-\end{equation}
-From here it follows that
-\begin{equation}
-	\left( \frac{m_{1}}{m_{2}} \right)^{2} = \frac{c_{34}}{c_{43}}, \qquad \frac{s - m_{1}^{2} - m_{2}^{2}}{m_{1}^{2}} = \frac{1}{c_{34}} + c_{43}.
-\end{equation}
-Solving these equations yields
-\begin{equation}
-	c_{43} = \frac{s - m_{1}^{2} - m_{2}^{2} \pm \sqrt{\Lambda_{12}(s)}}{2 m_{1}^{2}}, \qquad c_{34} = \frac{s - m_{1}^{2} - m_{2}^{2} \pm \sqrt{\Lambda_{12}(s)}}{2 m_{2}^{2}}.
-\end{equation}
-Thus,
-\begin{align}
-	1 + c_{34} &= \frac{s - m_{1}^{2} + m_{2}^{2} \pm \sqrt{\Lambda_{12}(s)}}{2 m_{2}^{2}}, \\
-	1 + c_{43} &= \frac{s + m_{1}^{2} - m_{2}^{2} \pm \sqrt{\Lambda_{12}(s)}}{2 m_{1}^{2}}, \\
-	c_{34} c_{43} &= \frac{s - m_{1}^{2} - m_{2}^{2} \pm \sqrt{\Lambda_{12}(s)}}{s - m_{1}^{2} - m_{2}^{2} \mp \sqrt{\Lambda_{12}(s)}},
-\end{align}
-which leads to
-\begin{equation}
-	1 - c_{34} c_{43} = \frac{\mp 2 \sqrt{\Lambda_{12}(s)}}{s - m_{1}^{2} - m_{2}^{2} \mp \sqrt{\Lambda_{12}(s)}} = \mp \frac{\sqrt{\Lambda_{12}(s)}}{m_{1} m_{2}} \left[ \frac{s - m_{1}^{2} - m_{2}^{2} \pm \sqrt{\Lambda_{12}(s)}}{2 m_{1} m_{2}} \right] .
-\end{equation}
-Furthermore,
-\begin{equation}
-	\left( k_{3} \cdot k_{4} \right) = - \frac{m_{1} m_{2}}{2} \left[ \frac{2m_{1} m_{2}}{s - m_{1}^{2} - m_{2}^{2} \pm \sqrt{\Lambda_{12}(s)}} \right],
-\end{equation}
-which can also be written as
-\begin{equation}
-	\left( k_{3} \cdot k_{4} \right) = - \frac{m_{1} m_{2}}{2} \left[ \frac{s - m_{1}^{2} - m_{2}^{2} \mp \sqrt{\Lambda_{12}(s)}}{2m_{1} m_{2}} \right].
-\end{equation}
-In the end, it is more useful to write $k_{3} \cdot k_{4}$ as an implicit function:
-\begin{equation}
-	\left( k_{3} \cdot k_{4} \right) = - \frac{m_{1}^{2}}{2 c_{34}} = - \frac{m_{2}^{2}}{2 c_{43}} = - \frac{s}{2 \left(1 + c_{34} \right) \left(1 + c_{43} \right) } = -\frac{s - m_{1}^{2} - m_{2}^{2}}{2 \left(1 + c_{34} c_{43} \right)}.
-\end{equation}
-Note that
-\begin{align}
-	p_{1} \cdot k_{3} &= \frac{ \left( p_{1} \cdot p_{3} \right) - c_{34} \left( p_{1} \cdot p_{4} \right) }{1 - c_{34} c_{43}} = \frac{ \left( t - 2m_{1}^{2} \right) - c_{34} \left( u - m_{1}^{2} - m_{2}^{2} \right) }{2 \left( 1 - c_{34} c_{43} \right)}, \\
-	p_{1} \cdot k_{4} &= \frac{ \left( p_{1} \cdot p_{4} \right) - c_{43} \left( p_{1} \cdot p_{3} \right) }{1 - c_{34} c_{43}} = \frac{ \left( u - m_{1}^{2} - m_{2}^{2} \right) - c_{43} \left( t - 2m_{1}^{2} \right) }{2 \left( 1 - c_{34} c_{43} \right)}, \\
-	p_{2} \cdot k_{3} &= \frac{ \left( p_{2} \cdot p_{3} \right) - c_{34} \left( p_{2} \cdot p_{4} \right) }{1 - c_{34} c_{43}} = \frac{ \left( u - m_{1}^{2} - m_{2}^{2} \right) - c_{34} \left( t - 2m_{2}^{2} \right) }{2 \left( 1 - c_{34} c_{43} \right)}, \\
-	p_{2} \cdot k_{4} &= \frac{ \left( p_{2} \cdot p_{4} \right) - c_{43} \left( p_{2} \cdot p_{3} \right) }{1 - c_{34} c_{43}} = \frac{ \left( t - 2m_{2}^{2} \right) - c_{43} \left( u - m_{1}^{2} - m_{2}^{2} \right) }{2 \left( 1 - c_{34} c_{43} \right)}.
-\end{align}
-Using these, you find
-\begin{align}
-	c_{13} &= \frac{p_{1} \cdot k_{4}}{k_{3} \cdot k_{4}} = \frac{ \left( u - m_{1}^{2} - m_{2}^{2} \right) - c_{43} \left( t - 2m_{1}^{2} \right) }{s} \left[ \frac{\left(1 + c_{34} \right) \left(1 + c_{43} \right)}{\left(1 - c_{34} c_{43} \right)} \right], \\
-	c_{14} &= \frac{p_{1} \cdot k_{3}}{k_{3} \cdot k_{4}} = \frac{ \left( t - 2m_{1}^{2} \right) - c_{34} \left( u - m_{1}^{2} - m_{2}^{2} \right) }{s} \left[ \frac{\left(1 + c_{34} \right) \left(1 + c_{43} \right)}{\left(1 - c_{34} c_{43} \right)} \right], \\
-	c_{23} &= \frac{p_{2} \cdot k_{4}}{k_{3} \cdot k_{4}} = \frac{ \left( t - 2m_{2}^{2} \right) - c_{43} \left( u - m_{1}^{2} - m_{2}^{2} \right) }{s} \left[ \frac{\left(1 + c_{34} \right) \left(1 + c_{43} \right)}{\left(1 - c_{34} c_{43} \right)} \right], \\
-	c_{24} &= \frac{p_{2} \cdot k_{3}}{k_{3} \cdot k_{4}} = \frac{ \left( u - m_{1}^{2} - m_{2}^{2} \right) - c_{34} \left( t - 2m_{2}^{2} \right) }{s} \left[ \frac{\left(1 + c_{34} \right) \left(1 + c_{43} \right)}{\left(1 - c_{34} c_{43} \right)} \right].
-\end{align}
-More importantly,
-\begin{align}
-	c_{13} + c_{23} &= \left[ \frac{s - m_{1}^{2} + m_{2}^{2} - c_{43} \left( s + m_{1}^{2} - m_{2}^{2} \right)}{s} \right] \left[ \frac{\left(1 + c_{34} \right) \left(1 + c_{43} \right)}{\left(1 - c_{34} c_{43} \right)} \right], \\
-	c_{14} + c_{24} &= \left[ \frac{s + m_{1}^{2} - m_{2}^{2} - c_{34} \left( s - m_{1}^{2} + m_{2}^{2} \right)}{s} \right] \left[ \frac{\left(1 + c_{34} \right) \left(1 + c_{43} \right)}{\left(1 - c_{34} c_{43} \right)} \right], \\
-	c_{13} - 1 &= ..., \\
-	c_{14} - c_{34} &= ..., \\
-	c_{43} - c_{23} &= ..., \\
-	1 - c_{24} &= ..., \\
-	c_{13} - c_{43} &= ..., \\
-	c_{14} - 1 &= ..., \\
-	1 - c_{23} &= ..., \\
-	c_{34} - c_{24} &= ....
-\end{align}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Center-of-Momentum Frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 In the center-of-momentum frame you write the energy-momentum vectors as
@@ -266,6 +160,176 @@ The sum of the incoming rapidites is equal to the sum of the outgoing rapidities
 \subsection{Physical Scattering Region}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Sudakov Slow Decomposition}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Sudakov Null Decomposition}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Let $k_{3}$ and $k_{4}$ be null momenta related to the outgoing momenta via the transformation:
+\begin{equation}
+	p_{3} = k_{3} + b_{3} k_{4}, \qquad p_{4} = k_{4} + a_{4} k_{3}.
+	\label{eq:sudakov_3_4}
+\end{equation}
+Then,
+\begin{align}
+	m_{1}^{2} = - \abs{p_{3}}^{2} \quad &\Longrightarrow \quad m_{1}^{2} = - 2 b_{3} \left( k_{3} \cdot k_{4} \right), \\
+	m_{2}^{2} = - \abs{p_{4}}^{2} \quad &\Longrightarrow \quad m_{2}^{2} = - 2 a_{4} \left( k_{3} \cdot k_{4} \right), \\
+	s = - \abs{p_{3} + p_{4}}^{2} \quad &\Longrightarrow \quad s = - 2 \left(1 + b_{3} \right) \left(1 + a_{4} \right) \left( k_{3} \cdot k_{4} \right).
+\end{align}
+Solving these equations yield
+\begin{equation}
+	b_{3} = \frac{2 m_{1}^{2}}{s - m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}(s)}}, \qquad a_{4} = \frac{2 m_{2}^{2}}{s - m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}(s)}};
+\end{equation}
+and
+\begin{equation}
+	k_{3} \cdot k_{4} = -\frac{1}{4} \left( s - m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}(s)} \right).
+\end{equation}
+You have
+\begin{equation}
+	b_{3} a_{4} = \frac{s - m_{1}^{2} - m_{2}^{2} - \sqrt{\Lambda_{12}(s)}}{s - m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}(s)}},
+\end{equation}
+\begin{equation}
+	1 + b_{3} a_{4} = \frac{ 2 \left( s - m_{1}^{2} - m_{2}^{2} \right)}{s - m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}(s)}}, \qquad
+	1 - b_{3} a_{4} = \frac{ 2 \sqrt{\Lambda_{12}(s)}}{s - m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}(s)}};
+\end{equation}
+and
+\begin{equation}
+	b_{3} + a_{4} = \frac{ 2 \left( m_{1}^{2} + m_{2}^{2} \right)}{s - m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}(s)}}, \qquad
+	b_{3} - a_{4} = \frac{ 2 \left( m_{1}^{2} - m_{2}^{2} \right)}{s - m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}(s)}}.
+\end{equation}
+Also
+\begin{align}
+	1 + b_{3} &= \frac{s + m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}(s)}}{s - m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}(s)}} = \frac{s - m_{1}^{2} + m_{2}^{2} - \sqrt{\Lambda_{12}(s)}}{2m_{2}^{2}}, \\
+	1 + a_{4} &= \frac{s - m_{1}^{2} + m_{2}^{2} + \sqrt{\Lambda_{12}(s)}}{s - m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}(s)}} = \frac{s + m_{1}^{2} - m_{2}^{2} - \sqrt{\Lambda_{12}(s)}}{2m_{1}^{2}};
+\end{align}
+and
+\begin{equation}
+	1 - b_{3} = \frac{s - 3m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}(s)}}{s - m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}(s)}}, \qquad
+	1 - a_{4} = \frac{s - m_{1}^{2} - 3m_{2}^{2} + \sqrt{\Lambda_{12}(s)}}{s - m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}(s)}}.
+\end{equation}
+Thus
+\begin{align}
+	\left( 1 + b_{3} \right) \left( 1 + a_{4} \right) &= \frac{2s}{s - m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}(s)}}, \\
+	\left( 1 - b_{3} \right) \left( 1 + a_{4} \right) &= \frac{ 2 \sqrt{\Lambda_{12}(s)} - 2 \left( m_{1}^{2} - m_{2}^{2} \right)}{s - m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}(s)}}, \\
+	\left( 1 + b_{3} \right) \left( 1 - a_{4} \right) &= \frac{ 2 \sqrt{\Lambda_{12}(s)} + 2 \left( m_{1}^{2} - m_{2}^{2} \right)}{s - m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}(s)}}, \\
+	\left( 1 - b_{3} \right) \left( 1 - a_{4} \right) &= \frac{ 2 \left( s - 2m_{1}^{2} - 2m_{2}^{2} \right)}{s - m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}(s)}}.
+\end{align}
+
+In terms of $a_{4}$ and $b_{3}$, the outgoing speeds in the center-of-momentum frame are
+\begin{equation}
+	\abs{\mathbf{v}_{3}} = \frac{1 - b_{3} a_{4}}{1 + 2 b_{3} + b_{3} a_{4}} = \frac{\sqrt{\Lambda_{12}(s)}}{s + m_{1}^{2} - m_{2}^{2}}, \qquad \abs{\mathbf{v}_{4}} = \frac{1 - b_{3} a_{4}}{1 + 2 a_{4} + b_{3} a_{4}} = \frac{\sqrt{\Lambda_{12}(s)}}{s - m_{1}^{2} + m_{2}^{2}}.
+\end{equation}
+Other relevant results are
+\begin{align}
+	\frac{1}{b_{3}} \left( \frac{1 + b_{3}}{1 + a_{4}} \right) &= \frac{s + m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}(s)}}{s + m_{1}^{2} - m_{2}^{2} - \sqrt{\Lambda_{12}(s)}}, \\
+	\frac{1}{a_{4}} \left( \frac{1 + a_{4}}{1 + b_{3}} \right) &= \frac{s - m_{1}^{2} + m_{2}^{2} + \sqrt{\Lambda_{12}(s)}}{s - m_{1}^{2} + m_{2}^{2} - \sqrt{\Lambda_{12}(s)}};
+\end{align}
+and
+\begin{equation}
+	\frac{1}{b_{3}a_{4}} = \frac{s - m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}(s)}}{s - m_{1}^{2} - m_{2}^{2} - \sqrt{\Lambda_{12}(s)}}.
+\end{equation}
+The logarithm of these expressions are related to rapidities in the center-of-momentum frame.
+
+The inverse of (\ref{eq:sudakov_3_4}) is
+\begin{equation}
+	k_{3} = \frac{p_{3} - b_{3} p_{4}}{1 - b_{3} a_{4}}, \qquad k_{4} = \frac{p_{4} - a_{4} p_{3}}{1 - b_{3} a_{4}}.
+\end{equation}
+Thus,
+\begin{align}
+	p_{1} \cdot k_{3} &= \frac{p_{1} \cdot p_{3} - b_{3} \left( p_{1} \cdot p_{4} \right)}{1 - b_{3} a_{4}} = \frac{ t - 2m_{1}^{2} - b_{3} \left( u - m_{1}^{2} - m_{2}^{2} \right) }{2 \left(1 - b_{3} a_{4} \right)}, \\
+	p_{2} \cdot k_{3} &= \frac{p_{2} \cdot p_{3} - b_{3} \left( p_{2} \cdot p_{4} \right)}{1 - b_{3} a_{4}} = \frac{ u - m_{1}^{2} - m_{2}^{2} - b_{3} \left( t - 2m_{2}^{2} \right) }{2 \left(1 - b_{3} a_{4} \right)}, \\
+	p_{3} \cdot k_{3} &= \frac{\abs{p_{3}}^{2} - b_{3} \left( p_{3} \cdot p_{4} \right)}{1 - b_{3} a_{4}} = \frac{ b_{3} \left( s - m_{1}^{2} - m_{2}^{2} \right) - 2m_{1}^{2} }{2 \left(1 - b_{3} a_{4} \right)}, \\
+	p_{4} \cdot k_{3} &= \frac{p_{3} \cdot p_{4} - b_{3} \abs{p_{4}}^{2}}{1 - b_{3} a_{4}} = \frac{ m_{1}^{2} + m_{2}^{2} - s + 2 m_{2}^{2} b_{3}}{2 \left(1 - b_{3} a_{4} \right)};
+\end{align}
+and
+\begin{align}
+	p_{1} \cdot k_{4} &= \frac{p_{1} \cdot p_{4} - a_{4} \left( p_{1} \cdot p_{3} \right)}{1 - b_{3} a_{4}} = \frac{u - m_{1}^{2} - m_{2}^{2} - a_{4} \left(t - 2 m_{1}^{2} \right)}{2 \left( 1 - b_{3} a_{4} \right)}, \\
+	p_{2} \cdot k_{4} &= \frac{p_{2} \cdot p_{4} - a_{4} \left( p_{2} \cdot p_{3} \right)}{1 - b_{3} a_{4}} = \frac{t - 2m_{2}^{2} - a_{4} \left( u - m_{1}^{2} - m_{2}^{2} \right)}{2 \left( 1 - b_{3} a_{4} \right)}, \\
+	p_{3} \cdot k_{4} &= \frac{p_{3} \cdot p_{4} - a_{4} \abs{p_{3}}^{2}}{1 - b_{3} a_{4}} = \frac{m_{1}^{2} + m_{2}^{2} - s + 2 a_{4} m_{1}^{2}}{2 \left( 1 - b_{3} a_{4} \right)}, \\
+	p_{4} \cdot k_{4} &= \frac{ \abs{p_{4}}^{2} - a_{4} \left( p_{3} \cdot p_{4} \right)}{1 - b_{3} a_{4}} = \frac{a_{4} \left( s - m_{1}^{2} - m_{2}^{2} \right) - 2 m_{2}^{2}}{2 \left( 1 - b_{3} a_{4} \right)}.
+\end{align}
+Given a spacetime vector $v$, the Sudakov null decomposition is given by
+\begin{equation}
+	v = V + a_{v} k_{3} + b_{v} k_{4}, \qquad V \cdot k_{3} = V \cdot k_{4} = 0.
+\end{equation}
+Here $V$ lives in the orthogonal complement to the Sudakov subspace, and $a_{v}$ and $b_{v}$ are the Sudakov moduli. Since the Sudakov momenta are null, you have
+\begin{equation}
+	a_{v} = \frac{v \cdot k_{4}}{k_{3} \cdot k_{4}}, \qquad b_{v} = \frac{v \cdot k_{3}}{k_{3} \cdot k_{4}}.
+\end{equation}
+Thus,
+\begin{equation}
+	\abs{V}^{2} = \abs{v}^{2} - 2 a_{v} b_{v} \left( k_{3} \cdot k_{4} \right).
+\end{equation}
+The external momenta split into the incoming set ($p_{1}$ and $p_{2}$) and the outgoing set ($p_{3}$ and $p_{4}$). You have already null-decomposed the outgoing set by introducing the Sudakov momenta in (\ref{eq:sudakov_3_4}). Hence, by definition, the outgoing set live in the Sudakov subspace. The Sudakov null decomposition of the incoming set is
+\begin{equation}
+	p_{1} = P_{1} + a_{1} k_{3} + b_{1} k_{4}, \qquad p_{2} = P_{2} + a_{2} k_{3} + b_{2} k_{4}.
+\end{equation}
+Using the conservation constraint, you find
+\begin{equation}
+	P_{1} + P_{2} + \left( a_{1} + a_{2} \right) k_{3} + \left( b_{1} + b_{2} \right) k_{4} = \left( 1 + a_{4} \right) k_{3} + \left( 1 + b_{3} \right) k_{4}.
+\end{equation}
+This leads to three relations:
+\begin{equation}
+	P_{1} + P_{2} = 0, \qquad a_{1} + a_{2} = 1 + a_{4}, \qquad b_{1} + b_{2} = 1 + b_{3}.
+	\label{eq:conv_rel}
+\end{equation}
+You have
+\begin{equation}
+	a_{1} = \frac{a_{4} \left( t - 2 m_{3}^{2} \right) - \left( u - m_{3}^{2} - m_{4}^{2} \right) }{\sqrt{\Lambda_{34}(s)}}, \qquad
+	b_{1} = \frac{b_{3} \left( u - m_{3}^{2} - m_{4}^{2} \right) - \left( t - 2 m_{3}^{2} \right) }{\sqrt{\Lambda_{34}(s)}};
+\end{equation}
+and
+\begin{equation}
+	a_{2} = \frac{a_{4} \left( u - m_{3}^{2} - m_{4}^{2} \right) - \left( t - 2 m_{4}^{2} \right) }{\sqrt{\Lambda_{34}(s)}}, \qquad
+	b_{2} = \frac{b_{3} \left( t - 2 m_{4}^{2} \right) - \left( u - m_{3}^{2} - m_{4}^{2} \right) }{\sqrt{\Lambda_{34}(s)}}.
+\end{equation}
+With the null decomposition of the external momenta, you can null-decompose any other combination of external momenta. Let
+\begin{equation}
+	p \equiv p_{1} + p_{2} = p_{3} + p_{4}, \qquad q \equiv p_{1} - p_{3} = p_{4} - p_{2}, \qquad r \equiv p_{1} - p_{4} = p_{3} - p_{2}.
+\end{equation}
+These are the spacetime vectors that yield the Mandelstam invariants:
+\begin{equation}
+	s = -\abs{p}^{2}, \qquad t = -\abs{q}^{2}, \qquad u = -\abs{r}^{2}.
+\end{equation}
+The Sudakov null decomposition of these momenta is
+\begin{equation}
+	p = P + a_{p} k_{3} + b_{p} k_{4}, \qquad q = Q + a_{q} k_{3} + b_{q} k_{4}, \qquad r = R + a_{r} k_{3} + b_{r} k_{4}.
+\end{equation}
+Using the null decomposition of the external momenta yields:
+\begin{align}
+	P = P_{1} + P_{2} = 0, \qquad a_{p} &= a_{1} + a_{2} = 1 + a_{4}, \qquad b_{p} = b_{1} + b_{2} = 1 + b_{3}; \\
+	Q = P_{1} = -P_{2}, \qquad a_{q} &= a_{1} - 1 = a_{4} - a_{2}, \qquad b_{q} = b_{1} - b_{3} = 1 - b_{2}; \\
+	R = P_{1} = -P_{2}, \qquad a_{r} &= a_{1} - a_{4} = 1 - a_{2}, \qquad b_{r} = b_{1} - 1 = b_{3} - b_{2}.
+\end{align}
+Explicitly,
+\begin{align}
+	a_{1} + a_{2} &= \frac{ \left(s - m_{3}^{2} + m_{4}^{2}\right) - a_{4} \left(s + m_{3}^{2} - m_{4}^{2} \right) }{\sqrt{\Lambda_{34}(s)}}, \\
+	b_{1} + b_{2} &= \frac{ \left(s + m_{3}^{2} - m_{4}^{2}\right) - b_{3} \left(s - m_{3}^{2} + m_{4}^{2} \right) }{\sqrt{\Lambda_{34}(s)}}.
+\end{align}
+Using
+\begin{equation}
+	\frac{s + m_{3}^{2} - m_{4}^{2}}{\sqrt{\Lambda_{34}(s)}} = \frac{\left( 1 + b_{3} \right) + b_{3} \left( 1 + a_{4} \right)}{1 - b_{3} a_{4}}, \qquad \frac{s - m_{3}^{2} + m_{4}^{2}}{\sqrt{\Lambda_{34}(s)}} = \frac{\left( 1 + a_{4} \right) + a_{4} \left( 1 + b_{3} \right)}{1 - b_{3} a_{4}};
+\end{equation}
+you find that $a_{p} = 1 + a_{4}$ and $b_{p} = 1 + b_{3}$. This checks the relations from (\ref{eq:conv_rel}). You also have
+\begin{equation}
+	a_{q} = \frac{\left( 1 + a_{4} \right) t}{\sqrt{\Lambda_{34}(s)}}, \qquad
+	b_{q} = -\frac{\left( 1 + b_{3} \right) t}{\sqrt{\Lambda_{34}(s)}};
+\end{equation}
+and
+\begin{equation}
+	a_{r} = \frac{\left( 1 + a_{4} \right) t}{\sqrt{\Lambda_{34}(s)}} + 1 - a_{4}, \qquad 
+	b_{r} = - \frac{\left( 1 + b_{3} \right) t}{\sqrt{\Lambda_{34}(s)}} - 1 + b_{3}.
+\end{equation}
+From $t = -\abs{q}^{2}$ it follows that
+\begin{equation}
+	\abs{Q}^{2} = -t \left[ 1 + \frac{s t}{\Lambda_{34}(s)} \right].
+\end{equation}
+Thus,
+\begin{equation}
+	\abs{R}^{2} = \abs{P_{1}}^{2} = \abs{P_{2}}^{2} = \abs{Q}^{2} = -t \left[ 1 + \frac{s t}{\Lambda_{34}(s)} \right].
+\end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Scattering Regimes}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
