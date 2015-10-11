@@ -277,13 +277,13 @@ This leads to three relations:
 \end{equation}
 You have
 \begin{equation}
-	a_{1} = \frac{a_{4} \left( t - 2 m_{3}^{2} \right) - \left( u - m_{3}^{2} - m_{4}^{2} \right) }{\sqrt{\Lambda_{34}(s)}}, \qquad
-	b_{1} = \frac{b_{3} \left( u - m_{3}^{2} - m_{4}^{2} \right) - \left( t - 2 m_{3}^{2} \right) }{\sqrt{\Lambda_{34}(s)}};
+	a_{1} = \frac{a_{4} \left( t - 2 m_{1}^{2} \right) - \left( u - m_{1}^{2} - m_{2}^{2} \right) }{\sqrt{\Lambda_{12}(s)}}, \qquad
+	b_{1} = \frac{b_{3} \left( u - m_{1}^{2} - m_{2}^{2} \right) - \left( t - 2 m_{1}^{2} \right) }{\sqrt{\Lambda_{12}(s)}};
 \end{equation}
 and
 \begin{equation}
-	a_{2} = \frac{a_{4} \left( u - m_{3}^{2} - m_{4}^{2} \right) - \left( t - 2 m_{4}^{2} \right) }{\sqrt{\Lambda_{34}(s)}}, \qquad
-	b_{2} = \frac{b_{3} \left( t - 2 m_{4}^{2} \right) - \left( u - m_{3}^{2} - m_{4}^{2} \right) }{\sqrt{\Lambda_{34}(s)}}.
+	a_{2} = \frac{a_{4} \left( u - m_{1}^{2} - m_{2}^{2} \right) - \left( t - 2 m_{2}^{2} \right) }{\sqrt{\Lambda_{12}(s)}}, \qquad
+	b_{2} = \frac{b_{3} \left( t - 2 m_{2}^{2} \right) - \left( u - m_{1}^{2} - m_{2}^{2} \right) }{\sqrt{\Lambda_{12}(s)}}.
 \end{equation}
 With the null decomposition of the external momenta, you can null-decompose any other combination of external momenta. Let
 \begin{equation}
@@ -293,7 +293,7 @@ These are the spacetime vectors that yield the Mandelstam invariants:
 \begin{equation}
 	s = -\abs{p}^{2}, \qquad t = -\abs{q}^{2}, \qquad u = -\abs{r}^{2}.
 \end{equation}
-The Sudakov null decomposition of these momenta is
+The Sudakov null decomposition of these linear combinations of momenta is
 \begin{equation}
 	p = P + a_{p} k_{3} + b_{p} k_{4}, \qquad q = Q + a_{q} k_{3} + b_{q} k_{4}, \qquad r = R + a_{r} k_{3} + b_{r} k_{4}.
 \end{equation}
@@ -305,30 +305,30 @@ Using the null decomposition of the external momenta yields:
 \end{align}
 Explicitly,
 \begin{align}
-	a_{1} + a_{2} &= \frac{ \left(s - m_{3}^{2} + m_{4}^{2}\right) - a_{4} \left(s + m_{3}^{2} - m_{4}^{2} \right) }{\sqrt{\Lambda_{34}(s)}}, \\
-	b_{1} + b_{2} &= \frac{ \left(s + m_{3}^{2} - m_{4}^{2}\right) - b_{3} \left(s - m_{3}^{2} + m_{4}^{2} \right) }{\sqrt{\Lambda_{34}(s)}}.
+	a_{1} + a_{2} &= \frac{ \left(s - m_{1}^{2} + m_{2}^{2}\right) - a_{4} \left(s + m_{1}^{2} - m_{2}^{2} \right) }{\sqrt{\Lambda_{12}(s)}}, \\
+	b_{1} + b_{2} &= \frac{ \left(s + m_{1}^{2} - m_{2}^{2}\right) - b_{3} \left(s - m_{1}^{2} + m_{2}^{2} \right) }{\sqrt{\Lambda_{12}(s)}}.
 \end{align}
 Using
 \begin{equation}
-	\frac{s + m_{3}^{2} - m_{4}^{2}}{\sqrt{\Lambda_{34}(s)}} = \frac{\left( 1 + b_{3} \right) + b_{3} \left( 1 + a_{4} \right)}{1 - b_{3} a_{4}}, \qquad \frac{s - m_{3}^{2} + m_{4}^{2}}{\sqrt{\Lambda_{34}(s)}} = \frac{\left( 1 + a_{4} \right) + a_{4} \left( 1 + b_{3} \right)}{1 - b_{3} a_{4}};
+	\frac{s + m_{1}^{2} - m_{2}^{2}}{\sqrt{\Lambda_{12}(s)}} = \frac{\left( 1 + b_{3} \right) + b_{3} \left( 1 + a_{4} \right)}{1 - b_{3} a_{4}}, \qquad \frac{s - m_{1}^{2} + m_{2}^{2}}{\sqrt{\Lambda_{12}(s)}} = \frac{\left( 1 + a_{4} \right) + a_{4} \left( 1 + b_{3} \right)}{1 - b_{3} a_{4}};
 \end{equation}
 you find that $a_{p} = 1 + a_{4}$ and $b_{p} = 1 + b_{3}$. This checks the relations from (\ref{eq:conv_rel}). You also have
 \begin{equation}
-	a_{q} = \frac{\left( 1 + a_{4} \right) t}{\sqrt{\Lambda_{34}(s)}}, \qquad
-	b_{q} = -\frac{\left( 1 + b_{3} \right) t}{\sqrt{\Lambda_{34}(s)}};
+	a_{q} = \frac{\left( 1 + a_{4} \right) t}{\sqrt{\Lambda_{12}(s)}}, \qquad
+	b_{q} = -\frac{\left( 1 + b_{3} \right) t}{\sqrt{\Lambda_{12}(s)}};
 \end{equation}
 and
 \begin{equation}
-	a_{r} = \frac{\left( 1 + a_{4} \right) t}{\sqrt{\Lambda_{34}(s)}} + 1 - a_{4}, \qquad 
-	b_{r} = - \frac{\left( 1 + b_{3} \right) t}{\sqrt{\Lambda_{34}(s)}} - 1 + b_{3}.
+	a_{r} = \frac{\left( 1 + a_{4} \right) t}{\sqrt{\Lambda_{12}(s)}} + 1 - a_{4}, \qquad 
+	b_{r} = - \frac{\left( 1 + b_{3} \right) t}{\sqrt{\Lambda_{12}(s)}} - 1 + b_{3}.
 \end{equation}
 From $t = -\abs{q}^{2}$ it follows that
 \begin{equation}
-	\abs{Q}^{2} = -t \left[ 1 + \frac{s t}{\Lambda_{34}(s)} \right].
+	\abs{Q}^{2} = -t \left[ 1 + \frac{s t}{\Lambda_{12}(s)} \right].
 \end{equation}
 Thus,
 \begin{equation}
-	\abs{R}^{2} = \abs{P_{1}}^{2} = \abs{P_{2}}^{2} = \abs{Q}^{2} = -t \left[ 1 + \frac{s t}{\Lambda_{34}(s)} \right].
+	\abs{R}^{2} = \abs{P_{1}}^{2} = \abs{P_{2}}^{2} = \abs{Q}^{2} = -t \left[ 1 + \frac{s t}{\Lambda_{12}(s)} \right].
 \end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Scattering Regimes}
@@ -338,6 +338,11 @@ Thus,
 \subsubsection{Slow Small-Speed Scattering}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Small slow speeds occur when $s$ is close to the threshold value $(m_{1} + m_{2})^{2}$.
+
+In this regime you have
+\begin{equation}
+	b_{3} \rightarrow \frac{m_{1}}{m_{2}}, \qquad a_{4} \rightarrow \frac{m_{2}}{m_{1}} \quad \Longrightarrow \quad 1 - b_{3} a_{4} \rightarrow 0.
+\end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Slow Fixed-Speed Scattering}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -350,6 +355,8 @@ Slow fixed-speed scattering corresponds to the kinematic regime where we keep th
 	\frac{s}{m_{1} m_{2}} \text{ fixed}, \qquad \frac{m_{1}}{m_{2}} \text{ fixed}.
 \end{equation}
 This regime is appropriate for either large $s$ and large masses, or small $s$ and small masses. Note that fixed-speed is equivalent to fixed-rapidity. By itself, this regime is not very helpful, but when combined with other limits it leads to important approximations.
+
+In this regime you have $b_{3}$ and $a_{4}$ fixed.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Slow Large-Speed Scattering}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -358,6 +365,12 @@ Large-speed scattering involves the regime
 	\frac{s}{m_{1} m_{2}} \rightarrow \infty, \qquad \frac{m_{1}}{m_{2}} \text{ fixed}.
 \end{equation}
 That is, $s$ is very large compared to the masses.
+
+In this regime you have
+\begin{equation}
+	b_{3} \rightarrow 0, \qquad a_{4} \rightarrow 0.
+\end{equation}
+That is, $p_{3}$ and $p_{4}$ become null momenta.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Regge Scattering}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -401,6 +414,11 @@ In this regime all dual conformal invariants become trivial:
 \end{split}
 \end{equation}
 You can view the regime of Regge scattering as either large $t$ and large $u$ with fixed $s$ and fixed masses, or small $s$ and small masses with fixed $t$ and fixed $u$. So in the $s$-channel Regge scattering is a low-energy approximation.
+
+In this regime $b_{3}$ and $a_{4}$ are fixed, but you have
+\begin{equation}
+	a_{q} \rightarrow \infty, \qquad b_{q} \rightarrow -\infty.
+\end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Forward Scattering}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -445,6 +463,16 @@ The rest of the dual conformal invariants are fixed and nontrivial:
 \end{split}
 \end{equation}
 You can view the forward regime as either $t$ small with $s$, $u$, and the masses fixed, or $t$ fixed and large $s$, large $u$, and large masses. Thus, in the $s$-channel, the forward regime is a high-energy approximation.
+
+In this regime $b_{3}$ and $a_{4}$ are fixed, but you have
+\begin{equation}
+	\abs{Q}^{2} \rightarrow -t, \qquad a_{q} \rightarrow 0, \qquad b_{q} \rightarrow 0;
+\end{equation}
+and
+\begin{equation}
+	a_{r} \rightarrow 1 - a_{4}, \qquad b_{r} \rightarrow {-\left(1 - b_{3}\right)}.
+\end{equation}
+Thus, $q$ becomes orthogonal to the Sudakov momenta.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Backward Scattering}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
