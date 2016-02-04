@@ -2,9 +2,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ...
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Mandelstam Invariants}
+\section{Slow Quanta}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-For convenience, one defines the three Mandelstam invariants:
+Consider four slow momenta:
+\begin{equation}
+	m_{1}^{2} = -\abs{p_{1}}^{2}, \qquad m_{2}^{2} = -\abs{p_{2}}^{2}, \qquad m_{3}^{2} = -\abs{p_{3}}^{2}, \qquad m_{4}^{2} = -\abs{p_{4}}^{2}.
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Mandelstam Invariants}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+For convenience, one defines the three (slow) Mandelstam invariants:
 \begin{equation}
 	s = -\abs{p_{1} + p_{2}}^{2}, \qquad t = -\abs{p_{1} - p_{3}}^{2}, \qquad u = -\abs{p_{1} - p_{4}}^{2}. 
 \end{equation}
@@ -14,10 +21,235 @@ Energy-momentum conservation leads to a constraint,
 \end{equation}
 This constraint means that only three out of the four external energy-momentum vectors are linearly independent. Due to the conservation constraint, the three Mandelstam invariants satisfy a linear relation:
 \begin{equation}
-	s + t + u = -\abs{p_{1}}^{2} - \abs{p_{2}}^{2} - \abs{p_{3}}^{2} - \abs{p_{4}}^{2}.
+	s + t + u = m_{1}^{2} + m_{2}^{2} + m_{3}^{2} + m_{4}^{2}.
 	\label{eq:stu_slow}
 \end{equation}
 Thus, only two of the Mandelstam invariants are linearly independent.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Regge-Mandelstam Invariants}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The Regge-Mandelstam invariants are useful dimensionless combinations. There are six:
+\begin{align}
+	\sigma_{12} = \frac{s - m_{1}^{2} - m_{2}^{2}}{2 m_{1} m_{2}}, \qquad \tau_{13} = \frac{t - m_{1}^{2} - m_{3}^{2}}{2 m_{1} m_{3}}, \qquad \upsilon_{14} = \frac{u - m_{1}^{2} - m_{4}^{2}}{2 m_{1} m_{4}}, \\
+	\upsilon_{23} = \frac{u - m_{2}^{2} - m_{3}^{2}}{2 m_{2} m_{3}}, \qquad \tau_{24} = \frac{t - m_{2}^{2} - m_{4}^{2}}{2 m_{2} m_{4}}, \qquad \sigma_{34} = \frac{s - m_{3}^{2} - m_{4}^{2}}{2 m_{3} m_{4}}.
+\end{align}
+Note that
+\begin{align}
+	s < \left( m_{1} - m_{2} \right)^{2} \quad &\Longrightarrow \quad \sigma_{12} < -1, \\
+	s = \left( m_{1} - m_{2} \right)^{2} \quad &\Longrightarrow \quad \sigma_{12} = -1, \\
+	\left( m_{1} - m_{2} \right)^{2} < s < m_{1}^{2} + m_{2}^{2} \quad &\Longrightarrow \quad -1 < \sigma_{12} < 0, \\
+	s = m_{1}^{2} + m_{2}^{2} \quad &\Longrightarrow \quad \sigma_{12} = 0, \\
+	m_{1}^{2} + m_{2}^{2} < s < \left( m_{1} + m_{2} \right)^{2} \quad &\Longrightarrow \quad 0 < \sigma_{12} < 1, \\
+	s = \left( m_{1} + m_{2} \right)^{2} \quad &\Longrightarrow \quad \sigma_{12} = 1, \\
+	s > \left( m_{1} + m_{2} \right)^{2} \quad &\Longrightarrow \quad \sigma_{12} > 1.
+\end{align}
+Similar remarks hold for the other Regge-Mandelstam invariants.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{K\"{a}ll\'{e}n Function}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The slow K\"{a}ll\'{e}n function is
+\begin{equation}
+	\Lambda_{ij}(x) = \left[ \left(x - m_{i}^{2} - m_{j}^{2} \right)^{2} - 4 m_{i}^{2} m_{j}^{2} \right] = \kallen{x}{m_{i}}{m_{j}},
+\end{equation}
+where $x$ is a (slow) Mandelstam invariant. Note that $\Lambda_{ij}(x)$ can be either negative, zero, or positive for real values of $x$.
+
+If the slow K\"{a}ll\'{e}n function is negative, then
+\begin{equation}
+	\Lambda_{ij}(x) < 0 \quad \Longrightarrow \quad \abs{x - m_{i}^{2} - m_{j}^{2}} < 2 m_{i} m_{j},
+\end{equation}
+which leads to
+\begin{equation}
+	\Lambda_{ij}(x) < 0 \quad \Longrightarrow \quad x > \left(m_{i} - m_{j}\right)^{2} \text{ and } x < \left(m_{i} + m_{j}\right)^{2}.
+\end{equation}
+Similarly, if the slow K\"{a}ll\'{e}n function is zero, then
+\begin{equation}
+	\Lambda_{ij}(x) = 0 \quad \Longrightarrow \quad \abs{x - m_{i}^{2} - m_{j}^{2}} = 2 m_{i} m_{j},
+\end{equation}
+which leads to
+\begin{equation}
+	\Lambda_{ij}(x) = 0 \quad \Longrightarrow \quad x = \left(m_{i} - m_{j}\right)^{2} \text{ or } x = \left(m_{i} + m_{j}\right)^{2}.
+\end{equation}
+Finally, if the slow K\"{a}ll\'{e}n function is positive, then
+\begin{equation}
+	\Lambda_{ij}(x) > 0 \quad \Longrightarrow \quad \abs{x - m_{i}^{2} - m_{j}^{2}} > 2 m_{i} m_{j},
+\end{equation}
+which leads to
+\begin{equation}
+	\Lambda_{ij}(x) > 0 \quad \Longrightarrow \quad x < \left(m_{i} - m_{j}\right)^{2} \text{ or } x > \left(m_{i} + m_{j}\right)^{2}.
+\end{equation}
+The region where $\Lambda_{ij}(x)$ is negative is called the (slow-slow) Coulomb region. If one of the (slow) masses becomes zero, you get the null-slow K\"{a}ll\'{e}n function:
+\begin{equation}
+	\Lambda_{i}(x) = \left( x - m_{i}^{2} \right)^{2},
+\end{equation}
+which is positive for any real value of $x$. That is, there is no (null-slow) Coulomb region.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Speed and Rapidity}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The (slow) mass $m$, spatial momentum $\mathbf{p}$, and energy $E$ of a slow quantum satisfy the on-shell constraint
+\begin{equation}
+	{-m^{2}} = {-E^{2}} + \abs{\mathbf{p}}^{2}.
+\end{equation}
+This constraint can be solved by writing
+\begin{equation}
+	E = m \operatorname{cosh}{\rho}, \qquad \abs{\mathbf{p}} = m \operatorname{sinh}{\rho}.
+\end{equation}
+Thus,
+\begin{equation}
+	\operatorname{tanh}{\rho} = \frac{\sqrt{E^{2} - m^{2}}}{E} = \frac{\abs{\mathbf{p}}}{\sqrt{\abs{\mathbf{p}}^{2} + m^{2}}} = \frac{\abs{\mathbf{p}}}{E} \equiv \abs{\mathbf{v}}.
+\end{equation}
+Here $\rho$ is the (slow) rapidity, and $\abs{\mathbf{v}}$ is the speed of the slow quantum. Note that
+\begin{equation}
+	m^{2} \leq E^{2} < \infty \text{ or } 0 \leq \abs{\mathbf{p}}^{2} < \infty \quad \Longrightarrow \quad 0 \leq \abs{\mathbf{v}}^{2} < 1.
+\end{equation}
+That is, the speed of a slow quantum is bounded from above.
+
+Recall that
+\begin{equation}
+	\operatorname{artanh}{\abs{\mathbf{v}}} = \frac{1}{2} \log{\left( \frac{1 + \abs{\mathbf{v}}}{1 - \abs{\mathbf{v}}} \right)}, \qquad 0 \leq \abs{\mathbf{v}} < 1,
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Sudakov Null Decomposition}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The linear combination of two null vectors is, in general, not a null vector. Consider writing the outgoing momenta ($p_{3}$ and $p_{4}$) as
+\begin{equation}
+	p_{3} = k_{3} - \frac{m_{3}^{2}}{S_{34}} k_{4}, \qquad p_{4} = k_{4} - \frac{m_{4}^{2}}{S_{34}} k_{3}; \qquad S_{34} = -\abs{k_{3} + k_{4}}^{2}.
+\end{equation}
+Here $k_{3}$ and $k_{4}$ are (null) Sudakov momenta. From $s = -\abs{p_{3} + p_{4}}^{2}$ you find
+\begin{equation}
+	S_{34} = \frac{1}{2} \left[ s - m_{3}^{2} - m_{4}^{2} + \sqrt{\Lambda_{34}(s)} \right].
+\end{equation}
+The other momenta in the problem are $p_{1}$ and $p_{2}$. The null decomposition consists of splitting these momenta:
+\begin{equation}
+	p_{1} = P_{1} + \kappa_{13} k_{3} + \kappa_{14} k_{4}, \qquad p_{2} = P_{2} + \kappa_{23} k_{3} + \kappa_{24} k_{4}.
+\end{equation}
+Here $P_{1}$ and $P_{2}$ are orthogonal to both $k_{3}$ and $k_{4}$:
+\begin{equation}
+	P_{1} \cdot k_{3} = P_{1} \cdot k_{4} = 0, \qquad P_{2} \cdot k_{3} = P_{2} \cdot k_{4} = 0.
+\end{equation}
+From the conservation constraint, you find
+\begin{equation}
+	P_{1} + P_{2} + \left( \kappa_{13} + \kappa_{23} \right) k_{3} + \left( \kappa_{14} + \kappa_{24} \right) k_{4} = \left(1 - \frac{m_{4}^{2}}{S_{34}} \right) k_{3} + \left(1 - \frac{m_{3}^{2}}{S_{34}} \right) k_{4}.
+\end{equation}
+Thus,
+\begin{equation}
+	P_{1} + P_{2} = 0, \qquad \kappa_{13} + \kappa_{23} = 1 - \frac{m_{4}^{2}}{S_{34}}, \qquad \kappa_{14} + \kappa_{24} = 1 - \frac{m_{3}^{2}}{S_{34}}.
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Sudakov Null Basis}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instead of decomposing the incoming momenta in terms of the outgoing Sudakov momenta, you can also introduce incoming (null) Sudakov momenta:
+\begin{equation}
+	p_{1} = k_{1} - \frac{m_{1}^{2}}{S_{12}} k_{2}, \qquad p_{2} = k_{2} - \frac{m_{2}^{2}}{S_{12}} k_{1}; \qquad S_{12} = -\abs{k_{1} + k_{2}}^{2}.
+\end{equation}
+Just like before, from $s = -\abs{p_{1} + p_{2}}^{2}$ you find
+\begin{equation}
+	S_{12} = \frac{1}{2} \left[ s - m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}(s)} \right].
+\end{equation}
+The invariants $S_{12}$ and $S_{34}$ are examples of Sudakov invariants. These are like Mandelstam invariants, but with the null Sudakov momenta instead. There are four other Sudakov invariants:
+\begin{equation}
+\begin{split}
+	T_{13} = - \abs{k_{1} - k_{3}}^{2}, &\qquad U_{14} = - \abs{k_{1} - k_{4}}^{2}, \\
+	U_{23} = - \abs{k_{2} - k_{3}}^{2}, &\qquad T_{24} = - \abs{k_{2} - k_{4}}^{2}.
+\end{split}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Fast Quanta}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Now consider four fast momenta:
+\begin{equation}
+	w_{1}^{2} = \abs{p_{1}}^{2}, \qquad w_{2}^{2} = \abs{p_{2}}^{2}, \qquad w_{3}^{2} = \abs{p_{3}}^{2}, \qquad w_{4}^{2} = \abs{p_{4}}^{2}.
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Mandelstam Invariants}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+For convenience, one defines the three (fast) Mandelstam invariants:
+\begin{equation}
+	x = \abs{p_{1} + p_{2}}^{2}, \qquad y = \abs{p_{1} - p_{3}}^{2}, \qquad z = \abs{p_{1} - p_{4}}^{2}. 
+\end{equation}
+Energy-momentum conservation leads to a constraint,
+\begin{equation}
+	p_{1} + p_{2} = p_{3} + p_{4}.
+\end{equation}
+This constraint means that only three out of the four external energy-momentum vectors are linearly independent. Due to the conservation constraint, the three Mandelstam invariants satisfy a linear relation:
+\begin{equation}
+	x + y + z = w_{1}^{2} + w_{2}^{2} + w_{3}^{2} + w_{4}^{2}.
+	\label{eq:stu_fast}
+\end{equation}
+Thus, only two of the Mandelstam invariants are linearly independent.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Regge-Mandelstam Invariants}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{K\"{a}ll\'{e}n Function}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The fast K\"{a}ll\'{e}n function is
+\begin{equation}
+	\Upsilon_{ij}(x) = \left[ \left(x + w_{i}^{2} + w_{j}^{2} \right)^{2} - 4 w_{i}^{2} w_{j}^{2} \right] = \kallenf{x}{w_{i}}{w_{j}},
+\end{equation}
+where $x$ is a (slow) Mandelstam invariant. Just like $\Lambda_{ij}(x)$, the function $\Upsilon_{ij}$ can be either negative, zero, or positive for real values of $x$.
+
+If the fast K\"{a}ll\'{e}n function is negative, then
+\begin{equation}
+	\Upsilon_{ij}(x) < 0 \quad \Longrightarrow \quad \abs{x + w_{i}^{2} + w_{j}^{2}} < 2 w_{i} w_{j},
+\end{equation}
+which leads to
+\begin{equation}
+	\Upsilon_{ij}(x) < 0 \quad \Longrightarrow \quad x > -\left(w_{i} + w_{j}\right)^{2} \text{ and } x < -\left(w_{i} - w_{j}\right)^{2}.
+\end{equation}
+Similarly, if the fast K\"{a}ll\'{e}n function is zero, then
+\begin{equation}
+	\Upsilon_{ij}(x) = 0 \quad \Longrightarrow \quad \abs{x + w_{i}^{2} + w_{j}^{2}} = 2 w_{i} w_{j},
+\end{equation}
+which leads to
+\begin{equation}
+	\Upsilon_{ij}(x) = 0 \quad \Longrightarrow \quad x = -\left(w_{i} + w_{j}\right)^{2} \text{ or } x = -\left(w_{i} - w_{j}\right)^{2}.
+\end{equation}
+Finally, if the fast K\"{a}ll\'{e}n function is positive, then
+\begin{equation}
+	\Upsilon_{ij}(x) > 0 \quad \Longrightarrow \quad \abs{x + w_{i}^{2} + w_{j}^{2}} > 2 w_{i} w_{j},
+\end{equation}
+which leads to
+\begin{equation}
+	\Upsilon_{ij}(x) > 0 \quad \Longrightarrow \quad x < -\left(w_{i} + w_{j}\right)^{2} \text{ or } x > -\left(w_{i} - w_{j}\right)^{2}.
+\end{equation}
+The region where $\Upsilon_{ij}(x)$ is negative is called the (fast-fast) Coulomb region. If one of the (fast) masses becomes zero, you get the null-fast K\"{a}ll\'{e}n function:
+\begin{equation}
+	\Upsilon_{i}(x) = \left( x + w_{i}^{2} \right)^{2},
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Speed and Rapidity}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The (fast) mass $w$, spatial momentum $\mathbf{p}$, and energy $E$ of a fast quantum satisfy the on-shell constraint
+\begin{equation}
+	{w^{2}} = {-E^{2}} + \abs{\mathbf{p}}^{2}.
+\end{equation}
+This constraint can be solved by writing
+\begin{equation}
+	E = w \operatorname{sinh}{\xi}, \qquad \abs{\mathbf{p}} = w \operatorname{cosh}{\xi}.
+\end{equation}
+Thus,
+\begin{equation}
+	\operatorname{coth}{\xi} = \frac{\sqrt{E^{2} + w^{2}}}{E} = \frac{\abs{\mathbf{p}}}{\sqrt{\abs{\mathbf{p}}^{2} - w^{2}}} = \frac{\abs{\mathbf{p}}}{E} \equiv \abs{\mathbf{v}}.
+\end{equation}
+Here $\xi$ is the (fast) rapidity, and $\abs{\mathbf{v}}$ is the speed of the fast quantum. Note that
+\begin{equation}
+	0 \leq E^{2} < \infty \text{ or } w^{2} \leq \abs{\mathbf{p}}^{2} < \infty \quad \Longrightarrow \quad 1 < \abs{\mathbf{v}}^{2} < \infty.
+\end{equation}
+That is, the speed of a fast quantum is bounded from below.
+
+Recall that
+\begin{equation}
+	\operatorname{arcoth}{x} = \frac{1}{2} \log{\left( \frac{x + 1}{x - 1} \right)}, \qquad 1 < x < \infty.
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Sudakov Null Decomposition}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Sudakov Null Basis}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+...
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Dual Spacetime}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -69,83 +301,7 @@ Given three dual spacetime positions, the 3-point Cayley-Menger determinant is g
 	\end{pmatrix}
 	}, \qquad d_{IJ} \equiv d_{I} - d_{J}.
 \end{equation}
-Since a tetrahedron has four triangular faces, there are four possible 2-simplex invariants for each tetrahedron. These invariants take the form of K\"{a}ll\'{e}n functions. I will introduce three kinds of K\"{a}ll\'{e}n functions.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Slow K\"{a}ll\'{e}n Function}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The slow K\"{a}ll\'{e}n function is
-\begin{equation}
-	\Lambda_{ij}(x) = \left[ \left(x - m_{i}^{2} - m_{j}^{2} \right)^{2} - 4 m_{i}^{2} m_{j}^{2} \right] = \kallen{x}{m_{i}}{m_{j}},
-\end{equation}
-where $x$ is a Mandelstam invariant. Note that $\Lambda_{ij}(x)$ can be either negative, zero, or positive for real values of $x$.
-
-If the slow K\"{a}ll\'{e}n function is negative, then
-\begin{equation}
-	\Lambda_{ij}(x) < 0 \quad \Longrightarrow \quad \abs{x - m_{i}^{2} - m_{j}^{2}} < 2 m_{i} m_{j},
-\end{equation}
-which leads to
-\begin{equation}
-	\Lambda_{ij}(x) < 0 \quad \Longrightarrow \quad x > \left(m_{i} - m_{j}\right)^{2} \text{ and } x < \left(m_{i} + m_{j}\right)^{2}.
-\end{equation}
-Similarly, if the slow K\"{a}ll\'{e}n function is zero, then
-\begin{equation}
-	\Lambda_{ij}(x) = 0 \quad \Longrightarrow \quad \abs{x - m_{i}^{2} - m_{j}^{2}} = 2 m_{i} m_{j},
-\end{equation}
-which leads to
-\begin{equation}
-	\Lambda_{ij}(x) = 0 \quad \Longrightarrow \quad x = \left(m_{i} - m_{j}\right)^{2} \text{ or } x = \left(m_{i} + m_{j}\right)^{2}.
-\end{equation}
-Finally, if the slow K\"{a}ll\'{e}n function is positive, then
-\begin{equation}
-	\Lambda_{ij}(x) > 0 \quad \Longrightarrow \quad \abs{x - m_{i}^{2} - m_{j}^{2}} > 2 m_{i} m_{j},
-\end{equation}
-which leads to
-\begin{equation}
-	\Lambda_{ij}(x) > 0 \quad \Longrightarrow \quad x < \left(m_{i} - m_{j}\right)^{2} \text{ or } x > \left(m_{i} + m_{j}\right)^{2}.
-\end{equation}
-The region where $\Lambda_{ij}(x)$ is negative is called the (slow) Coulomb region. If one of the (slow) masses becomes zero, you get the null-slow K\"{a}ll\'{e}n function:
-\begin{equation}
-	\Lambda_{i}(x) = \left( x - m_{i}^{2} \right)^{2},
-\end{equation}
-which is positive for any real value of $x$. That is, there is no (slow) Coulomb region.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Fast K\"{a}ll\'{e}n Function}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The fast K\"{a}ll\'{e}n function is
-\begin{equation}
-	\Upsilon_{ij}(x) = \left[ \left(x + w_{i}^{2} + w_{j}^{2} \right)^{2} - 4 w_{i}^{2} w_{j}^{2} \right] = \kallenf{x}{w_{i}}{w_{j}},
-\end{equation}
-where $x$ is a Mandelstam invariant. Just like $\Lambda_{ij}(x)$, the function $\Upsilon_{ij}$ can be either negative, zero, or positive for real values of $x$.
-
-If the fast K\"{a}ll\'{e}n function is negative, then
-\begin{equation}
-	\Upsilon_{ij}(x) < 0 \quad \Longrightarrow \quad \abs{x + w_{i}^{2} + w_{j}^{2}} < 2 w_{i} w_{j},
-\end{equation}
-which leads to
-\begin{equation}
-	\Upsilon_{ij}(x) < 0 \quad \Longrightarrow \quad x > -\left(w_{i} + w_{j}\right)^{2} \text{ and } x < -\left(w_{i} - w_{j}\right)^{2}.
-\end{equation}
-Similarly, if the fast K\"{a}ll\'{e}n function is zero, then
-\begin{equation}
-	\Upsilon_{ij}(x) = 0 \quad \Longrightarrow \quad \abs{x + w_{i}^{2} + w_{j}^{2}} = 2 w_{i} w_{j},
-\end{equation}
-which leads to
-\begin{equation}
-	\Upsilon_{ij}(x) = 0 \quad \Longrightarrow \quad x = -\left(w_{i} + w_{j}\right)^{2} \text{ or } x = -\left(w_{i} - w_{j}\right)^{2}.
-\end{equation}
-Finally, if the fast K\"{a}ll\'{e}n function is positive, then
-\begin{equation}
-	\Upsilon_{ij}(x) > 0 \quad \Longrightarrow \quad \abs{x + w_{i}^{2} + w_{j}^{2}} > 2 w_{i} w_{j},
-\end{equation}
-which leads to
-\begin{equation}
-	\Upsilon_{ij}(x) > 0 \quad \Longrightarrow \quad x < -\left(w_{i} + w_{j}\right)^{2} \text{ or } x > -\left(w_{i} - w_{j}\right)^{2}.
-\end{equation}
-The region where $\Upsilon_{ij}(x)$ is negative is called the (fast) Coulomb region. If one of the (fast) masses becomes zero, you get the null-fast K\"{a}ll\'{e}n function:
-\begin{equation}
-	\Upsilon_{i}(x) = \left( x + w_{i}^{2} \right)^{2},
-\end{equation}
-which is positive for any real value of $x$. That is, there is no (fast) Coulomb region.
+Since a tetrahedron has four triangular faces, there are four possible 2-simplex invariants for each tetrahedron. These invariants take the form of K\"{a}ll\'{e}n functions.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Mixed K\"{a}ll\'{e}n Function}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -183,94 +339,16 @@ In four-point scattering there is a unique quartet of dual spacetime coordinates
 \end{equation}
 which is analogous to the constraint satisfied by the three Mandelstam invariants.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Speed and Rapidity}
+\section{Two-Body Sudakov Null Decomposition}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The (slow) mass $m$, spatial momentum $\mathbf{p}$, and energy $E$ of a slow quantum satisfy the on-shell constraint
+The external energy-momentum vectors can be divided into an incoming set ($p_{1}$ and $p_{2}$), and an outgoing set ($p_{3}$ and $p_{4}$). In a two-body Sudakov decomposition one postulates the existence of two (null) Sudakov momenta $k_{3}$ and $k_{4}$ and writes the outgoing momenta as linear combinations of the Sudakov momenta:
 \begin{equation}
-	{-m^{2}} = {-E^{2}} + \abs{\mathbf{p}}^{2}.
+	p_{3} = k_{3} + \frac{\abs{p_{3}}^{2}}{S_{34}} k_{4}, \qquad p_{4} = k_{4} + \frac{\abs{p_{4}}^{2}}{S_{34}} k_{3}; \qquad S_{34} \equiv -\abs{k_{3} + k_{4}}^{2}.
 \end{equation}
-This constraint can be solved by writing
+Using $s = - \abs{p_{3} + p_{4}}^{2}$, you find that
 \begin{equation}
-	E = m \operatorname{cosh}{\rho}, \qquad \abs{\mathbf{p}} = m \operatorname{sinh}{\rho}.
+	S_{34} = \frac{1}{2} \left[ \right].
 \end{equation}
-Thus,
-\begin{equation}
-	\operatorname{tanh}{\rho} = \frac{\sqrt{E^{2} - m^{2}}}{E} = \frac{\abs{\mathbf{p}}}{\sqrt{\abs{\mathbf{p}}^{2} + m^{2}}} = \frac{\abs{\mathbf{p}}}{E} \equiv \abs{\mathbf{v}}.
-\end{equation}
-Here $\rho$ is the (slow) rapidity, and $\abs{\mathbf{v}}$ is the speed of the slow quantum. Note that
-\begin{equation}
-	m^{2} \leq E^{2} < \infty \text{ or } 0 \leq \abs{\mathbf{p}}^{2} < \infty \quad \Longrightarrow \quad 0 \leq \abs{\mathbf{v}}^{2} < 1.
-\end{equation}
-That is, the speed of a slow quantum is bounded from above.
-
-Similarly, the (fast) mass $w$, spatial momentum $\mathbf{p}$, and energy $E$ of a fast quantum satisfy the on-shell constraint
-\begin{equation}
-	{w^{2}} = {-E^{2}} + \abs{\mathbf{p}}^{2}.
-\end{equation}
-This constraint can be solved by writing
-\begin{equation}
-	E = w \operatorname{sinh}{\xi}, \qquad \abs{\mathbf{p}} = w \operatorname{cosh}{\xi}.
-\end{equation}
-Thus,
-\begin{equation}
-	\operatorname{coth}{\xi} = \frac{\sqrt{E^{2} + w^{2}}}{E} = \frac{\abs{\mathbf{p}}}{\sqrt{\abs{\mathbf{p}}^{2} - w^{2}}} = \frac{\abs{\mathbf{p}}}{E} \equiv \abs{\mathbf{v}}.
-\end{equation}
-Here $\xi$ is the (fast) rapidity, and $\abs{\mathbf{v}}$ is the speed of the fast quantum. Note that
-\begin{equation}
-	0 \leq E^{2} < \infty \text{ or } w^{2} \leq \abs{\mathbf{p}}^{2} < \infty \quad \Longrightarrow \quad 1 < \abs{\mathbf{v}}^{2} < \infty.
-\end{equation}
-That is, the speed of a fast quantum is bounded from below.
-
-Recall that
-\begin{equation}
-	\operatorname{argtanh}{x} = \frac{1}{2} \log{\left( \frac{1 + x}{1 - x} \right)}, \qquad 0 \leq x < 1,
-\end{equation}
-and
-\begin{equation}
-	\operatorname{argcoth}{x} = \frac{1}{2} \log{\left( \frac{x + 1}{x - 1} \right)}, \qquad 1 < x < \infty.
-\end{equation}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Two-Body Sudakov Decomposition}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The external energy-momentum vectors can be divided into an incoming set ($p_{1}$ and $p_{2}$), and an outgoing set ($p_{3}$ and $p_{4}$). In a two-body Sudakov decomposition one postulates the existence of two Sudakov momenta $k_{3}$ and $k_{4}$ and writes the outgoing momenta as linear combinations of the Sudakov momenta:
-\begin{equation}
-	p_{3} = k_{3} + c_{34} k_{4}, \qquad p_{4} = c_{43} k_{3} + k_{4}.
-\end{equation}
-In other words, the outgoing and Sudakov momenta are related by a linear transformation:
-\begin{equation}
-	\begin{pmatrix} p_{3} \\
-	p_{4} \end{pmatrix} = \begin{pmatrix} 1 & c_{34} \\
-	c_{43} & 1 \end{pmatrix} \begin{pmatrix} k_{3} \\
-	k_{4} \end{pmatrix}.
-\end{equation}
-In order for this transformation to be invertible, you need the determinant of the $2 \times 2$ matrix to be nonzero. The inverse transformation is
-\begin{equation}
-	\begin{pmatrix} k_{3} \\
-	k_{4} \end{pmatrix} = \frac{1}{1 - c_{34} c_{43}} \begin{pmatrix} 1 & -c_{34} \\
-	-c_{43} & 1 \end{pmatrix} \begin{pmatrix} p_{3} \\
-	p_{4} \end{pmatrix}.
-\end{equation}
-That is, in terms of the outgoing momenta, the Sudakov momenta are
-\begin{equation}
-	k_{3} = \frac{p_{3} - c_{34} p_{4}}{1 - c_{34} c_{43}}, \qquad k_{4} = \frac{p_{4} - c_{43} p_{3}}{1 - c_{34} c_{43}}.
-\end{equation}
-% Thus,
-% \begin{align}
-% 	\abs{k_{3}}^{2} &= \frac{\abs{p_{3}}^{2} - 2 c_{34} \left(p_{3} \cdot p_{4}\right) + c_{34}^{2} \abs{p_{4}}^{2}}{\left( 1 - c_{34} c_{43} \right)^{2}}, \\
-% 	\abs{k_{4}}^{2} &= \frac{c_{43}^{2}\abs{p_{3}}^{2} - 2 c_{43} \left(p_{3} \cdot p_{4}\right) + \abs{p_{4}}^{2}}{\left( 1 - c_{34} c_{43} \right)^{2}}, \\
-% 	\left(k_{3} \cdot k_{4}\right) &= \frac{ \left( 1 + c_{34}c_{43} \right) \left(p_{3} \cdot p_{4}\right) - c_{43} \abs{p_{3}}^{2} - c_{34} \abs{p_{4}}^{2}}{\left( 1 - c_{34} c_{43} \right)^{2}}.
-% \end{align}
-You have
-\begin{align}
-	\abs{p_{3}}^{2} &= \abs{k_{3}}^{2} + c_{34}^{2} \abs{k_{4}}^{2} + 2 c_{34} \left( k_{3} \cdot k_{4} \right), \\
-	\abs{p_{4}}^{2} &= c_{43}^{2} \abs{k_{3}}^{2} + \abs{k_{4}}^{2} + 2 c_{43} \left( k_{3} \cdot k_{4} \right), \\
-	\left(p_{3} \cdot p_{4} \right) &= c_{43} \abs{k_{3}}^{2} + c_{34} \abs{k_{4}}^{2} + \left( 1 + c_{34} c_{43} \right) \left( k_{3} \cdot k_{4} \right).
-\end{align}
-and thus
-\begin{equation}
-	\abs{p_{3}}^{2} \abs{p_{4}}^{2} - \left( p_{3} \cdot p_{4} \right)^{2} = \left(1 - c_{34} c_{43} \right)^{2} \left( \abs{k_{3}}^{2} \abs{k_{4}}^{2} - \left( k_{3} \cdot k_{4} \right)^{2} \right)
-\end{equation}
-You know the value of $\abs{p_{3}}^{2}$, $\abs{p_{4}}^{2}$, and $p_{3} \cdot p_{4}$, so you can eliminate at most three of the five unknowns. Thus, in order for this decomposition to be useful, you need to specify two additional pieces of information.
 
 Each of the incoming momenta is decomposed into a part that is orthogonal to the subspace spanned by the two Sudakov momenta, and a part that is parallel to this subspace:
 \begin{align}

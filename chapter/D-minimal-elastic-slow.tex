@@ -144,9 +144,191 @@ For this particular process, the physical scattering region is
 	s > 4m^2, \qquad t < 0, \qquad u < 0.
 \end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Fixed-Speed Scattering}
+\subsection{Sudakov Slow Decomposition}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The speed of each external quantum can be written as a function of one dimensionless ratio,
+...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Sudakov Null Decomposition}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Let $k_{3}$ and $k_{4}$ be null momenta related to the outgoing momenta via the transformation:
+\begin{equation}
+	p_{3} = k_{3} + b_{3} k_{4}, \qquad p_{4} = k_{4} + a_{4} k_{3}.
+	\label{eq:sudakov_3_4}
+\end{equation}
+Then,
+\begin{align}
+	m^{2} = - \abs{p_{3}}^{2} \quad &\Longrightarrow \quad m^{2} = - 2 b_{3} \left( k_{3} \cdot k_{4} \right), \\
+	m^{2} = - \abs{p_{4}}^{2} \quad &\Longrightarrow \quad m^{2} = - 2 a_{4} \left( k_{3} \cdot k_{4} \right), \\
+	s = - \abs{p_{3} + p_{4}}^{2} \quad &\Longrightarrow \quad s = - 2 \left(1 + b_{3} \right) \left(1 + a_{4} \right) \left( k_{3} \cdot k_{4} \right).
+\end{align}
+Solving these equations yield
+\begin{equation}
+	b_{3} = a_{4} = \frac{2 m^{2}}{s - 2m^{2} + \sqrt{\Lambda_{12}(s)}};
+\end{equation}
+and
+\begin{equation}
+	k_{3} \cdot k_{4} = -\frac{1}{4} \left( s - 2m^{2} + \sqrt{\Lambda_{12}(s)} \right).
+\end{equation}
+You have
+\begin{equation}
+	b_{3} a_{4} = \frac{s - 2m^{2} - \sqrt{\Lambda_{12}(s)}}{s - 2m^{2} + \sqrt{\Lambda_{12}(s)}},
+\end{equation}
+\begin{equation}
+	1 + b_{3} a_{4} = \frac{ 2 \left( s - 2m^{2} \right)}{s - 2m^{2} + \sqrt{\Lambda_{12}(s)}}, \qquad
+	1 - b_{3} a_{4} = \frac{ 2 \sqrt{\Lambda_{12}(s)}}{s - 2m^{2} + \sqrt{\Lambda_{12}(s)}};
+\end{equation}
+and
+\begin{equation}
+	b_{3} + a_{4} = \frac{ 4m^{2} }{s - 2m^{2} + \sqrt{\Lambda_{12}(s)}}, \qquad
+	b_{3} - a_{4} = 0.
+\end{equation}
+Also
+\begin{align}
+	1 + b_{3} &= \frac{s + \sqrt{\Lambda_{12}(s)}}{s - 2m^{2} + \sqrt{\Lambda_{12}(s)}} = \frac{s - \sqrt{\Lambda_{12}(s)}}{2m^{2}}, \\
+	1 + a_{4} &= \frac{s + \sqrt{\Lambda_{12}(s)}}{s - 2m^{2} + \sqrt{\Lambda_{12}(s)}} = \frac{s - \sqrt{\Lambda_{12}(s)}}{2m^{2}};
+\end{align}
+and
+\begin{equation}
+	1 - b_{3} = \frac{s - 4m^{2} + \sqrt{\Lambda_{12}(s)}}{s - 2m^{2} + \sqrt{\Lambda_{12}(s)}}, \qquad
+	1 - a_{4} = \frac{s - 4m^{2} + \sqrt{\Lambda_{12}(s)}}{s - 2m^{2} + \sqrt{\Lambda_{12}(s)}}.
+\end{equation}
+Thus
+\begin{align}
+	\left( 1 + b_{3} \right) \left( 1 + a_{4} \right) &= \frac{2s}{s - 2m^{2} + \sqrt{\Lambda_{12}(s)}}, \\
+	\left( 1 - b_{3} \right) \left( 1 + a_{4} \right) &= \frac{ 2 \sqrt{\Lambda_{12}(s)} }{s - 2m^{2} + \sqrt{\Lambda_{12}(s)}}, \\
+	\left( 1 + b_{3} \right) \left( 1 - a_{4} \right) &= \frac{ 2 \sqrt{\Lambda_{12}(s)} }{s - 2m^{2} + \sqrt{\Lambda_{12}(s)}}, \\
+	\left( 1 - b_{3} \right) \left( 1 - a_{4} \right) &= \frac{ 2 \left( s - 4m^{2} \right)}{s - 2m^{2} + \sqrt{\Lambda_{12}(s)}}.
+\end{align}
+
+In terms of $a_{4}$ and $b_{3}$, the outgoing speeds in the center-of-momentum frame are
+\begin{equation}
+	\abs{\mathbf{v}_{3}} = \abs{\mathbf{v}_{4}} = \frac{1 - b_{3} a_{4}}{1 + 2 a_{4} + b_{3} a_{4}} = \frac{\sqrt{\Lambda_{12}(s)}}{s}.
+\end{equation}
+Other relevant results are
+\begin{equation}
+	\frac{1}{b_{3}} = \frac{1}{a_{4}} = \frac{s + \sqrt{\Lambda_{12}(s)}}{s - \sqrt{\Lambda_{12}(s)}};
+\end{equation}
+and
+\begin{equation}
+	\frac{1}{b_{3}a_{4}} = \frac{s - 2m^{2} + \sqrt{\Lambda_{12}(s)}}{s - 2m^{2} - \sqrt{\Lambda_{12}(s)}}.
+\end{equation}
+The logarithm of these expressions are related to rapidities in the center-of-momentum frame.
+
+The inverse of (\ref{eq:sudakov_3_4}) is
+\begin{equation}
+	k_{3} = \frac{p_{3} - b_{3} p_{4}}{1 - b_{3} a_{4}}, \qquad k_{4} = \frac{p_{4} - a_{4} p_{3}}{1 - b_{3} a_{4}}.
+\end{equation}
+Thus,
+\begin{align}
+	p_{1} \cdot k_{3} &= \frac{p_{1} \cdot p_{3} - b_{3} \left( p_{1} \cdot p_{4} \right)}{1 - b_{3} a_{4}} = \frac{ t - 2m^{2} - b_{3} \left( u - 2m^{2} \right) }{2 \left(1 - b_{3} a_{4} \right)}, \\
+	p_{2} \cdot k_{3} &= \frac{p_{2} \cdot p_{3} - b_{3} \left( p_{2} \cdot p_{4} \right)}{1 - b_{3} a_{4}} = \frac{ u - 2m^{2} - b_{3} \left( t - 2m^{2} \right) }{2 \left(1 - b_{3} a_{4} \right)}, \\
+	p_{3} \cdot k_{3} &= \frac{\abs{p_{3}}^{2} - b_{3} \left( p_{3} \cdot p_{4} \right)}{1 - b_{3} a_{4}} = \frac{ b_{3} \left( s - 2m^{2} \right) - 2m^{2} }{2 \left(1 - b_{3} a_{4} \right)}, \\
+	p_{4} \cdot k_{3} &= \frac{p_{3} \cdot p_{4} - b_{3} \abs{p_{4}}^{2}}{1 - b_{3} a_{4}} = \frac{ 2m^{2} - s + 2m^{2} b_{3}}{2 \left(1 - b_{3} a_{4} \right)};
+\end{align}
+and
+\begin{align}
+	p_{1} \cdot k_{4} &= \frac{p_{1} \cdot p_{4} - a_{4} \left( p_{1} \cdot p_{3} \right)}{1 - b_{3} a_{4}} = \frac{u - 2m^{2} - a_{4} \left(t - 2m^{2} \right)}{2 \left( 1 - b_{3} a_{4} \right)}, \\
+	p_{2} \cdot k_{4} &= \frac{p_{2} \cdot p_{4} - a_{4} \left( p_{2} \cdot p_{3} \right)}{1 - b_{3} a_{4}} = \frac{t - 2m^{2} - a_{4} \left( u - 2m^{2} \right)}{2 \left( 1 - b_{3} a_{4} \right)}, \\
+	p_{3} \cdot k_{4} &= \frac{p_{3} \cdot p_{4} - a_{4} \abs{p_{3}}^{2}}{1 - b_{3} a_{4}} = \frac{2m^{2} - s + 2m^{2} a_{4}}{2 \left( 1 - b_{3} a_{4} \right)}, \\
+	p_{4} \cdot k_{4} &= \frac{ \abs{p_{4}}^{2} - a_{4} \left( p_{3} \cdot p_{4} \right)}{1 - b_{3} a_{4}} = \frac{a_{4} \left( s - 2m^{2} \right) - 2m^{2}}{2 \left( 1 - b_{3} a_{4} \right)}.
+\end{align}
+Given a spacetime vector $v$, the Sudakov null decomposition is given by
+\begin{equation}
+	v = V + a_{v} k_{3} + b_{v} k_{4}, \qquad V \cdot k_{3} = V \cdot k_{4} = 0.
+\end{equation}
+Here $V$ lives in the orthogonal complement to the Sudakov subspace, and $a_{v}$ and $b_{v}$ are the Sudakov moduli. Since the Sudakov momenta are null, you have
+\begin{equation}
+	a_{v} = \frac{v \cdot k_{4}}{k_{3} \cdot k_{4}}, \qquad b_{v} = \frac{v \cdot k_{3}}{k_{3} \cdot k_{4}}.
+\end{equation}
+Thus,
+\begin{equation}
+	\abs{V}^{2} = \abs{v}^{2} - 2 a_{v} b_{v} \left( k_{3} \cdot k_{4} \right).
+\end{equation}
+The external momenta split into the incoming set ($p_{1}$ and $p_{2}$) and the outgoing set ($p_{3}$ and $p_{4}$). You have already null-decomposed the outgoing set by introducing the Sudakov momenta in (\ref{eq:sudakov_3_4}). Hence, by definition, the outgoing set live in the Sudakov subspace. The Sudakov null decomposition of the incoming set is
+\begin{equation}
+	p_{1} = P_{1} + a_{1} k_{3} + b_{1} k_{4}, \qquad p_{2} = P_{2} + a_{2} k_{3} + b_{2} k_{4}.
+\end{equation}
+Using the conservation constraint, you find
+\begin{equation}
+	P_{1} + P_{2} + \left( a_{1} + a_{2} \right) k_{3} + \left( b_{1} + b_{2} \right) k_{4} = \left( 1 + a_{4} \right) k_{3} + \left( 1 + b_{3} \right) k_{4}.
+\end{equation}
+This leads to three relations:
+\begin{equation}
+	P_{1} + P_{2} = 0, \qquad a_{1} + a_{2} = 1 + a_{4}, \qquad b_{1} + b_{2} = 1 + b_{3}.
+	\label{eq:conv_rel}
+\end{equation}
+You have
+\begin{equation}
+	a_{1} = \frac{a_{4} \left( t - 2m^{2} \right) - \left( u - 2m^{2} \right) }{\sqrt{\Lambda_{12}(s)}}, \qquad
+	b_{1} = \frac{b_{3} \left( u - 2m^{2} \right) - \left( t - 2m^{2} \right) }{\sqrt{\Lambda_{12}(s)}};
+\end{equation}
+and
+\begin{equation}
+	a_{2} = \frac{a_{4} \left( u - 2m^{2} \right) - \left( t - 2m^{2} \right) }{\sqrt{\Lambda_{12}(s)}}, \qquad
+	b_{2} = \frac{b_{3} \left( t - 2m^{2} \right) - \left( u - 2m^{2} \right) }{\sqrt{\Lambda_{12}(s)}}.
+\end{equation}
+With the null decomposition of the external momenta, you can null-decompose any other combination of external momenta. Let
+\begin{equation}
+	p \equiv p_{1} + p_{2} = p_{3} + p_{4}, \qquad q \equiv p_{1} - p_{3} = p_{4} - p_{2}, \qquad r \equiv p_{1} - p_{4} = p_{3} - p_{2}.
+\end{equation}
+These are the spacetime vectors that yield the Mandelstam invariants:
+\begin{equation}
+	s = -\abs{p}^{2}, \qquad t = -\abs{q}^{2}, \qquad u = -\abs{r}^{2}.
+\end{equation}
+The Sudakov null decomposition of these linear combinations of momenta is
+\begin{equation}
+	p = P + a_{p} k_{3} + b_{p} k_{4}, \qquad q = Q + a_{q} k_{3} + b_{q} k_{4}, \qquad r = R + a_{r} k_{3} + b_{r} k_{4}.
+\end{equation}
+Using the null decomposition of the external momenta yields:
+\begin{align}
+	P = P_{1} + P_{2} = 0, \qquad a_{p} &= a_{1} + a_{2} = 1 + a_{4}, \qquad b_{p} = b_{1} + b_{2} = 1 + b_{3}; \\
+	Q = P_{1} = -P_{2}, \qquad a_{q} &= a_{1} - 1 = a_{4} - a_{2}, \qquad b_{q} = b_{1} - b_{3} = 1 - b_{2}; \\
+	R = P_{1} = -P_{2}, \qquad a_{r} &= a_{1} - a_{4} = 1 - a_{2}, \qquad b_{r} = b_{1} - 1 = b_{3} - b_{2}.
+\end{align}
+Explicitly,
+\begin{align}
+	a_{1} + a_{2} &= \frac{ s \left(1 - a_{4} \right) }{\sqrt{\Lambda_{12}(s)}}, \\
+	b_{1} + b_{2} &= \frac{ s \left(1 - b_{3} \right) }{\sqrt{\Lambda_{12}(s)}}.
+\end{align}
+Using
+\begin{equation}
+	\frac{s}{\sqrt{\Lambda_{12}(s)}} = \frac{\left( 1 + b_{3} \right) + b_{3} \left( 1 + a_{4} \right)}{1 - b_{3} a_{4}}, \qquad \frac{s}{\sqrt{\Lambda_{12}(s)}} = \frac{\left( 1 + a_{4} \right) + a_{4} \left( 1 + b_{3} \right)}{1 - b_{3} a_{4}};
+\end{equation}
+you find that $a_{p} = 1 + a_{4}$ and $b_{p} = 1 + b_{3}$. This checks the relations from (\ref{eq:conv_rel}). You also have
+\begin{equation}
+	a_{q} = \frac{\left( 1 + a_{4} \right) t}{\sqrt{\Lambda_{12}(s)}}, \qquad
+	b_{q} = -\frac{\left( 1 + b_{3} \right) t}{\sqrt{\Lambda_{12}(s)}};
+\end{equation}
+and
+\begin{equation}
+	a_{r} = \frac{\left( 1 + a_{4} \right) t}{\sqrt{\Lambda_{12}(s)}} + 1 - a_{4}, \qquad 
+	b_{r} = - \frac{\left( 1 + b_{3} \right) t}{\sqrt{\Lambda_{12}(s)}} - 1 + b_{3}.
+\end{equation}
+From $t = -\abs{q}^{2}$ it follows that
+\begin{equation}
+	\abs{Q}^{2} = -t \left[ 1 + \frac{s t}{\Lambda_{12}(s)} \right].
+\end{equation}
+Thus,
+\begin{equation}
+	\abs{R}^{2} = \abs{P_{1}}^{2} = \abs{P_{2}}^{2} = \abs{Q}^{2} = -t \left[ 1 + \frac{s t}{\Lambda_{12}(s)} \right].
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Scattering Regimes}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Slow Small-Speed Scattering}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Small (slow) speeds occur when $s$ is close to the threshold value $4 m^{2}$.
+
+In this regime you have
+\begin{equation}
+	b_{3} \rightarrow 1, \qquad a_{4} \rightarrow 1.
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Slow Fixed-Speed Scattering}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The (slow) speed of each external quantum is a function of one dimensionless ratio,
 \begin{equation}
 	\frac{s}{m^{2}}.
 \end{equation}
@@ -155,18 +337,22 @@ Fixed-speed scattering corresponds to the kinematic regime where we keep this ra
 	\frac{s}{m^{2}} \text{ fixed}.
 \end{equation}
 This regime is appropriate for either large $s$ and large mass, or small $s$ and small mass. Note that fixed-speed is equivalent to fixed-rapidity. By itself, this regime is not very helpful, but when combined with other limits it leads to important approximations.
+
+In this regime both $b_{3}$ and $a_{4}$ are kept fixed.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Small-Speed Scattering}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Small speeds occur when $s$ is close to the threshold value $4 m^{2}$.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Large-Speed Scattering}
+\subsubsection{Slow Large-Speed Scattering}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Large-speed scattering involves the regime
 \begin{equation}
 	\frac{s}{m^{2}} \rightarrow \infty.
 \end{equation}
 That is, $\sqrt{s}$ is very large compared to the mass.
+
+In this regime you have
+\begin{equation}
+	b_{3} \rightarrow 0, \qquad a_{4} \rightarrow 0.
+\end{equation}
+That is, both $p_{3}$ and $p_{4}$ become null momenta.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Regge Scattering}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
